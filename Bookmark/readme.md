@@ -2,11 +2,15 @@
 
 A lightweight **command-line bookmark manager written in Python** for saving, searching, opening, editing, and deleting links with notes. It stores data in SQLite (no server needed) and uses `rich` for coloured terminal output — a compact example of a CRUD console app.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 Bookmark stores your important URLs in a local SQLite database (`links.db`) alongside a title and a short summary note. All operations are done through a simple interactive prompt. The `rich` library provides colored, readable output in the terminal.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - **Add** links with a title, URL, and summary note
 - **Search** links by keyword matching the title
@@ -17,7 +21,9 @@ Bookmark stores your important URLs in a local SQLite database (`links.db`) alon
 - Color-coded terminal output via `rich`
 - Graceful exit with `Ctrl+C`
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 rich
@@ -28,10 +34,12 @@ rich
 Install the dependency:
 
 ```bash
-pip install rich
+python -m pip install rich
 ```
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 From the `Console_Code` folder:
 
@@ -70,7 +78,9 @@ Choose ID: 1
 Opening...
 ```
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Bookmark/
@@ -78,13 +88,17 @@ Bookmark/
     └── book_marks.py    # Main script (also creates links.db in the working directory)
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - `links.db` is created automatically in the directory where the script is run.
 - The database schema adds the `note` column automatically if it's missing (for backwards compatibility with older databases).
 - Commands are case-insensitive (`add`, `ADD`, and `Add` all work), and the search matches part of the title (`LIKE '%keyword%'`).
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Python dbm key-value database example](../Database/README.md)
 - [Contact Book — Python GUI with SQL Server](../GUI_Apps/README.md)

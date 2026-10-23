@@ -15,8 +15,8 @@ A time series forecasting script that predicts the number of daily COVID-19 case
 #### How It Works
 
 1. Downloads daily COVID-19 case data via the `covid_daily` package (if not already cached locally as a CSV)
-2. Performs stationarity testing using the **Augmented Dickey-Fuller (ADF)** test
-3. Detrends and differences the time series for stationarity
+2. Detrends and differences a copy of the series for stationarity diagnostics (model fitting still uses the original series)
+3. Performs the **Augmented Dickey-Fuller (ADF)** test and rolling-statistics diagnostics on that transformed series
 4. Automatically fits the best ARIMA/SARIMA model using `pmdarima.auto_arima`
 5. Fits the chosen model using `statsmodels.SARIMAX`
 6. Generates a **static forecast** (in-sample) and a **future forecast** for the next N days
@@ -43,7 +43,7 @@ matplotlib
 ```
 
 ```bash
-pip install numpy pandas pmdarima covid_daily statsmodels matplotlib
+python -m pip install numpy pandas pmdarima covid_daily statsmodels matplotlib
 ```
 
 #### Usage
@@ -100,7 +100,7 @@ numpy
 ```
 
 ```bash
-pip install pandas scikit-learn joblib numpy
+python -m pip install pandas scikit-learn joblib numpy
 ```
 
 #### Usage
@@ -127,7 +127,9 @@ Predicted Salary for 5.0 years of experience: $<predicted amount>
 
 ---
 
-## Folder Structure
+<a id="folder-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 ML/
@@ -145,7 +147,9 @@ ML/
         └── scaler.pkl             # Saved StandardScaler
 ```
 
-## Related
+<a id="related"></a>
+
+## 🔗 Related documentation
 
 - [Machine-learning datasets](https://github.com/gcfernando/datasets) — more datasets for regression, classification, and forecasting practice
 - [Back to all Python projects](../README.md)

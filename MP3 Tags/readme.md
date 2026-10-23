@@ -2,11 +2,15 @@
 
 A short Python script that shows **how to read MP3 metadata (ID3 tags) in Python** with `eyed3` — title, artist, album, genre, track number, and year — along with audio details such as sample rate, bitrate, duration, and channel mode.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script loads an MP3 file, extracts its ID3 tag information and audio stream properties, and prints them to the console. It covers both tag metadata (title, artist, genre, etc.) and technical audio details (bitrate, sample rate, duration, channels).
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 Extracts and displays the following information:
 
@@ -28,7 +32,9 @@ Extracts and displays the following information:
 **File Information:**
 - File size (MB)
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 eyed3
@@ -37,10 +43,12 @@ eyed3
 Install the dependency:
 
 ```bash
-pip install eyed3
+python -m pip install eyed3
 ```
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 Open `ReadMP3File.py` and update the file path:
 
@@ -75,7 +83,9 @@ File Size: <MB>
 
 In `eyed3`, `audio_file.info.bit_rate` is a `(vbr, bitrate)` tuple whose bitrate is **already in kb/s**. The script divides it by 1000 again (`bit_rate[1] // 1000`), so a 320 kb/s file prints `Bitrate: 0 kbps`. Printing `audio_file.info.bit_rate[1]` — or `audio_file.info.bit_rate_str`, which also marks variable bitrates with `~` — shows the correct value.
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 MP3 Tags/
@@ -83,13 +93,17 @@ MP3 Tags/
     └── ReadMP3File.py    # Main script
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - The file path is currently hardcoded in the script. Update it before running.
 - Year is only printed if `getBestDate()` returns a valid date object.
-- The script assumes the file has an ID3 tag; for an untagged MP3, `audio_file.tag` is `None`.
+- An untagged MP3 has `audio_file.tag` set to `None`; the existing `if audio_file.tag` guard skips tag output. The script does not guard `audio_file` itself: if `eyed3.load()` returns `None` for an unsupported input, the first attribute access fails.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [MP3 Player with crossfade](../MP3%20Player/readme.md)
 - [Improve MP3 Quality — re-encode MP3 files](../Improve%20MP3%20Quality/readme.md)

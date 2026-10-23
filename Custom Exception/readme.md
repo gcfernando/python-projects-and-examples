@@ -2,9 +2,26 @@
 
 A minimal Python example demonstrating **how to define, raise, and catch a custom exception class** by subclassing `Exception`.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script shows the pattern for creating a user-defined exception in Python by subclassing the built-in `Exception` class. It demonstrates how to raise the custom exception under a specific condition and catch it with a `try/except` block.
+
+<a id="usage"></a>
+
+## 💡 Usage
+
+From the `Console_Code` folder:
+
+```bash
+python CustomException.py
+```
+
+**Output** (confirmed by running the script):
+```text
+Something went wrong
+```
 
 ## How It Works
 
@@ -32,32 +49,6 @@ except CustomException as e:
     print(e.message)
 ```
 
-## Usage
-
-From the `Console_Code` folder:
-
-```bash
-python CustomException.py
-```
-
-**Output** (confirmed by running the script):
-```text
-Something went wrong
-```
-
-## Notes
-
-- No external dependencies required — uses only Python built-ins.
-- The script includes a discussion in the docstring about when it is appropriate to make a custom exception serializable (relevant for distributed systems where exceptions may be passed across process boundaries).
-
-## File Structure
-
-```text
-Custom Exception/
-└── Console_Code/
-    └── CustomException.py    # Main script
-```
-
 ## FAQ
 
 **Do I need to store `message` on the exception?**
@@ -66,7 +57,26 @@ No — `str(e)` already returns the message passed to `super().__init__(message)
 **Should custom exceptions inherit from `Exception` or `BaseException`?**
 From `Exception` (or one of its subclasses). `BaseException` is reserved for exceptions such as `KeyboardInterrupt` and `SystemExit` that ordinary `except Exception` blocks should not catch.
 
-## Related Projects
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
+
+```text
+Custom Exception/
+└── Console_Code/
+    └── CustomException.py    # Main script
+```
+
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
+
+- No external dependencies required — uses only Python built-ins.
+- The script includes a discussion in the docstring about when it is appropriate to make a custom exception serializable (relevant for distributed systems where exceptions may be passed across process boundaries).
+
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Object Clone — deep copy example](../Object%20Clone/readme.md)
 - [Python dbm database example](../Database/README.md)

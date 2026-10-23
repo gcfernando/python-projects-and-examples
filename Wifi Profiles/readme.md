@@ -4,7 +4,9 @@ A Windows utility written in Python that uses `netsh wlan` to **list saved Wi-Fi
 
 > ⚠️ **Running the script as it is deletes your saved Wi-Fi profiles.** Both parts run one after the other: after listing the passwords, the script deletes every saved profile except the one named in `ignore_ssid`, which is set to the placeholder `"WIFI_NAME"`. Unless you change `ignore_ssid` to your network's name, or comment out the delete section, **all** saved Wi-Fi profiles are deleted.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script uses `netsh wlan` commands via `subprocess` to:
 1. Display all saved Wi-Fi SSIDs and their stored passwords
@@ -12,20 +14,26 @@ This script uses `netsh wlan` commands via `subprocess` to:
 
 Both operations are in the same script and both run every time. To only list passwords, comment out the delete section (everything from the `ignore_ssid` line onwards).
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - Lists all saved Wi-Fi profiles with their SSIDs and passwords
 - Bulk-deletes all Wi-Fi profiles except a designated "safe" SSID
 - Uses only Python standard library modules (`subprocess`, `re`)
 - No external dependencies
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 No external dependencies. Uses only Python standard library.
 
 > **Windows only.** Requires a Windows system with the WLAN AutoConfig service running.
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 ```bash
 python profile.py
@@ -65,7 +73,9 @@ The script then deletes all other saved profiles, printing `Skipping profile: ..
 - Retrieves the same profile list
 - Runs `netsh wlan delete profile name=<name>` for each profile not matching `ignore_ssid`
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Wifi Profiles/
@@ -73,14 +83,19 @@ Wifi Profiles/
     └── profile.py    # Main script
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - You may need to run this script as Administrator to read stored passwords on some Windows configurations.
 - This tool is intended for personal use to manage your own saved Wi-Fi connections. Always use responsibly and with respect for privacy.
-- Deleted profiles cannot be recovered — the connection details must be re-entered manually. To keep a backup first, run `netsh wlan export profile key=clear folder=<path>` (the exported files contain passwords in plain text, so store them securely).
+- The script has no undo. Re-create profiles manually or restore a separately retained export. To keep a backup first, run `netsh wlan export profile key=clear folder=<path>` (the exported files contain passwords in plain text, so store them securely).
+- The deletion subprocess does not check its return code; a printed `Deleted profile` message alone does not prove deletion succeeded.
 - The profile list is parsed with the English label `All User Profile`, so on Windows installations in other display languages the script may find no profiles.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [WiFi Scanner — list nearby networks](../Wifi%20Scanner/readme.md)
 - [WiFi Radar — live Wi-Fi dashboard](../Wifi%20Radar/readme.md)

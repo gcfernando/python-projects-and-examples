@@ -2,11 +2,15 @@
 
 A short Python script that **reads a PDF aloud**, page by page: it extracts the text with `PyPDF2` and speaks it with `pyttsx3`, which uses your operating system's built-in (offline) text-to-speech voices.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script extracts text from a PDF file using `PyPDF2` and converts it to speech using `pyttsx3`. It reads each page sequentially, with a brief pause between pages for natural pacing. A preferred voice (female by default) is selected automatically if available.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - Reads all pages of a PDF aloud using the system's text-to-speech engine
 - Tries to select a voice whose name or ID contains "female" (see the note on voice selection below)
@@ -15,7 +19,9 @@ This script extracts text from a PDF file using `PyPDF2` and converts it to spee
 - Short pause between pages for a more natural listening experience
 - Error handling for missing files and unexpected issues
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 PyPDF2
@@ -25,10 +31,12 @@ pyttsx3
 Install dependencies:
 
 ```bash
-pip install PyPDF2 pyttsx3
+python -m pip install PyPDF2 pyttsx3
 ```
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 `Story.pdf` is not included in the repository. Place your own PDF named `Story.pdf` in the folder you run the script from (or update the path), then run:
 
@@ -55,7 +63,9 @@ read_pdf_aloud("path/to/your/file.pdf", voice_id=chosen_voice, rate=150, volume=
 | `rate` | `150` | Speaking speed in words per minute |
 | `volume` | `0.9` | Volume level (0.0 to 1.0) |
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 StoryReader/
@@ -63,7 +73,9 @@ StoryReader/
     └── StoryReader.py    # Main script
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - `pyttsx3` uses the operating system's built-in TTS engine (SAPI5 on Windows, NSSpeechSynthesizer on macOS, eSpeak on Linux).
 - Pages with no extractable text are silently skipped.
@@ -74,7 +86,9 @@ StoryReader/
 
 `select_voice` looks for the word "female" in each installed voice's name or ID. Standard Windows voice names such as "Microsoft Zira Desktop" do not contain that word, so the function usually falls back to `voices[1]`, the second installed voice. On a default English (US) Windows installation, that is typically Zira. If only one voice is installed, `voices[1]` raises an `IndexError`; change the fallback to `voices[0]` or pass a specific voice ID.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Text2Audio — Google text-to-speech desktop app](../Text2Audio/readme.md)
 - [Back to all Python projects](../README.md)

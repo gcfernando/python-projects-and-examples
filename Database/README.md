@@ -2,23 +2,31 @@
 
 A simple example of **key-value data persistence** using Python's built-in **`dbm` module**: store a small record in a file-based database and read it back, with no database server and no third-party packages.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script demonstrates how to store and retrieve structured data using Python's `dbm` module — a lightweight, file-based key-value store that requires no external database server. It saves a set of user details to a database file, then reads them back and formats a summary.
 
 `dbm` is a good fit for small caches, settings, or lookup tables where a full database such as SQLite would be more than you need. For queryable relational data, see the SQLite-backed [Bookmark](../Bookmark/readme.md) project instead.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - Stores key-value pairs in a file-based database using `dbm`
 - Reads back and decodes stored data from the database
 - No external libraries or server setup required
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 No external dependencies. `dbm` is part of the Python standard library.
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 ```bash
 cd DatabaseManager/Console_Code
@@ -44,7 +52,9 @@ As currently written, the script raises `KeyError: 'first_name'` when it reaches
 3. `load_user_data()` opens the database in read mode (`'r'`), reads back all keys, decodes the byte values to strings, and returns a dictionary.
 4. The loaded data is formatted into a readable sentence and printed.
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Database/
@@ -53,12 +63,16 @@ Database/
         └── data_manager.py    # Main script
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - The database file is created in the current working directory when the script runs.
 - `dbm` stores all keys and values as bytes. The `load_user_data()` function decodes the values using `.decode()`.
 
-## Related examples
+<a id="related-examples"></a>
+
+## 🔗 Related documentation
 
 - [Object Clone](../Object%20Clone/readme.md) and [Custom Exception](../Custom%20Exception/readme.md) — other short Python fundamentals examples
 - [Back to all Python projects](../README.md)

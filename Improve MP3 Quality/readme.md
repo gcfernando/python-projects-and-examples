@@ -4,20 +4,26 @@ A command-line tool written in Python that **re-encodes MP3 files** with a chose
 
 > Re-encoding cannot add detail that a lower-quality MP3 has already lost; a higher bitrate mainly makes the file larger. Use it to standardize settings or reduce file size.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script uses `pydub` (backed by FFmpeg) to re-encode one or more MP3 files. The original file is replaced in-place with the optimized version. ID3 tags from the original file are preserved in the output. It can process a single MP3 file or an entire folder of MP3s in one run.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - Process a single MP3 file or a whole folder at once
-- 7 bitrate options: `32k`, `64k`, `96k`, `128k`, `192k`, `256k`, `320k`
+- 7 bitrate menu options: `32k`, `64k`, `96k`, `128k`, `192k`, `256k`, `320k`
 - 4 channel options: `mono`, `stereo`, `joint_stereo`, `dual_mono` (see [Channel options](#channel-options))
 - 11 sample rate options: `8000` Hz to `192000` Hz
 - ID3 tags are read from the original and written to the re-encoded output
 - Original file is replaced in-place after encoding
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 pydub
@@ -28,7 +34,7 @@ You also need **FFmpeg** installed and available on your system PATH. Windows bu
 Install the Python dependency:
 
 ```bash
-pip install pydub
+python -m pip install pydub
 ```
 
 Install FFmpeg:
@@ -37,7 +43,9 @@ Install FFmpeg:
 - **macOS:** `brew install ffmpeg`
 - **Linux:** `sudo apt install ffmpeg`
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 From the `Console_Code` folder:
 
@@ -81,7 +89,9 @@ The channel options are applied by `pydub` before encoding; they are not LAME's 
 | `joint_stereo` | Mono input becomes two channels; stereo input is remixed by overlaying the left and right channels with panning onto a silent base track |
 | `dual_mono` | Mono input becomes two channels; stereo input keeps **one randomly chosen channel**, so the output is mono |
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Improve MP3 Quality/
@@ -93,14 +103,20 @@ Improve MP3 Quality/
     └── QualityModifier.py    # Main script
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - The original file is overwritten. Back up your files before running if needed.
 - Only `.mp3` files are processed when a folder path is given.
 - The `libmp3lame` encoder is used for all output files.
+- The selected bitrate is not always the final encoder argument. `scale_qality()` appends a second `-b:a` value: `256k` maps to `245k`, `192k` to `225k`, `128k` to `130k`, `96k` to `100k`, `64k` to `65k`, and `32k` falls back to `65k`. The `320k` option appends `320k`. Treat the menu as the current implementation, not a guarantee of the requested output bitrate.
+- The menu includes `96000` and `192000` Hz, but listing a sample rate does not establish that the MP3 encoder can produce it. Encoding failures are caught and only a generic failure message is printed.
 - Each file is first written to `<name>_temp.mp3` and then moved over the original with `os.replace`.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [MP3 Tags — read ID3 metadata](../MP3%20Tags/readme.md)
 - [MP3 Player with crossfade](../MP3%20Player/readme.md)

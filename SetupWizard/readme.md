@@ -2,11 +2,15 @@
 
 A Python desktop GUI that displays fruit images and descriptions in a paginated viewer, built with **PySimpleGUI** and **Pillow**, with a `resource_path()` helper that makes bundled assets work when the app is packaged into a Windows executable with **PyInstaller**.
 
-## Overview
+<a id="overview"></a>
 
-Fruit Wiki is a simple desktop encyclopedia for fruits. It reads image files from an `Images/` folder and matching text files from a `Data/` folder, then displays them side by side in a centered window. Users can browse entries using Previous and Next buttons.
+## 🔎 Overview
 
-## Features
+Fruit Wiki is a simple desktop image browser for fruits. It reads image files from an `Images/` folder and matching text files from a `Data/` folder, then displays the fruit image and exposes its description as an image tooltip. Users can browse entries using Previous and Next buttons.
+
+<a id="features"></a>
+
+## ✨ Features
 
 - Paginated image viewer with Previous / Next navigation
 - Loads images (`.png`, `.jpg`, `.jpeg`) from an `Images/` folder
@@ -14,9 +18,11 @@ Fruit Wiki is a simple desktop encyclopedia for fruits. It reads image files fro
 - Images are automatically resized to fit a 300×300 display area
 - Custom font loaded from a `Fonts/` folder (`Futura.ttf`)
 - Dark teal theme (`DarkTeal10`)
-- Resource paths resolved correctly for both development and PyInstaller bundles
+- Resource helper for development working-directory paths and PyInstaller extraction paths
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 PySimpleGUI
@@ -28,25 +34,12 @@ pyinstaller
 Install dependencies:
 
 ```bash
-pip install PySimpleGUI Pillow pyglet pyinstaller
+python -m pip install PySimpleGUI Pillow pyglet pyinstaller
 ```
 
-## Folder Structure
+<a id="usage"></a>
 
-```text
-SetupWizard/
-└── GUI_Code/
-    ├── fruitWiki.py    # Main application
-    ├── icon.ico        # Application icon
-    ├── Fonts/
-    │   └── Futura.ttf  # Custom font
-    ├── Images/         # Apple, Banana, Cherry, Grapes, Mango, Papaya (.png)
-    └── Data/           # Matching descriptions (Apple.txt, Banana.txt, ...)
-```
-
-Each `.txt` file in `Data/` must have the same base name as its matching image file. Six fruits are included.
-
-## Usage
+## 💡 Usage
 
 ### Running the script directly
 
@@ -67,15 +60,37 @@ pyinstaller --onefile --windowed --icon icon.ico --add-data "Fonts;Fonts" --add-
 
 The executable is created in `dist/`.
 
-## Notes
+<a id="folder-structure"></a>
+
+## 🏗️ Architecture
+
+```text
+SetupWizard/
+└── GUI_Code/
+    ├── fruitWiki.py    # Main application
+    ├── icon.ico        # Application icon
+    ├── Fonts/
+    │   └── Futura.ttf  # Custom font
+    ├── Images/         # Apple, Banana, Cherry, Grapes, Mango, Papaya (.png)
+    └── Data/           # Matching descriptions (Apple.txt, Banana.txt, ...)
+```
+
+Each `.txt` file in `Data/` must have the same base name as its matching image file. Six fruits are included.
+
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - The `resource_path()` function ensures the app finds its assets whether run from source or as a PyInstaller bundle.
 - Sentence formatting is applied to description text: periods followed by a space are replaced with a newline.
-- The Previous button is disabled when viewing the first entry; the Next button is disabled on the last.
+- The Previous button starts disabled. After navigation, `button_control()` disables Previous or Next at the respective end; initial state is not recalculated after loading entries. The default six-entry set has a next item.
+- Image order follows `os.listdir()` and is not sorted. An unreadable description can fail at `.replace()` before the later empty-content check.
 - The custom font is registered with `pyglet.font.add_file`, which is why `pyglet` is a dependency.
 - PySimpleGUI's licensing changed with version 5. Check the current PySimpleGUI terms before installing, or use FreeSimpleGUI, a community fork of the version 4 API.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Text2Audio — customtkinter text-to-speech app](../Text2Audio/readme.md)
 - [Contact Book — ttkbootstrap and SQL Server](../GUI_Apps/README.md)

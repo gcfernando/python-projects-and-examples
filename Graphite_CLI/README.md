@@ -6,7 +6,23 @@
 
 *Before-and-after example image included in the project folder.*
 
-## End-user usage
+<a id="developer-installation-one-time"></a>
+
+## 📦 Prerequisites and installation
+
+Python 3.10+ and the following dependencies are required:
+
+```bash
+python -m pip install -r requirements_portrait_graphite.txt
+```
+
+The requirements file (in `Console_Code/`) constrains compatible version ranges for `numpy>=1.26,<3`, `opencv-python>=4.8,<5`, and `Pillow>=10,<13`.
+
+Install the dependencies as part of deployment so the end user only runs the two-argument command. An executable distribution would need to be built separately for each target operating system if users must not install Python or packages.
+
+<a id="end-user-usage"></a>
+
+## 💡 Usage
 
 From the `Console_Code` folder:
 
@@ -18,18 +34,6 @@ That's the complete command. The tool reads the photo, chooses rendering setting
 
 On success it prints the saved file and its size, for example `Saved 'sketch.png' (1920 x 1080)`. On failure it prints `Error: <reason>` and exits with status code `1`.
 
-## Developer installation (one time)
-
-Python 3.10+ and the following dependencies are required:
-
-```bash
-python -m pip install -r requirements_portrait_graphite.txt
-```
-
-The requirements file (in `Console_Code/`) pins `numpy>=1.26,<3`, `opencv-python>=4.8,<5`, and `Pillow>=10,<13`.
-
-Install the dependencies as part of deployment so the end user only runs the two-argument command. An executable distribution would need to be built separately for each target operating system if users must not install Python or packages.
-
 ## How it works
 
 1. **Load** — the photo is opened with Pillow, rotated according to its EXIF orientation, composited onto white (for transparent images), and converted to 8-bit grayscale. Images larger than 20 million pixels or smaller than 16 pixels on a side are rejected.
@@ -40,17 +44,15 @@ Install the dependencies as part of deployment so the end user only runs the two
 
 ## Input and output formats
 
-Supports common Pillow-readable image files as input and PNG/JPEG as output (`.png`, `.jpg`, `.jpeg`). For best lossless output, use `.png`.
-
-## Limitations
-
-This is a deterministic OpenCV renderer, not a neural image-to-image model or a human artist. It cannot guarantee a specific reference style, 100% identity preservation in perceptual terms, or perfect results on arbitrary photos. Automatic validation detects corrupted output, wrong dimensions, and obvious failures, not subjective artistic quality. For a strict artistic acceptance target, use a validated trained model or a human-in-the-loop quality-review process.
+Supports common Pillow-readable image files as input and PNG/JPEG as output (`.png`, `.jpg`, `.jpeg`). EXIF rotation can swap width and height; dimension preservation is relative to the oriented image. For best lossless output, use `.png`.
 
 ## Verification limits
 
 This repository does not include an automated test module for Graphite CLI. The runtime validation described above checks output integrity and basic image properties; it does not verify artistic quality. Inspect the saved image when deciding whether a conversion meets your needs.
 
-## Project structure
+<a id="project-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Graphite_CLI/
@@ -60,7 +62,15 @@ Graphite_CLI/
     └── Before and After.png                # Example result
 ```
 
-## Related projects
+<a id="limitations"></a>
+
+## 🛠️ Troubleshooting and limitations
+
+This is a deterministic OpenCV renderer, not a neural image-to-image model or a human artist. It cannot guarantee a specific reference style, 100% identity preservation in perceptual terms, or perfect results on arbitrary photos. Automatic validation detects corrupted output, wrong dimensions, and obvious failures, not subjective artistic quality. For a strict artistic acceptance target, use a validated trained model or a human-in-the-loop quality-review process.
+
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Image2Cartoon](../Image2Cartoon/readme.md) — cartoon-style image effects with OpenCV
 - [Image to ASCII](../Image%20to%20ASCII/readme.md) — turn an image into ASCII art

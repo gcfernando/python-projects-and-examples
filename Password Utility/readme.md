@@ -2,12 +2,20 @@
 
 Two small Python command-line tools: a **random password generator** with guaranteed numbers of digits, uppercase, lowercase, and special characters, and a **password strength checker** that rates a password by the number of possible character combinations.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This project contains two independent scripts:
 
 - **Password Generator** — creates a random password of configurable length and character composition
 - **Password Strength Validator** — assesses how strong a given password is based on its character variety
+
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
+
+No external dependencies. Both scripts use only Python standard library modules (`random`, `string`, `re`, `os`).
 
 ## Scripts
 
@@ -36,13 +44,13 @@ The generated characters are shuffled so the guaranteed characters are not group
 python Password_Generator.py
 ```
 
-The script prints one 30-character password; every run produces a different one.
+The script prints one 30-character password; repeated output is possible with any finite random generator.
 
 ---
 
 ### Password Strength Validator (`PasswordStregth.py`)
 
-Evaluates a password by calculating the total number of possible combinations given its character composition: 26 options for each lowercase letter, 26 for each uppercase letter, 10 for each digit, and the size of the special-character set for each special character, multiplied together.
+Evaluates a password by calculating the total number of possible combinations given its character composition: 26 options for each lowercase letter, 26 for each uppercase letter, 10 for each digit, and the length of the regex pattern string for each matched special character, multiplied together. That last factor counts regex syntax too, so it is not the size of the actual special-character alphabet.
 
 **Strength levels:**
 
@@ -77,11 +85,9 @@ More ! (Y|N) : N
 
 > The rating only considers length and character types. `P@ssw0rd!2024` scores **Very Strong** even though it follows a very common pattern that password crackers try early. For a realistic estimate, use a library such as `zxcvbn`, which also checks dictionary words and common substitutions.
 
-## Requirements
+<a id="file-structure"></a>
 
-No external dependencies. Both scripts use only Python standard library modules (`random`, `string`, `re`, `os`).
-
-## File Structure
+## 🏗️ Architecture
 
 ```text
 Password Utility/
@@ -90,7 +96,9 @@ Password Utility/
     └── PasswordStregth.py       # Password strength validator
 ```
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Use Windows Login — verify Windows credentials](../Use%20Windows%20Login/readme.md)
 - [Steganography — hide text in images](../Stenography/readme.md)

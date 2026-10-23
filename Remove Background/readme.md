@@ -2,33 +2,41 @@
 
 A short Python script that shows **how to remove the background from an image in Python** using the AI-based `rembg` library, then places the subject on a solid black background with Pillow.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script takes an input image, removes its background using the AI-powered `rembg` library, and composites the foreground onto a solid black canvas. The result is saved as a new image file.
 
-## Features
+<a id="features"></a>
 
-- Automatic background removal using `rembg` (powered by U²-Net deep learning model)
+## ✨ Features
+
+- Automatic background removal through `rembg.remove()`; the installed dependency chooses its default model
 - Composites the transparent result onto a solid black background
 - Accepts any image format supported by Pillow as input
 - Output saved as a separate file (original is preserved)
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
-rembg
+rembg[cpu]
 Pillow
 ```
 
 Install dependencies:
 
 ```bash
-pip install rembg Pillow
+python -m pip install "rembg[cpu]" Pillow
 ```
 
-> On first run, `rembg` will download the U²-Net model (~170 MB). This only happens once.
+The [upstream rembg installation guide](https://github.com/danielgatis/rembg#installation) documents backend extras and current Python requirements. This repository does not pin a rembg version or explicitly select a model. Its default model, download size, cache location, and model-weight license can therefore change with the installed version. A first run may download weights; later runs can reuse cached weights. Check upstream model terms before using the output commercially.
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 By default the script processes the included sample image `Elephant.jpg` and writes `Elephant_Modified.jpg`, so you can try it straight away from the `Console_Code` folder:
 
@@ -52,7 +60,9 @@ The processed image will be saved at the output path.
 3. The resulting RGBA image (with transparent background) is pasted onto a new black RGB canvas.
 4. The final image is saved to the output path.
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Remove Background/
@@ -61,14 +71,18 @@ Remove Background/
     └── Elephant.jpg   # Sample input image
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - The output background color is currently set to black. Change `'black'` to `'white'` or any other color in `Image.new('RGB', result_img.size, 'black')` to use a different background.
 - `rembg` works best on images with clear subject-background contrast.
 - To keep a transparent background instead, save `result_img` (the RGBA image) as a `.png` file rather than compositing it onto a colour.
 - The function's docstring and variable name mention a white background, but the code uses `'black'`.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Image2Cartoon — cartoon effect with OpenCV](../Image2Cartoon/readme.md)
 - [Photo to graphite pencil sketch CLI](../Graphite_CLI/README.md)

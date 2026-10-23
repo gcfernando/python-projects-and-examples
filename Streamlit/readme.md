@@ -2,11 +2,15 @@
 
 A single-file **Streamlit example app** in Python that demonstrates sidebar input widgets, a pandas DataFrame, a matplotlib histogram, and Streamlit's native line and area charts — a quick way to learn how to build an interactive data web app without writing HTML or JavaScript.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This app serves as a showcase of Streamlit's core capabilities. Users can interact with various sidebar controls, view their selections displayed in the main area, explore a dynamically generated data table, and see multiple chart types — all in a single-page web interface.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - **Sidebar widgets:**
   - Slider (age range selection)
@@ -26,7 +30,9 @@ This app serves as a showcase of Streamlit's core capabilities. Users can intera
   - Salary-vs-age area chart (Streamlit native)
   - Conditional "Show More Info" section via checkbox
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 streamlit
@@ -38,10 +44,12 @@ matplotlib
 Install dependencies:
 
 ```bash
-pip install streamlit pandas numpy matplotlib
+python -m pip install streamlit pandas numpy matplotlib
 ```
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 From the `Console_Code` folder:
 
@@ -55,9 +63,17 @@ If the above command does not work:
 python -m streamlit run streamlit_app.py
 ```
 
-The app opens automatically in your default browser at `http://localhost:8501`.
+Streamlit normally serves at `http://localhost:8501`; use the URL printed by the CLI if its configuration or available port differs. Browser opening depends on the runtime environment.
 
-## File Structure
+The age-range slider is displayed in the summary but does not filter the table. The entered name, gender, salary and hobbies populate one sample row; its age is regenerated randomly on each rerun. No persistence or authentication is implemented.
+
+## How Streamlit Runs the App
+
+Streamlit re-runs the whole script from top to bottom every time a widget changes. Each widget call (for example `st.sidebar.slider`) returns its current value, so the page always reflects the latest inputs without callbacks.
+
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Streamlit/
@@ -65,11 +81,9 @@ Streamlit/
     └── streamlit_app.py    # Main Streamlit application
 ```
 
-## How Streamlit Runs the App
+<a id="related-projects"></a>
 
-Streamlit re-runs the whole script from top to bottom every time a widget changes. Each widget call (for example `st.sidebar.slider`) returns its current value, so the page always reflects the latest inputs without callbacks.
-
-## Related Projects
+## 🔗 Related documentation
 
 - [Local AI chat app with Ollama and Streamlit](https://github.com/gcfernando/document/blob/main/local_ai_learning_lab.md)
 - [WiFi Radar — Flask web dashboard](../Wifi%20Radar/readme.md)

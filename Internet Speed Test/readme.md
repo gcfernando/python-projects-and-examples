@@ -2,11 +2,15 @@
 
 A short Python script that **tests your internet speed** — download, upload, and ping — using the `speedtest-cli` library and Speedtest.net servers.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script connects to the best available Speedtest.net server, runs a full speed test, and prints the results to the console.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - Automatically selects the best available test server
 - Measures download speed (Mbps)
@@ -14,7 +18,9 @@ This script connects to the best available Speedtest.net server, runs a full spe
 - Reports ping latency (ms)
 - Displays the selected server's host, country, and sponsor
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 speedtest-cli
@@ -23,10 +29,12 @@ speedtest-cli
 Install the dependency:
 
 ```bash
-pip install speedtest-cli
+python -m pip install speedtest-cli
 ```
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 From the `Console_Code` folder:
 
@@ -50,7 +58,13 @@ Upload      : 48.17 Mbps
 Ping        : 12.34 ms
 ```
 
-## File Structure
+## Note on the reported units
+
+`speedtest-cli` returns speeds in bits per second. The script's `bytes_to_mb` helper divides by powers of **1024** and always appends `Mbps`, so a result shown as "90.6 Mbps" is about 95 megabits per second in the usual decimal sense (roughly 4.6% higher). Very slow connections, below 1,048,576 bit/s, are shown in kilobit units but are still labelled `Mbps`. Dividing by `1_000_000` gives standard Mbps.
+
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Internet Speed Test/
@@ -58,11 +72,9 @@ Internet Speed Test/
     └── SpeedTest.py    # Main script
 ```
 
-## Note on the reported units
+<a id="related-projects"></a>
 
-`speedtest-cli` returns speeds in bits per second. The script's `bytes_to_mb` helper divides by powers of **1024** and always appends `Mbps`, so a result shown as "90.6 Mbps" is about 95 megabits per second in the usual decimal sense (roughly 4.6% higher). Very slow connections, below 1,048,576 bit/s, are shown in kilobit units but are still labelled `Mbps`. Dividing by `1_000_000` gives standard Mbps.
-
-## Related Projects
+## 🔗 Related documentation
 
 - [FixNetwork — Windows network reset script](../FixNetwork/readme.md)
 - [WiFi Scanner](../Wifi%20Scanner/readme.md)

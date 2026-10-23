@@ -2,18 +2,24 @@
 
 A short **Selenium web scraping example in Python** that runs Chrome in headless mode, opens the ESPN Cricinfo news page, and prints the page header and news headlines found by CSS class.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script launches a headless Chrome browser, navigates to the ESPN Cricinfo news page, and extracts the page header and all news feed article titles. Results are printed to the console.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - Runs Chrome in headless mode (no visible browser window)
 - Scrapes the page header and news article titles
 - GPU acceleration disabled for compatibility in server environments
 - Console cleared before displaying results
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 selenium
@@ -22,14 +28,14 @@ selenium
 Install the dependency:
 
 ```bash
-pip install selenium
+python -m pip install selenium
 ```
 
 You also need:
 - **Google Chrome** installed on your system
 - **ChromeDriver** matching your Chrome version — available from [Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/)
 
-> **Selenium version:** the script passes the driver path as the first positional argument, `webdriver.Chrome(chromedriver_path, options=chrome_options)`. That form was removed in Selenium 4.10, so with current Selenium versions the call fails. Either install an older release (`pip install "selenium<4.10"`) or update the call to use a `Service`:
+> **Source adaptation required:** the script passes the driver path as the first positional argument, `webdriver.Chrome(chromedriver_path, options=chrome_options)`. Current Selenium uses a `Service` for an explicit driver path. Update your local copy as described in the [official Selenium migration guide](https://www.selenium.dev/documentation/webdriver/troubleshooting/upgrade_to_selenium_4/):
 >
 > ```python
 > from selenium.webdriver.chrome.service import Service
@@ -38,7 +44,9 @@ You also need:
 >
 > With Selenium 4.6 or later you can also omit the path entirely and let Selenium Manager download a matching driver: `webdriver.Chrome(options=chrome_options)`.
 
-## Configuration
+<a id="configuration"></a>
+
+## ⚙️ Configuration
 
 Open `Web_Scrape.py` and update the ChromeDriver path:
 
@@ -53,7 +61,9 @@ https://www.espncricinfo.com/cricket-news
 
 You can change this to any URL and update the CSS class selectors (`ds-text-title-xl`, `ds-text-title-s`) to match the structure of your target page.
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 From the `Console_Code` folder:
 
@@ -72,7 +82,9 @@ Looking for : <page header text>
 
 Headlines change daily, and the CSS classes used by the site can change at any time; if nothing is printed, inspect the page and update the selectors.
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Simple Selenium Scraper/
@@ -80,14 +92,18 @@ Simple Selenium Scraper/
     └── Web_Scrape.py    # Main script
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - The first two items from the news feed list are skipped (`news_feeds[2:]`) to avoid navigation elements.
 - ChromeDriver must be version-compatible with the installed Chrome browser.
 - The console is cleared with `os.system('cls')`, which is Windows-specific; use `clear` on macOS or Linux.
 - Check a website's terms of use and `robots.txt` before scraping it, and keep request rates low.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Tag Clouds — word cloud from scraped web pages](../TagClouds/readme.md)
 - [Simple WhatsApp Sender — browser automation](../Simple%20WhatApp%20Sender/readme.md)

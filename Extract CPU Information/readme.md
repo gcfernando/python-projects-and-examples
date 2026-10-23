@@ -2,11 +2,15 @@
 
 A short script that shows **how to get CPU information in Python**: processor brand, architecture, clock speed, and physical and logical core counts, using `psutil` and `py-cpuinfo`.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script uses the `psutil` and `py-cpuinfo` libraries to gather and print CPU details to the console, including brand name, architecture, clock speed, core counts, and an estimated temperature.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - CPU brand name and architecture
 - cpuinfo version string
@@ -15,7 +19,9 @@ This script uses the `psutil` and `py-cpuinfo` libraries to gather and print CPU
 - Number of logical cores (including hyper-threaded)
 - Estimated temperature in °C (derived from current frequency)
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 psutil
@@ -25,10 +31,12 @@ py-cpuinfo
 Install dependencies:
 
 ```bash
-pip install psutil py-cpuinfo
+python -m pip install psutil py-cpuinfo
 ```
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 From the `Console_Code` folder:
 
@@ -51,12 +59,9 @@ Processor Info
     Temperature      : 41.0°C
 ```
 
-## Notes
+<a id="file-structure"></a>
 
-- Temperature is estimated based on the current CPU frequency (`freq / 100 + 15`). It is not a hardware sensor reading and should not be used to judge whether a CPU is overheating. On Linux, `psutil.sensors_temperatures()` can read real sensor values where the hardware exposes them.
-- `psutil` and `cpuinfo` support Windows, macOS, and Linux.
-
-## File Structure
+## 🏗️ Architecture
 
 ```text
 Extract CPU Information/
@@ -64,7 +69,16 @@ Extract CPU Information/
     └── CPU.py    # Main script
 ```
 
-## Related Projects
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
+
+- Temperature is estimated based on the current CPU frequency (`freq / 100 + 15`). It is not a hardware sensor reading and should not be used to judge whether a CPU is overheating. On Linux, `psutil.sensors_temperatures()` can read real sensor values where the hardware exposes them.
+- `psutil` and `cpuinfo` support Windows, macOS, and Linux.
+
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Health Monitor — live process memory dashboard](../Health%20Monitor/readme.md)
 - [Back to all Python projects](../README.md)

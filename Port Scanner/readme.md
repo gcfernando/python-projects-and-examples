@@ -1,27 +1,35 @@
 # Python Port Scanner — Multithreaded TCP Scanner with IPv6, Banners and JSON Output
 
-A fast, multithreaded **TCP port scanner written in pure Python** (standard library only). It scans IPv4 and IPv6 hosts, distinguishes open, closed, and filtered ports, can grab service banners, and can emit JSON for automation.
+A fast, multithreaded **TCP port scanner written in pure Python** (standard library only). It resolves IPv4 or IPv6 hosts, reports open TCP ports, can read service banners, and can emit JSON for automation. Internal closed/filtered classification has a platform limitation described below.
 
 > **Only scan systems you own or have explicit written permission to test.**
 > Unauthorized scanning may violate computer-misuse laws in your jurisdiction.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - **IPv4 and IPv6** — resolves hostnames via `getaddrinfo`, prefers IPv4 with automatic IPv6 fallback
 - **Flexible port specification** — single ports, ranges, lists, or any mix: `80`, `1-1024`, `22,80,443`, `1-100,8080`
-- **Three port states** — distinguishes `open`, `closed`, and `filtered`
+- **Open-port output** — internal workers classify results, while CLI and JSON output contain only open ports
 - **Banner grabbing** — optional service-banner read on open ports
 - **Streamed output** — open ports are printed as they are discovered
 - **JSON mode** — machine-readable output for piping into other tools
 - **Graceful Ctrl+C** — pending work is cancelled cleanly; exits with code 130
 - **Configurable** — timeout, concurrency, and port range are all tunable from the CLI
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 - Python **3.10** or newer
 - No external packages
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
+
+Run from the `Port Scanner/Console_Code` directory:
 
 ```bash
 python portscan.py <target> [options]
@@ -48,7 +56,7 @@ python portscan.py example.com -p 1-100,443,8000-8100
 python portscan.py example.com -p 1-65535 -c 500 -t 0.5
 
 # IPv6 target
-python portscan.py 2606:4700::1111 -p 80,443
+python portscan.py ::1 -p 80,443
 
 # Banner grabbing
 python portscan.py example.com -p 22,80,443 --banner
@@ -88,6 +96,7 @@ Illustrative output (addresses and open ports depend on the target):
 ```
 
 ### JSON (`--json`)
+
 ```json
 {
   "target": "example.com",
@@ -108,9 +117,11 @@ Illustrative output (addresses and open ports depend on the target):
 |---|---|
 | `open` | Service accepted the TCP handshake |
 | `closed` | Host actively refused the connection |
-| `filtered` | Connection timed out (likely a firewall) |
+| `filtered` | Timeout, most nonzero connection errors, or an OS error; not proof of a firewall |
 
-The human-readable format and the JSON structure above were confirmed by scanning `127.0.0.1`. Service names come from the operating system's services database (`socket.getservbyport`), so the same port can be labelled differently on different systems (for example, port 135 appears as `epmap` on Windows).
+Only Linux error code `111` is recognized as `closed`. For example, Windows refusal code `10061` is classified internally as `filtered`. Neither closed nor filtered entries are emitted by the CLI, so an empty `open` array does not distinguish those conditions.
+
+The output above is illustrative. Service names come from the operating system's services database (`socket.getservbyport`), so the same port can be labelled differently on different systems (for example, port 135 appears as `epmap` on Windows).
 
 ## Exit Codes
 
@@ -118,16 +129,8 @@ The human-readable format and the JSON structure above were confirmed by scannin
 |---|---|
 | `0` | Scan completed successfully |
 | `1` | Unexpected error during scan |
-| `2` | Invalid arguments |
+| `2` | Invalid arguments, port specification, concurrency, or target resolution |
 | `130` | Interrupted by user (Ctrl+C) |
-
-## File Structure
-
-```text
-Port Scanner/
-└── Console_Code/
-    └── portscan.py    # Main script
-```
 
 ## FAQ
 
@@ -135,9 +138,21 @@ Port Scanner/
 No. It performs TCP connect scans only (no SYN, UDP, OS, or version detection). It is a readable example of a concurrent scanner and a lightweight tool for quick checks.
 
 **Why are some ports shown as `filtered`?**
-The connection attempt timed out rather than being refused, which usually means a firewall dropped the packets. Increasing `--timeout` can turn slow `filtered` results into `open` or `closed`.
+The CLI does not print filtered entries. Internally the worker uses that label for timeouts and most connection errors, including refusals on some operating systems. Increase `--timeout` for slow connections, but do not interpret this label as a reliable firewall diagnosis.
 
-## Related Projects
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
+
+```text
+Port Scanner/
+└── Console_Code/
+    └── portscan.py    # Main script
+```
+
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [WiFi Radar — Flask Wi-Fi scanner dashboard](../Wifi%20Radar/readme.md)
 - [Linux command reference for cybersecurity](https://github.com/gcfernando/other_codes/tree/main/Linux_Commands)

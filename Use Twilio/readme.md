@@ -2,18 +2,24 @@
 
 A command-line Python client that shows **how to send an SMS, send a WhatsApp message, and place a voice call with the Twilio API**, using the official `twilio` package.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script wraps the Twilio REST API into a `TwilioService` class with three communication methods. It runs an interactive loop that lets you choose the communication type, enter a recipient's phone number, and type a message.
 
-## Features
+<a id="features"></a>
 
-- Send SMS messages to any phone number
+## ✨ Features
+
+- Submit SMS requests to configured recipients (subject to your account and sender capabilities)
 - Send WhatsApp messages via Twilio's WhatsApp Business API
 - Make voice calls using a TwiML URL
 - Interactive console loop for repeated use
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 twilio
@@ -22,10 +28,12 @@ twilio
 Install the dependency:
 
 ```bash
-pip install twilio
+python -m pip install twilio
 ```
 
-## Configuration
+<a id="configuration"></a>
+
+## ⚙️ Configuration
 
 Open `SendSMS.py` and replace the placeholder credentials with your actual Twilio account details (the committed file contains masked placeholder values):
 
@@ -40,7 +48,9 @@ twilio_service = TwilioService(
 
 You can find these values in your [Twilio Console](https://console.twilio.com/). Do not commit real credentials; in your own copy, read them from environment variables such as `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN`.
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 From the `Console_Code` folder:
 
@@ -71,7 +81,9 @@ Enter message : Hello from Python!
 - **WhatsApp:** Sends via `client.messages.create(from_='whatsapp:...', to='whatsapp:...', body=message)`
 - **Voice call:** Creates a call via `client.calls.create(url=twiml_url, from_=..., to=...)`
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Use Twilio/
@@ -79,7 +91,9 @@ Use Twilio/
     └── SendSMS.py    # Main script
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - The voice call option uses `http://demo.twilio.com/docs/voice.xml` as the TwiML URL, which plays a Twilio demo message.
 - WhatsApp messaging requires a Twilio WhatsApp sender number approved through the Twilio console.
@@ -89,7 +103,9 @@ Use Twilio/
 - The option prompt is read with `eval(input(...))`, which executes whatever is typed as Python code. Run it only on your own machine, or change it to `int(input(...))`.
 - Twilio trial accounts can only send to verified numbers, and messages and calls are billed to your Twilio account.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Simple WhatsApp Sender — WhatsApp Web automation](../Simple%20WhatApp%20Sender/readme.md)
 - [Back to all Python projects](../README.md)

@@ -2,11 +2,15 @@
 
 Demonstrates **how to call a compiled C# / .NET library (DLL) from Python** using `pythonnet` and its `clr` module.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This project shows cross-language interoperability between Python and .NET. A simple `Calculator` class is compiled as a C# class library (DLL), and Python loads it at runtime via the `clr` (Common Language Runtime) module from the `pythonnet` package. The Python script then calls the .NET methods directly as if they were native Python functions.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - Load and call a .NET assembly (`.dll`) from Python
 - Calls five static methods on the C# `Calc` class — a description plus four arithmetic operations:
@@ -16,21 +20,9 @@ This project shows cross-language interoperability between Python and .NET. A si
   - `Multiplication(a, b)`
   - `Division(a, b)`
 
-## Project Structure
+<a id="requirements"></a>
 
-```text
-LoadLibraries/
-├── Calculator/
-│   ├── Calc.cs               # C# source — static Calculator class
-│   ├── Calculator.csproj     # .NET project file
-│   └── Calculator.sln        # .NET solution file
-├── Console_Code/
-│   └── CalcCaller.py         # Python script that loads and calls the DLL
-└── Library/
-    └── Calculator.dll        # Compiled .NET class library
-```
-
-## Requirements
+## 📦 Prerequisites and installation
 
 ```text
 pythonnet
@@ -39,12 +31,14 @@ pythonnet
 Install the dependency:
 
 ```bash
-pip install pythonnet
+python -m pip install pythonnet
 ```
 
 You also need a **.NET runtime** that can load the DLL. `Calculator.csproj` targets **.NET 6** (`net6.0`).
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 The DLL is pre-compiled and located in `Library/Calculator.dll`. Update the path in `CalcCaller.py` if needed:
 
@@ -82,7 +76,25 @@ dotnet build --configuration Release
 
 Copy the resulting `.dll` from the `bin/Release/` output to `Library/Calculator.dll`.
 
-## Notes
+<a id="project-structure"></a>
+
+## 🏗️ Architecture
+
+```text
+LoadLibraries/
+├── Calculator/
+│   ├── Calc.cs               # C# source — static Calculator class
+│   ├── Calculator.csproj     # .NET project file
+│   └── Calculator.sln        # .NET solution file
+├── Console_Code/
+│   └── CalcCaller.py         # Python script that loads and calls the DLL
+└── Library/
+    └── Calculator.dll        # Compiled .NET class library
+```
+
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - The DLL path in `CalcCaller.py` is currently hardcoded. Update it to match your actual directory structure before running.
 - `Calc` is a `public static class`, so its methods are called directly on the type (`Calc.Addition(5, 5)`) without creating an instance.
@@ -100,7 +112,9 @@ Copy the resulting `.dll` from the `bin/Release/` output to `Library/Calculator.
   The machine needs a .NET runtime that can run a `net6.0` assembly, or rebuild the library for the runtime you have installed.
 - **`FileNotFoundException` for the DLL** — the path passed to `clr.AddReference` must point to the DLL on your machine.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [The reverse direction: call Python from C# with Python.NET](https://github.com/gcfernando/csharp_codes/tree/main/PythonBridge)
 - [Back to all Python projects](../README.md)

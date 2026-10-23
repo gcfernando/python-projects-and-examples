@@ -50,17 +50,14 @@ ttkbootstrap
 Install dependencies:
 
 ```bash
-pip install pyodbc ttkbootstrap
+python -m pip install pyodbc ttkbootstrap
 ```
 
 #### Database Setup
 
 The application uses **Microsoft SQL Server** via the ODBC Driver 17. Run the provided SQL script to create the required table, constraints, indexes, and stored procedures:
 
-```bash
-# Connect to your SQL Server instance and run:
-SQL_Script/ContactBook.sql
-```
+Open [`SQL_Script/ContactBook.sql`](SQL_Script/ContactBook.sql) in your SQL Server client, select your intended development database, review the script, and execute it there. A SQL file path is not a shell command.
 
 The script creates:
 
@@ -98,7 +95,9 @@ The database enforces unique mobile numbers and email addresses, so a save is re
 
 ---
 
-## Folder Structure
+<a id="folder-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 GUI_Apps/
@@ -109,7 +108,9 @@ GUI_Apps/
     └── ContactBook.sql      # Database schema and stored procedures
 ```
 
-## Related
+<a id="related"></a>
+
+## 🔗 Related documentation
 
 - [Text2Audio](../Text2Audio/readme.md) and [Setup Wizard — Fruit Wiki](../SetupWizard/readme.md) — more Python desktop GUI examples
 - [Complete SQL Guide](https://github.com/gcfernando/document/blob/main/sql_complete_guide.md) — learn the SQL Server concepts used here, including stored procedures and constraints

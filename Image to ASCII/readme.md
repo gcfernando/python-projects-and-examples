@@ -2,11 +2,15 @@
 
 A short Python script that **converts an image into ASCII art** and saves it as a text file, using `pywhatkit.image_to_ascii_art`.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script uses the `pywhatkit` library to transform any image into a text-based ASCII art representation. The output is saved as a `.txt` file at a path you specify in the script.
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 pywhatkit
@@ -15,10 +19,12 @@ pywhatkit
 Install the dependency:
 
 ```bash
-pip install pywhatkit
+python -m pip install pywhatkit
 ```
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 Open `ImageToText.py` and update the input and output paths:
 
@@ -43,7 +49,9 @@ In `pywhatkit` 5.4, `image_to_ascii_art` converts the image to grayscale with Pi
 
 > Importing `pywhatkit` also loads its WhatsApp, browser-automation (`pyautogui`), and other helpers, so it installs several extra dependencies. For ASCII art alone, a few lines of Pillow code would do the same job.
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Image to ASCII/
@@ -51,7 +59,9 @@ Image to ASCII/
     └── ImageToText.py    # Main script
 ```
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Photo to graphite pencil sketch CLI](../Graphite_CLI/README.md)
 - [Image2Cartoon — cartoon effect with OpenCV](../Image2Cartoon/readme.md)

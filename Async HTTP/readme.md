@@ -2,11 +2,15 @@
 
 An interactive command-line client that shows how to make **asynchronous HTTP requests in Python** with `asyncio` and `aiohttp` — sending GET, POST, PUT, and DELETE requests to a REST API and printing the JSON responses.
 
-## Overview
+<a id="overview"></a>
+
+## 🔎 Overview
 
 This script demonstrates asynchronous HTTP communication by connecting to the Northwind sample REST API. It runs a loop that lets you repeatedly choose a request method, provide the necessary data, and view the JSON response — all using non-blocking I/O.
 
-## Features
+<a id="features"></a>
+
+## ✨ Features
 
 - Supports GET, POST, PUT, and DELETE methods
 - Asynchronous request handling via `aiohttp` and `asyncio`
@@ -14,7 +18,9 @@ This script demonstrates asynchronous HTTP communication by connecting to the No
 - Pretty-printed JSON responses using `pprint`
 - Targets the Northwind API's `/categories` resource for demonstration
 
-## Requirements
+<a id="requirements"></a>
+
+## 📦 Prerequisites and installation
 
 ```text
 aiohttp
@@ -25,10 +31,12 @@ aiohttp
 Install the external dependency:
 
 ```bash
-pip install aiohttp
+python -m pip install aiohttp
 ```
 
-## Usage
+<a id="usage"></a>
+
+## 💡 Usage
 
 From the `Console_Code` folder:
 
@@ -36,7 +44,7 @@ From the `Console_Code` folder:
 python HttpCall.py
 ```
 
-The script uses `http://northwind.now.sh/api/` as its base URL. At the time of writing, that address redirects to `https://northwind.vercel.app/api/`, a shared public demo API, so POST, PUT, and DELETE requests change data that other people can see. Use your own API for anything beyond experimentation.
+The script uses `http://northwind.now.sh/api/` as its base URL. Availability, redirects, and write behavior of that external sample service are not guaranteed by this repository. Use an API you control before trying POST, PUT, or DELETE; those methods can mutate shared remote data. The base URL ends with `/` and request paths start with `/`, so the constructed URLs also contain a double slash.
 
 ### Example Session
 
@@ -64,7 +72,9 @@ More! (Y|N): N
 | PUT | Update an existing category | ID, Name, Description |
 | DELETE | Delete a category | ID |
 
-## File Structure
+<a id="file-structure"></a>
+
+## 🏗️ Architecture
 
 ```text
 Async HTTP/
@@ -72,12 +82,17 @@ Async HTTP/
     └── HttpCall.py    # Main script
 ```
 
-## Notes
+<a id="notes"></a>
+
+## 🛠️ Troubleshooting and limitations
 
 - Each request opens its own `aiohttp.ClientSession`. That keeps the demo short; in larger programs, create one session and reuse it for many requests.
+- Every response is parsed as JSON without `raise_for_status()` or a check for an empty body. HTML errors or a successful empty DELETE response can raise a JSON parsing error. The interactive `input()` calls block even though request I/O is asynchronous.
 - Entering any method other than GET, POST, PUT, or DELETE ends the loop.
 
-## Related Projects
+<a id="related-projects"></a>
+
+## 🔗 Related documentation
 
 - [Internet Speed Test](../Internet%20Speed%20Test/readme.md)
 - [Port Scanner](../Port%20Scanner/readme.md)
