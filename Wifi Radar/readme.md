@@ -8,6 +8,8 @@ A real-time, cross-platform **Wi-Fi scanner written in Python** with a military-
 
 ## 🔎 Overview
 
+[Open the published dashboard preview](https://gcfernando.github.io/python_codes/Wifi%20Radar/index.html). GitHub Pages serves the interface only; live scans and CSV export require the local Flask server described below. The hosted preview can show simulated networks with its offline banner.
+
 WiFi Radar runs a local Flask web server that continuously scans nearby Wi-Fi networks using native OS tools. The results are displayed in a browser-based radar UI that refreshes automatically. Vendor lookup is done via the macvendors.com API and cached locally.
 
 <a id="features"></a>

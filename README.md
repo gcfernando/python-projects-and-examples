@@ -90,7 +90,7 @@ Open the project guide for its exact command, working directory, dependencies, a
 | [Port Scanner](Port%20Scanner/readme.md) | Concurrent TCP connect scans with IPv4/IPv6, optional banners, and open-port JSON output. |
 | [Simple Selenium Scraper](Simple%20Selenium%20Scraper/readme.md) | Use headless Chrome and Selenium to collect cricket-news headlines. |
 | [Streamlit Demo](Streamlit/readme.md) | Explore Streamlit widgets, interactive data, and charts in a browser app. |
-| [WiFi Radar](Wifi%20Radar/readme.md) · [Online guide](https://gcfernando.github.io/python_codes/Wifi%20Radar/guide.html) | Local Flask dashboard for nearby access points, with live scanning and CSV export. |
+| [WiFi Radar](Wifi%20Radar/readme.md) · [Online guide](https://gcfernando.github.io/python_codes/Wifi%20Radar/guide.html) · [Static dashboard preview](https://gcfernando.github.io/python_codes/Wifi%20Radar/index.html) | Local Flask dashboard for nearby access points, with live scanning and CSV export. |
 | [WiFi Scanner](Wifi%20Scanner/readme.md) | Scan nearby wireless networks and display signal, frequency, and security details. |
 | [WiFi Profiles](Wifi%20Profiles/readme.md) | Manage saved Windows Wi-Fi profiles and inspect their stored connection details. |
 

@@ -24,6 +24,8 @@ Use the [complete project index](https://github.com/gcfernando/python_codes/blob
 
 ## Read online
 
+[Open the WiFi Radar HTML preview](https://gcfernando.github.io/python_codes/Wifi%20Radar/index.html). The live scanner requires a local Flask backend; GitHub Pages provides a static interface with simulated fallback data.
+
 <table>
 <thead><tr><th>Guide</th><th>Markdown or HTML source</th></tr></thead>
 <tbody>
@@ -32,7 +34,7 @@ Use the [complete project index](https://github.com/gcfernando/python_codes/blob
 <tr><td><a href="{{ guide.url | absolute_url }}">{{ guide.title | default: guide.name | escape }}</a></td><td><a href="https://github.com/{{ site.repository }}/blob/main/{{ guide.path | uri_escape }}">View source</a></td></tr>
 {% endif %}{% endfor %}
 {% for guide in site.static_files %}{% if guide.extname == '.html' and guide.sitemap != false %}
-<tr><td><a href="{{ guide.path | replace: '/index.html', '/' | absolute_url }}">{% if guide.path == '/Linux_Commands/index.html' %}Linux Command Reference{% elsif guide.path contains 'ai_coding_plugins_beginners_guide' %}AI Coding Add-ons: Beginner’s Guide{% else %}{{ guide.name | escape }} — {{ guide.path | escape }}{% endif %}</a></td><td><a href="https://github.com/{{ site.repository }}/blob/main{{ guide.path | uri_escape }}">View HTML source</a></td></tr>
+<tr><td><a href="{{ guide.path | uri_escape | absolute_url }}">{% if guide.path == '/Linux_Commands/index.html' %}Linux Command Reference{% elsif guide.path contains 'AI-Learning-Atlas' %}AI Learning Atlas{% elsif guide.path contains 'ai_coding_plugins_beginners_guide' %}AI Coding Add-ons: Beginner’s Guide{% elsif guide.path contains 'Wifi Radar' %}WiFi Radar — static interface preview{% else %}{{ guide.name | escape }} — {{ guide.path | escape }}{% endif %}</a></td><td><code>{{ guide.path | escape }}</code></td></tr>
 {% endif %}{% endfor %}
 </tbody>
 </table>
