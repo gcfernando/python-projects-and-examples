@@ -6,7 +6,7 @@ A minimal example of **cloning a Python object with `copy.deepcopy()`**, showing
 
 ## 🔎 Overview
 
-This script illustrates the difference between a reference copy and a true deep copy of an object. It creates an instance of a custom class, clones it with `copy.deepcopy()`, modifies the original, and shows that the clone remains unchanged — confirming that the two objects are fully independent.
+This script creates an instance of a custom class, clones it with `copy.deepcopy()`, then reassigns the original’s integer attribute. The copied instance retains its original value. The example demonstrates separate instances; it does not exercise nested mutable state or compare shallow copying directly.
 
 <a id="requirements"></a>
 

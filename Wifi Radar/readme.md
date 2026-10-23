@@ -142,6 +142,14 @@ Wifi Radar/
 └── START_UNIX.sh          # macOS / Linux launcher
 ```
 
+### Interpreting a snapshot
+
+The backend scans again after each native scan finishes and a four-second sleep; frontend polling is separate, so the graph’s “4s interval” label is approximate. Missing access points remain as stale records for up to about 30 seconds and still contribute to counts and exports.
+
+Security, radio generation and band are parser results or heuristics. Band is inferred from channel number alone, so channels shared by different bands can be misclassified. The macOS `airport` path simplifies security labels, and the `system_profiler` fallback supplies `WPA2` rather than detecting it. Confirm important fields with native diagnostics.
+
+Online CSV export includes the backend snapshot and first/last-seen fields. Offline export downloads the generated demo records shown in the browser; it does not recover a real scan. New-AP alerts mean first seen in this server session, including the initial scan, and events are consumed by the first API client that polls. They are not a durable event log. Vendor lookups use independent background threads; their per-thread delay does not enforce a global request limit.
+
 <a id="related-projects"></a>
 
 ## 🔗 Related documentation

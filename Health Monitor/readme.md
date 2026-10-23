@@ -18,13 +18,15 @@ Health Monitor continuously tracks the memory usage of the top processes on your
 - Three status levels per process:
   - **OK** — neither growth threshold is currently met
   - **WATCH** — memory has grown by more than 25 MB across the recent snapshot history
-  - **LEAK** — memory has increased on 10 or more consecutive snapshots
+  - **LEAK** — memory has increased on 10 or more consecutive intervals (at least 11 readings)
 - Footer shows flagged process IDs or the application's "No leaks detected" message with a timestamp; that message only means no tracked process currently meets the heuristic
 - Configurable number of processes to track and check interval via command-line arguments
 
 <a id="requirements"></a>
 
 ## 📦 Prerequisites and installation
+
+Use Python 3.10 or newer; the script uses runtime union type annotations such as `float | None`.
 
 ```text
 psutil
@@ -70,7 +72,7 @@ python health_monitor.py -n 20 -i 5
 |---|---|---|
 | Snapshot interval | 1 second | How often memory is sampled |
 | `LEAK_THRESHOLD_MB` | 50 MB | WATCH is shown when growth exceeds half of this value (25 MB) |
-| `LEAK_WINDOW` | 10 snapshots | Number of consecutive increases (of any size) that triggers LEAK |
+| `LEAK_WINDOW` | 10 increases | Number of consecutive increases (of any size) that triggers LEAK |
 | History length | 20 snapshots | Only the most recent 20 readings per process are kept |
 
 These are heuristics, not proof of a leak: caches, garbage-collected runtimes, and applications that are legitimately loading data can also grow steadily. A LEAK alert requires 10 consecutive increases, with any increase size; the header's summary of "+50MB over 10 snapshots" does not match this implemented rule. Investigate flagged processes with a profiler before diagnosing a leak.
@@ -104,6 +106,8 @@ Health Monitor/
 - Processes that cannot be read (e.g., protected system processes) are silently skipped.
 - The top-N list is recalculated on every snapshot, so a process that drops out of the top N stops being tracked.
 - Memory is the resident set size (RSS) reported by `psutil`.
+
+The display labels memory as MB, but the source divides bytes by `1024 ** 2`, so the values are MiB. Tracking is limited to the selected top processes; a process that drops out of that set loses its stored history and growth streak.
 
 <a id="related-projects"></a>
 

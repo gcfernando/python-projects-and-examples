@@ -9,13 +9,13 @@ A fast, multithreaded **TCP port scanner written in pure Python** (standard libr
 
 ## ✨ Features
 
-- **IPv4 and IPv6** — resolves hostnames via `getaddrinfo`, prefers IPv4 with automatic IPv6 fallback
+- **IPv4 and IPv6** — resolves hostnames via `getaddrinfo`, selects an IPv4 result when available, otherwise an IPv6 result; it scans one resolved address
 - **Flexible port specification** — single ports, ranges, lists, or any mix: `80`, `1-1024`, `22,80,443`, `1-100,8080`
 - **Open-port output** — internal workers classify results, while CLI and JSON output contain only open ports
 - **Banner grabbing** — optional service-banner read on open ports
 - **Streamed output** — open ports are printed as they are discovered
 - **JSON mode** — machine-readable output for piping into other tools
-- **Graceful Ctrl+C** — pending work is cancelled cleanly; exits with code 130
+- **Graceful Ctrl+C** — requests cancellation of queued work and exits with code 130; in-flight connections may delay exit
 - **Configurable** — timeout, concurrency, and port range are all tunable from the CLI
 
 <a id="requirements"></a>
@@ -149,6 +149,8 @@ Port Scanner/
 └── Console_Code/
     └── portscan.py    # Main script
 ```
+
+Resolution does not retry another address after a connection fails. The JSON `scanned` value is the number of requested ports, including when interrupted; it is not a verified count of completed probes. Use a positive `--timeout`: the CLI does not validate that constraint before creating sockets.
 
 <a id="related-projects"></a>
 

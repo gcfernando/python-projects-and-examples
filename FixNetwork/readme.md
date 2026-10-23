@@ -76,8 +76,10 @@ FixNetwork/
 
 - All commands use `subprocess.run()` with `shell=True`. Each step's output is shown only if the step fails.
 - This tool is Windows-only. It relies on `netsh`, `ipconfig`, `arp`, `nbtstat`, `ping`, `nslookup`, and PowerShell cmdlets.
-- Personal files and installed programs are not touched, but network configuration is: the TCP/IP, IPv4/IPv6, and Winsock resets rewrite network settings (a restart is needed for them to take full effect), DHCP leases are released and renewed, and active adapters are disabled and re-enabled.
+- Personal files and installed programs are not touched, but network configuration is: the TCP/IP, IPv4/IPv6, and Winsock resets rewrite network settings (a restart is needed for them to take full effect), DHCP leases are released and renewed, and active adapters are disabled, then the enable command targets all adapters, including ones that were previously disabled.
 - The "Clear SSL state" step runs `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8`, which deletes temporary Internet files in the Windows Internet Options cache.
+
+The IPv4/IPv6 steps labelled optional in the source still run on every invocation; there is no selection prompt or dry run. Failed commands print diagnostics, but their return values do not stop the routine or suppress its final `Finished` message. That message does not prove the network was repaired. The non-administrator path returns without setting a failure exit code.
 
 <a id="related-projects"></a>
 

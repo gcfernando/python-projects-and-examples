@@ -14,8 +14,8 @@ This script takes an input image, removes its background using the AI-powered `r
 
 - Automatic background removal through `rembg.remove()`; the installed dependency chooses its default model
 - Composites the transparent result onto a solid black background
-- Accepts any image format supported by Pillow as input
-- Output saved as a separate file (original is preserved)
+- Loads the configured image with Pillow and re-encodes it as PNG before background removal; unsupported PNG modes need conversion first
+- The default input and output names differ; keep them distinct to preserve the source image
 
 <a id="requirements"></a>
 

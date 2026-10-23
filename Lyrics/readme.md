@@ -86,7 +86,7 @@ Lyrics/
 
 - Use your own Genius API token. Do not commit a real token to source control — read it from an environment variable instead, for example `lyricsgenius.Genius(os.environ["GENIUS_ACCESS_TOKEN"])`.
 - `song.album` can be `None` for songs without an album on Genius, which would make the `song.album.full_title` line fail.
-- The Genius free API tier has rate limits. If you hit them, the search may return `None`.
+- The script does not catch authentication, network, rate-limit or other service exceptions. A search returning `None` follows the not-found branch; an exception follows the dependency’s error behavior and can terminate the script.
 - Only the first 1,000 characters of the lyrics are printed in the current implementation.
 
 ---

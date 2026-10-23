@@ -44,7 +44,7 @@ python -m pip install PyPDF2 pyttsx3
 python StoryReader.py
 ```
 
-The default configuration reads `Story.pdf` with a female voice at speed 150 and volume 0.9.
+The entry point reads `Story.pdf` at rate 150 and volume 0.9. Voice selection searches installed voice names/IDs for the requested gender text, then falls back to the second installed voice; the resulting voice depends on the system.
 
 ### Changing the PDF File
 
@@ -56,10 +56,10 @@ read_pdf_aloud("path/to/your/file.pdf", voice_id=chosen_voice, rate=150, volume=
 
 ### Parameters
 
-| Parameter | Default | Description |
+| Parameter | Entry-point value | Description |
 |---|---|---|
 | `file_path` | `"Story.pdf"` | Path to the PDF file |
-| `voice_id` | Female voice (auto-selected) | System voice ID |
+| `voice_id` | Result of `select_voice()` | Installed system voice ID; gender is not guaranteed |
 | `rate` | `150` | Speaking speed in words per minute |
 | `volume` | `0.9` | Volume level (0.0 to 1.0) |
 
@@ -84,7 +84,9 @@ StoryReader/
 
 ### Voice selection
 
-`select_voice` looks for the word "female" in each installed voice's name or ID. Standard Windows voice names such as "Microsoft Zira Desktop" do not contain that word, so the function usually falls back to `voices[1]`, the second installed voice. On a default English (US) Windows installation, that is typically Zira. If only one voice is installed, `voices[1]` raises an `IndexError`; change the fallback to `voices[0]` or pass a specific voice ID.
+`select_voice` looks for the requested gender text in each installed voice's name or ID. Names without that text do not match, even if the voice has the desired characteristics. The fallback is `voices[1]`, the second installed voice; it raises `IndexError` when fewer than two voices are installed. Choose an installed voice ID explicitly when adapting the sample.
+
+Calling `read_pdf_aloud()` directly uses its function default volume of `1.0` unless supplied; the entry point explicitly passes `0.9`. Voice initialization and selection happen before the PDF-reading error handler. A system without a matching voice and with fewer than two installed voices can therefore fail before that handler runs. Image-only pages need OCR, which this script does not implement.
 
 <a id="related-projects"></a>
 

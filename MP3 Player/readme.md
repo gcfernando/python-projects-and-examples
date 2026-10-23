@@ -98,6 +98,8 @@ MP3 Player/
 - On non-Windows systems, the console title is set with an ANSI escape sequence; sleep prevention is only available on Windows.
 - Track lengths are read with `mutagen` so the player knows when to start the crossfade.
 
+Background preloading shares a single `next_sound` variable without a track identity or lock. Overlapping preload and synchronous fallback work can race, so the displayed filename should not be treated as proof that the matching audio buffer is playing. Unreadable tracks can also cause repeated retries in the looping playlist.
+
 <a id="related-projects"></a>
 
 ## 🔗 Related documentation

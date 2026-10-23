@@ -10,7 +10,7 @@
 
 ## 📦 Prerequisites and installation
 
-Python 3.10+ and the following dependencies are required:
+Python 3.10+ is required. From the `Graphite_CLI/Console_Code` directory, install the dependencies:
 
 ```bash
 python -m pip install -r requirements_portrait_graphite.txt
@@ -32,7 +32,7 @@ python portrait_graphite_cli.py photo.jpg sketch.png
 
 That's the complete command. The tool reads the photo, chooses rendering settings automatically, converts it to a black-and-white graphite-style image, preserves the input pixel dimensions, validates the saved bytes, and writes `sketch.png`. If you run the command again, `sketch.png` is replaced. **The input photo is never overwritten.** The tool will refuse when the input and output reference the same file.
 
-On success it prints the saved file and its size, for example `Saved 'sketch.png' (1920 x 1080)`. On failure it prints `Error: <reason>` and exits with status code `1`.
+On success it prints the saved file and its size, for example `Saved 'sketch.png' (1920 x 1080)`. Processing failures print `Error: <reason>` and exit with status code `1`. Invalid command-line arguments are handled by `argparse`, which prints usage and exits with status code `2`.
 
 ## How it works
 
@@ -58,7 +58,7 @@ This repository does not include an automated test module for Graphite CLI. The 
 Graphite_CLI/
 └── Console_Code/
     ├── portrait_graphite_cli.py            # Command-line tool
-    ├── requirements_portrait_graphite.txt  # Pinned dependencies
+    ├── requirements_portrait_graphite.txt  # Dependency version ranges
     └── Before and After.png                # Example result
 ```
 

@@ -40,7 +40,7 @@ A teaching pipeline that processes a CSV dataset and conditionally saves a train
 |---|---|
 | 1 | Load dataset from `Source/Salary.csv` |
 | 2 | Remove duplicate rows |
-| 3 | Drop columns with >50% missing values; fill remaining nulls with column mean |
+| 3 | Keep columns with at least `int(0.5 * row_count)` non-null values; fill numeric nulls with column mean |
 | 4 | Scale `years_experience` using `StandardScaler` |
 | 5 | Split into 80% train / 20% test sets |
 | 6 | Train `LinearRegression` model |
@@ -111,6 +111,8 @@ Salary/
 - The dataset must contain `years_experience` and `salary` columns.
 - The model is only saved when the test-set R² exceeds 0.95. This is a demo's save condition, not a guarantee of prediction quality on new data.
 - The current script fills missing values and fits its scaler before the train/test split. For an independent evaluation, split first and fit preprocessing only on the training data, then transform the held-out data with those fitted steps. The current order allows held-out data to influence preprocessing.
+
+The inference prompt converts input to `float` without validating finite or non-negative experience. Its error handling does not cover invalid input, missing/incompatible artifacts or prediction failures. The included joblib files contain a `LinearRegression` model and `StandardScaler`; rebuilding them with your selected dependency versions is preferable to assuming cross-version compatibility.
 
 <a id="related-projects"></a>
 

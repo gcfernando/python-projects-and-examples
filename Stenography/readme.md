@@ -12,7 +12,7 @@ This script uses the `stegano` library's LSB (Least Significant Bit) method to e
 
 ## ✨ Features
 
-- Hides an arbitrary text message inside a PNG image using LSB steganography
+- Hides an a text message that fits the image’s embedding capacity message inside a PNG image using LSB steganography
 - Saves the resulting image to a new file (original is not modified)
 - Extracts and prints the hidden message from the output image
 
@@ -75,6 +75,8 @@ Stenography/
 - The carrier image must be large enough to hold the message (more pixels = more capacity).
 - The encoded output changes pixel values and is intended to look similar; visual identity is not guaranteed.
 - Steganography hides that a message exists but does not encrypt it — anyone who runs `lsb.reveal()` on the image can read the text. Encrypt the message first if it must stay confidential.
+
+Keep the configured input and output paths distinct. The sample uses separate names but has no same-file guard, capacity check or exception handling around hide/save/reveal; an unsupported image, oversized message or missing payload can fail.
 
 <a id="related-projects"></a>
 

@@ -81,12 +81,12 @@ Each `.txt` file in `Data/` must have the same base name as its matching image f
 
 ## 🛠️ Troubleshooting and limitations
 
-- The `resource_path()` function ensures the app finds its assets whether run from source or as a PyInstaller bundle.
+- The `resource_path()` helper chooses the working directory during development and `sys._MEIPASS` in a bundle. Start from `GUI_Code` or bundle the folders as shown above; the helper does not include assets automatically.
 - Sentence formatting is applied to description text: periods followed by a space are replaced with a newline.
 - The Previous button starts disabled. After navigation, `button_control()` disables Previous or Next at the respective end; initial state is not recalculated after loading entries. The default six-entry set has a next item.
 - Image order follows `os.listdir()` and is not sorted. An unreadable description can fail at `.replace()` before the later empty-content check.
 - The custom font is registered with `pyglet.font.add_file`, which is why `pyglet` is a dependency.
-- PySimpleGUI's licensing changed with version 5. Check the current PySimpleGUI terms before installing, or use FreeSimpleGUI, a community fork of the version 4 API.
+- The repository does not pin a PySimpleGUI release. Check the installation instructions, terms and API compatibility of the release you choose; this sample has not established compatibility with every release or alternative package.
 
 <a id="related-projects"></a>
 

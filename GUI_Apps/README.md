@@ -110,6 +110,8 @@ GUI_Apps/
 
 <a id="related"></a>
 
+Search combines supplied mobile and email values with **AND**: when both are entered, both must match the same record. Leaving both blank matches all contacts, but the GUI uses `fetchone()` and displays only one result; there is no ordered result list.
+
 ## 🔗 Related documentation
 
 - [Text2Audio](../Text2Audio/readme.md) and [Setup Wizard — Fruit Wiki](../SetupWizard/readme.md) — more Python desktop GUI examples
