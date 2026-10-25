@@ -159,8 +159,8 @@ Online CSV export includes the backend snapshot and first/last-seen fields. Offl
 - [WiFi Scanner — command-line scan with pywifi](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Scanner/)
 - [WiFi Profiles — saved Windows Wi-Fi networks](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/)
 - [Port Scanner](https://gcfernando.github.io/python-projects-and-examples/Port%20Scanner/)
-- [Back to all Python projects](../README.md)
+- [Back to all Python projects](https://gcfernando.github.io/python-projects-and-examples/)
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](https://gcfernando.github.io/python-projects-and-examples/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
