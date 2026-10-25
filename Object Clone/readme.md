@@ -72,13 +72,13 @@ Object Clone/
 
 ## 🔗 Related documentation
 
-- [Custom Exception](../Custom%20Exception/readme.md)
+- [Custom Exception](https://gcfernando.github.io/python-projects-and-examples/Custom%20Exception/)
 - [Python dbm database example](../Database/README.md)
-- [Python OOP and dunder methods guides](https://github.com/gcfernando/document)
+- [Python OOP and dunder methods guides](https://github.com/gcfernando/developer-guides-and-cheatsheets)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

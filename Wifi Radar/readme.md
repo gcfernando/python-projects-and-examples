@@ -8,7 +8,7 @@ A real-time, cross-platform **Wi-Fi scanner written in Python** with a military-
 
 ## 🔎 Overview
 
-[Open the published dashboard preview](https://gcfernando.github.io/python_codes/Wifi%20Radar/index.html). GitHub Pages serves the interface only; live scans and CSV export require the local Flask server described below. The hosted preview can show simulated networks with its offline banner.
+[Open the published dashboard preview](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/index.html). GitHub Pages serves the interface only; live scans and export of real scan results require the local Flask server described below. The hosted preview can display and export simulated data with its offline banner.
 
 WiFi Radar runs a local Flask web server that continuously scans nearby Wi-Fi networks using native OS tools. The results are displayed in a browser-based radar UI that refreshes automatically. Vendor lookup is done via the macvendors.com API and cached locally.
 
@@ -156,11 +156,11 @@ Online CSV export includes the backend snapshot and first/last-seen fields. Offl
 
 ## 🔗 Related documentation
 
-- [WiFi Scanner — command-line scan with pywifi](../Wifi%20Scanner/readme.md)
-- [WiFi Profiles — saved Windows Wi-Fi networks](../Wifi%20Profiles/readme.md)
-- [Port Scanner](../Port%20Scanner/readme.md)
+- [WiFi Scanner — command-line scan with pywifi](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Scanner/)
+- [WiFi Profiles — saved Windows Wi-Fi networks](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/)
+- [Port Scanner](https://gcfernando.github.io/python-projects-and-examples/Port%20Scanner/)
 - [Back to all Python projects](../README.md)
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

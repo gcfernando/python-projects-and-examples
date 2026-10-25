@@ -1,6 +1,6 @@
 # GitHub Pages documentation site; does not configure application deployment.
 url: "https://gcfernando.github.io"
-baseurl: "/python_codes"
+baseurl: "/python-projects-and-examples"
 title: "Python Projects and Code Examples"
 description: "Python examples for automation, networking, desktop interfaces, media processing, machine learning and local web dashboards."
 lang: "en"
@@ -218,7 +218,7 @@ defaults:
       sitemap: false
 
 # Public documentation navigation and presentation.
-repository: gcfernando/python_codes
+repository: gcfernando/python-projects-and-examples
 theme: jekyll-theme-primer
 projects_hub: https://gcfernando.github.io/gcfernando/projects/
 project_category: "Learn & utilities"

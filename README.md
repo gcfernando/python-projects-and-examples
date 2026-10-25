@@ -1,5 +1,7 @@
 # 🐍 Python Projects and Code Examples
 
+**Read online:** [Documentation website](https://gcfernando.github.io/python-projects-and-examples/) · [All guides](documentation.md)
+
 <a id="-python-projects-and-code-examples--automation-networking-desktop-gui-media-and-machine-learning"></a>
 
 Independent Python examples for automation, networking, desktop interfaces, image and audio processing, and machine learning.
@@ -7,6 +9,14 @@ Independent Python examples for automation, networking, desktop interfaces, imag
 ![Language: Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)
 
 <a id="a-colorful-collection-of-python-experiments-utilities-and-applications"></a>
+
+## Open in your browser
+
+| HTML source | View page | Setup guide |
+|---|---|---|
+| [Wifi Radar/index.html](https://github.com/gcfernando/python-projects-and-examples/blob/main/Wifi%20Radar/index.html) | [Open WiFi Radar — static dashboard preview](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/index.html) | [Run the local Flask scanner](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html) |
+
+The filename opens the HTML source on GitHub. The hosted preview can display and export simulated data. Live scanning and export of real scan results require the local Flask server; GitHub Pages does not run the scanner.
 
 ## 🔎 Overview
 
@@ -28,8 +38,8 @@ Each project has its own dependencies and operating-system requirements. Some ex
 Try a standard-library example first. From your terminal:
 
 ```bash
-git clone https://github.com/gcfernando/python_codes.git
-cd python_codes
+git clone https://github.com/gcfernando/python-projects-and-examples.git
+cd python-projects-and-examples
 python "Custom Exception/Console_Code/CustomException.py"
 ```
 
@@ -83,30 +93,30 @@ Open the project guide for its exact command, working directory, dependencies, a
 
 | Project | What it does |
 |---|---|
-| [Async HTTP](Async%20HTTP/readme.md) | Interactive asynchronous GET, POST, PUT, and DELETE requests to a sample REST API. |
+| [Async HTTP](https://gcfernando.github.io/python-projects-and-examples/Async%20HTTP/) | Interactive asynchronous GET, POST, PUT, and DELETE requests to a sample REST API. |
 | [Bookmark](Bookmark/readme.md) | Save, search, edit, delete, and open links stored in a local SQLite database. |
 | [FixNetwork](FixNetwork/readme.md) | Windows network diagnostics and repair steps, including network-stack and adapter resets. |
-| [Internet Speed Test](Internet%20Speed%20Test/readme.md) | Measure download, upload, and ping using Speedtest.net servers. |
-| [Port Scanner](Port%20Scanner/readme.md) | Concurrent TCP connect scans with IPv4/IPv6, optional banners, and open-port JSON output. |
-| [Simple Selenium Scraper](Simple%20Selenium%20Scraper/readme.md) | Use headless Chrome and Selenium to collect cricket-news headlines. |
+| [Internet Speed Test](https://gcfernando.github.io/python-projects-and-examples/Internet%20Speed%20Test/) | Measure download, upload, and ping using Speedtest.net servers. |
+| [Port Scanner](https://gcfernando.github.io/python-projects-and-examples/Port%20Scanner/) | Concurrent TCP connect scans with IPv4/IPv6, optional banners, and open-port JSON output. |
+| [Simple Selenium Scraper](https://gcfernando.github.io/python-projects-and-examples/Simple%20Selenium%20Scraper/) | Use headless Chrome and Selenium to collect cricket-news headlines. |
 | [Streamlit Demo](Streamlit/readme.md) | Explore Streamlit widgets, interactive data, and charts in a browser app. |
-| [WiFi Radar](Wifi%20Radar/readme.md) · [Online guide](https://gcfernando.github.io/python_codes/Wifi%20Radar/guide.html) · [Static dashboard preview](https://gcfernando.github.io/python_codes/Wifi%20Radar/index.html) | Local Flask dashboard for nearby access points, with live scanning and CSV export. |
-| [WiFi Scanner](Wifi%20Scanner/readme.md) | Scan nearby wireless networks and display signal, frequency, and security details. |
-| [WiFi Profiles](Wifi%20Profiles/readme.md) | Manage saved Windows Wi-Fi profiles and inspect their stored connection details. |
+| [WiFi Radar setup](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html) · [Static dashboard preview](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/index.html) | Local Flask dashboard for nearby access points, with live scanning and CSV export. |
+| [WiFi Scanner](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Scanner/) | Scan nearby wireless networks and display signal, frequency, and security details. |
+| [WiFi Profiles](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/) | Manage saved Windows Wi-Fi profiles and inspect their stored connection details. |
 
 ### 🎧 Media, images & creative tools
 
 | Project | What it does |
 |---|---|
 | [Graphite CLI](Graphite_CLI/README.md) | Convert a photo into a black-and-white graphite pencil sketch with a single OpenCV command. |
-| [Image to ASCII](Image%20to%20ASCII/readme.md) | Convert an image into ASCII art saved as a text file. |
+| [Image to ASCII](https://gcfernando.github.io/python-projects-and-examples/Image%20to%20ASCII/) | Convert an image into ASCII art saved as a text file. |
 | [Image2Cartoon](Image2Cartoon/readme.md) | Apply OpenCV filters to create a cartoon-style image. |
-| [Improve MP3 Quality](Improve%20MP3%20Quality/readme.md) | Re-encode MP3 files with configurable bitrate, channels, and sample rate. |
+| [Improve MP3 Quality](https://gcfernando.github.io/python-projects-and-examples/Improve%20MP3%20Quality/) | Re-encode MP3 files with configurable bitrate, channels, and sample rate. |
 | [Lyrics](Lyrics/readme.md) | Search Genius for song metadata and a lyrics preview. |
-| [MP3 Player](MP3%20Player/readme.md) | Shuffle a folder of MP3s with background preloading and crossfade transitions. |
-| [MP3 Tags](MP3%20Tags/readme.md) | Read ID3 metadata and technical audio details from an MP3 file. |
-| [QR Code](QR%20Code/readme.md) | Generate a styled QR code image from text or a URL. |
-| [Remove Background](Remove%20Background/readme.md) | Remove an image background and composite the subject onto a solid backdrop. |
+| [MP3 Player](https://gcfernando.github.io/python-projects-and-examples/MP3%20Player/) | Shuffle a folder of MP3s with background preloading and crossfade transitions. |
+| [MP3 Tags](https://gcfernando.github.io/python-projects-and-examples/MP3%20Tags/) | Read ID3 metadata and technical audio details from an MP3 file. |
+| [QR Code](https://gcfernando.github.io/python-projects-and-examples/QR%20Code/) | Generate a styled QR code image from text or a URL. |
+| [Remove Background](https://gcfernando.github.io/python-projects-and-examples/Remove%20Background/) | Remove an image background and composite the subject onto a solid backdrop. |
 | [Steganography](Stenography/readme.md) | Hide and retrieve text in PNG images using least-significant-bit encoding. |
 | [Story Reader](StoryReader/readme.md) | Extract text from a PDF and read it aloud with text-to-speech. |
 | [Tag Clouds](TagClouds/readme.md) | Collect web-page text and render a word cloud using an image mask. |
@@ -117,29 +127,29 @@ Open the project guide for its exact command, working directory, dependencies, a
 | Project | What it does |
 |---|---|
 | [Contact Book](GUI_Apps/README.md) | Desktop contact manager backed by Microsoft SQL Server. |
-| [Extract CPU Information](Extract%20CPU%20Information/readme.md) | Display CPU model, architecture, frequency, and core information. |
-| [Health Monitor](Health%20Monitor/readme.md) | Live process-memory dashboard with heuristic growth warnings. |
+| [Extract CPU Information](https://gcfernando.github.io/python-projects-and-examples/Extract%20CPU%20Information/) | Display CPU model, architecture, frequency, and core information. |
+| [Health Monitor](https://gcfernando.github.io/python-projects-and-examples/Health%20Monitor/) | Live process-memory dashboard with heuristic growth warnings. |
 | [Load Libraries](LoadLibraries/readme.md) | Call a compiled C#/.NET calculator library from Python using `pythonnet`. |
-| [Password Utility](Password%20Utility/readme.md) | Explore password generation and a character-count rating heuristic. |
+| [Password Utility](https://gcfernando.github.io/python-projects-and-examples/Password%20Utility/) | Explore password generation and a character-count rating heuristic. |
 | [Setup Wizard — Fruit Wiki](SetupWizard/readme.md) | Browse fruit images and descriptions in a paginated desktop GUI. |
-| [Simple WhatsApp Sender](Simple%20WhatApp%20Sender/readme.md) | Schedule a WhatsApp message through WhatsApp Web. |
-| [Use Twilio](Use%20Twilio/readme.md) | Send SMS or WhatsApp messages and place calls through Twilio. |
-| [Use Windows Login](Use%20Windows%20Login/readme.md) | Demonstrate checking the current Windows account credentials. |
+| [Simple WhatsApp Sender](https://gcfernando.github.io/python-projects-and-examples/Simple%20WhatApp%20Sender/) | Schedule a WhatsApp message through WhatsApp Web. |
+| [Use Twilio](https://gcfernando.github.io/python-projects-and-examples/Use%20Twilio/) | Send SMS or WhatsApp messages and place calls through Twilio. |
+| [Use Windows Login](https://gcfernando.github.io/python-projects-and-examples/Use%20Windows%20Login/) | Demonstrate checking the current Windows account credentials. |
 
 ### 🧠 Machine learning & data
 
 | Project | What it does |
 |---|---|
-| [COVID Forecast](ML/COVID%20Forecast/readme.md) | Analyze and forecast daily COVID-19 case data with ARIMA/SARIMAX models. |
+| [COVID Forecast](https://gcfernando.github.io/python-projects-and-examples/ML/COVID%20Forecast/) | Analyze and forecast daily COVID-19 case data with ARIMA/SARIMAX models. |
 | [Salary Prediction](ML/Salary/readme.md) | Train a linear-regression salary model and use it for interactive predictions. |
 
 ### 🧩 Python fundamentals & persistence
 
 | Project | What it does |
 |---|---|
-| [Custom Exception](Custom%20Exception/readme.md) | Define, raise, and catch a custom Python exception. |
+| [Custom Exception](https://gcfernando.github.io/python-projects-and-examples/Custom%20Exception/) | Define, raise, and catch a custom Python exception. |
 | [Database](Database/README.md) | Store and retrieve key-value data using Python's built-in `dbm` module. |
-| [Object Clone](Object%20Clone/readme.md) | Demonstrate independent object copies with `copy.deepcopy()`. |
+| [Object Clone](https://gcfernando.github.io/python-projects-and-examples/Object%20Clone/) | Demonstrate independent object copies with `copy.deepcopy()`. |
 
 <a id="-repository-layout"></a>
 
@@ -163,7 +173,7 @@ flowchart LR
 
 There is no repository-wide automated test suite. Start with the two standard-library commands above, then verify one example at a time with disposable inputs and the setup in its guide. Do not import arbitrary scripts as a test: many execute prompts, GUI code, network operations, or file changes at module scope.
 
-The tracked `audio8d-release.yml` workflow still refers to an absent `8D/` directory. It does not validate this collection. The separate [Audio8D repository](https://github.com/gcfernando/audio-8d) contains that application; workflow repair is a code/configuration task outside these documentation changes.
+The tracked `audio8d-release.yml` workflow still refers to an absent `8D/` directory. It does not validate this collection. The separate [Audio8D repository](https://github.com/gcfernando/8d-audio-converter) contains that application; workflow repair is a code/configuration task outside these documentation changes.
 
 <a id="-before-you-run-a-project"></a>
 <a id="-faq"></a>
@@ -186,7 +196,7 @@ The [Database example](Database/README.md) documents an existing byte-key bug. T
 
 ## 🤝 Contributing
 
-Submit a focused issue or pull request in [this repository](https://github.com/gcfernando/python_codes). Include the project path, operating system, Python/package versions, steps to reproduce, and redacted error output. When changing a script, update its guide with the exact command and working directory you verified.
+Submit a focused issue or pull request in [this repository](https://github.com/gcfernando/python-projects-and-examples). Include the project path, operating system, Python/package versions, steps to reproduce, and redacted error output. When changing a script, update its guide with the exact command and working directory you verified.
 
 ## 🔒 Security
 
@@ -198,11 +208,11 @@ Use repository issues for setup questions, with the project name and reproducibl
 
 ## 🔗 Related projects
 
-- [Audio8D](https://github.com/gcfernando/audio-8d) — a separate FFmpeg-based desktop and CLI audio converter.
-- [Machine-learning datasets](https://github.com/gcfernando/datasets) — CSV practice datasets.
-- [Developer knowledge base](https://github.com/gcfernando/document) — Python OOP and dunder-method references.
-- [C# and .NET examples](https://github.com/gcfernando/csharp_codes) — includes the reverse Python.NET bridge.
+- [Audio8D](https://github.com/gcfernando/8d-audio-converter) — a separate FFmpeg-based desktop and CLI audio converter.
+- [Machine-learning datasets](https://github.com/gcfernando/machine-learning-practice-datasets) — CSV practice datasets.
+- [Developer knowledge base](https://github.com/gcfernando/developer-guides-and-cheatsheets) — Python OOP and dunder-method references.
+- [C# and .NET examples](https://github.com/gcfernando/csharp-dotnet-examples) — includes the reverse Python.NET bridge.
 
 ## Documentation links
 
-[Guide index](documentation.md) · [Existing online documentation](https://gcfernando.github.io/python_codes/documentation/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Guide index](documentation.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

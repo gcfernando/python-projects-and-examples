@@ -113,11 +113,11 @@ The display labels memory as MB, but the source divides bytes by `1024 ** 2`, so
 
 ## 🔗 Related documentation
 
-- [Extract CPU Information](../Extract%20CPU%20Information/readme.md)
+- [Extract CPU Information](https://gcfernando.github.io/python-projects-and-examples/Extract%20CPU%20Information/)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

@@ -77,12 +77,12 @@ Internet Speed Test/
 ## 🔗 Related documentation
 
 - [FixNetwork — Windows network reset script](../FixNetwork/readme.md)
-- [WiFi Scanner](../Wifi%20Scanner/readme.md)
-- [Get your public IP address in C#](https://github.com/gcfernando/csharp_codes/tree/main/PublicIP)
+- [WiFi Scanner](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Scanner/)
+- [Get your public IP address in C#](https://github.com/gcfernando/csharp-dotnet-examples/tree/main/PublicIP)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

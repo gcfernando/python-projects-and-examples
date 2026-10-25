@@ -57,7 +57,7 @@ python -m pip install pyodbc ttkbootstrap
 
 The application uses **Microsoft SQL Server** via the ODBC Driver 17. Run the provided SQL script to create the required table, constraints, indexes, and stored procedures:
 
-Open [`SQL_Script/ContactBook.sql`](SQL_Script/ContactBook.sql) in your SQL Server client, select your intended development database, review the script, and execute it there. A SQL file path is not a shell command.
+Open [`SQL_Script/ContactBook.sql`](https://github.com/gcfernando/python-projects-and-examples/blob/main/GUI_Apps/SQL_Script/ContactBook.sql) in your SQL Server client, select your intended development database, review the script, and execute it there. A SQL file path is not a shell command.
 
 The script creates:
 
@@ -115,11 +115,11 @@ Search combines supplied mobile and email values with **AND**: when both are ent
 ## 🔗 Related documentation
 
 - [Text2Audio](../Text2Audio/readme.md) and [Setup Wizard — Fruit Wiki](../SetupWizard/readme.md) — more Python desktop GUI examples
-- [Complete SQL Guide](https://github.com/gcfernando/document/blob/main/sql_complete_guide.md) — learn the SQL Server concepts used here, including stored procedures and constraints
+- [Complete SQL Guide](https://github.com/gcfernando/developer-guides-and-cheatsheets/blob/main/sql_complete_guide.md) — learn the SQL Server concepts used here, including stored procedures and constraints
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

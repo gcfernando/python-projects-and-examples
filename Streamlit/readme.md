@@ -85,12 +85,12 @@ Streamlit/
 
 ## 🔗 Related documentation
 
-- [Local AI chat app with Ollama and Streamlit](https://github.com/gcfernando/document/blob/main/local_ai_learning_lab.md)
-- [WiFi Radar — Flask web dashboard](../Wifi%20Radar/readme.md)
+- [Local AI chat app with Ollama and Streamlit](https://github.com/gcfernando/developer-guides-and-cheatsheets/blob/main/local_ai_learning_lab.md)
+- [WiFi Radar — Flask web dashboard](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

@@ -74,12 +74,12 @@ Image2Cartoon/
 ## 🔗 Related documentation
 
 - [Photo to graphite pencil sketch CLI](../Graphite_CLI/README.md)
-- [Remove Background](../Remove%20Background/readme.md)
-- [Image to ASCII](../Image%20to%20ASCII/readme.md)
+- [Remove Background](https://gcfernando.github.io/python-projects-and-examples/Remove%20Background/)
+- [Image to ASCII](https://gcfernando.github.io/python-projects-and-examples/Image%20to%20ASCII/)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

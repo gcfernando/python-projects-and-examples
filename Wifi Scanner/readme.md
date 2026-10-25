@@ -93,13 +93,13 @@ Wifi Scanner/
 
 ## 🔗 Related documentation
 
-- [WiFi Radar — live Wi-Fi dashboard](../Wifi%20Radar/readme.md)
-- [WiFi Profiles — saved Windows Wi-Fi networks](../Wifi%20Profiles/readme.md)
-- [Internet Speed Test](../Internet%20Speed%20Test/readme.md)
+- [WiFi Radar — live Wi-Fi dashboard](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html)
+- [WiFi Profiles — saved Windows Wi-Fi networks](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/)
+- [Internet Speed Test](https://gcfernando.github.io/python-projects-and-examples/Internet%20Speed%20Test/)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

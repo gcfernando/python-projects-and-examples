@@ -118,13 +118,13 @@ Improve MP3 Quality/
 
 ## 🔗 Related documentation
 
-- [MP3 Tags — read ID3 metadata](../MP3%20Tags/readme.md)
-- [MP3 Player with crossfade](../MP3%20Player/readme.md)
-- [Audio8D — FFmpeg 8D audio converter](https://github.com/gcfernando/audio-8d)
+- [MP3 Tags — read ID3 metadata](https://gcfernando.github.io/python-projects-and-examples/MP3%20Tags/)
+- [MP3 Player with crossfade](https://gcfernando.github.io/python-projects-and-examples/MP3%20Player/)
+- [Audio8D — FFmpeg 8D audio converter](https://github.com/gcfernando/8d-audio-converter)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

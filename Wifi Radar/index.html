@@ -6,7 +6,7 @@
 <title>WIFI-RADAR // TACTICAL NETWORK SCANNER</title>
 <!-- This dashboard requires the local Flask scanner; the public documentation is indexable. -->
 <meta name="robots" content="noindex">
-<link rel="canonical" href="https://gcfernando.github.io/python_codes/Wifi%20Radar/index.html">
+<link rel="canonical" href="https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/index.html">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -209,7 +209,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;
 <body>
 
 <div class="banner" id="b-offline">⚠ SERVER OFFLINE — Run <b>python server.py</b> — Showing simulated data</div>
-<div class="banner" id="b-zero">⚠ SCAN RETURNED 0 APs &nbsp;·&nbsp; Wi-Fi must be ON &nbsp;·&nbsp; <a href="/api/debug" target="_blank">DEBUG PAGE</a> &nbsp;·&nbsp; Windows: Run as Administrator</div>
+<div class="banner" id="b-zero">⚠ SCAN RETURNED 0 APs &nbsp;·&nbsp; Wi-Fi must be ON &nbsp;·&nbsp; <a href="https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html#troubleshooting-and-limitations" data-local-debug="DEBUG PAGE" target="_blank">SCANNER HELP</a> &nbsp;·&nbsp; Windows: Run as Administrator</div>
 
 <!-- NEW AP ALERT POPUP -->
 <div id="alert-box">
@@ -229,7 +229,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;
       <div class="stat-pill">APs <b id="lbl-aps">0</b></div>
       <div class="stat-pill">SCAN# <b id="lbl-scan">0</b></div>
       <button class="top-btn export" onclick="exportCSV()">⬇ EXPORT CSV</button>
-      <a class="top-btn" href="/api/debug" target="_blank">DEBUG</a>
+      <a class="top-btn" href="https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html#troubleshooting-and-limitations" data-local-debug="DEBUG" target="_blank">SETUP GUIDE</a>
     </div>
     <div id="clock">00:00:00</div>
   </div>
@@ -306,6 +306,13 @@ body::after{content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;
 </div>
 
 <script>
+// The hosted preview links to setup help; Flask keeps its local debug endpoint.
+if (location.hostname !== 'gcfernando.github.io' && location.protocol !== 'file:') {
+  document.querySelectorAll('[data-local-debug]').forEach(link => {
+    link.href = '/api/debug';
+    link.textContent = link.dataset.localDebug;
+  });
+}
 // ════════════════════════════════════════════════════════════════
 //  WiFi Military Radar  v5 PROD
 // ════════════════════════════════════════════════════════════════

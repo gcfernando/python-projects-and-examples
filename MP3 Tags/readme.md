@@ -105,8 +105,8 @@ MP3 Tags/
 
 ## 🔗 Related documentation
 
-- [MP3 Player with crossfade](../MP3%20Player/readme.md)
-- [Improve MP3 Quality — re-encode MP3 files](../Improve%20MP3%20Quality/readme.md)
+- [MP3 Player with crossfade](https://gcfernando.github.io/python-projects-and-examples/MP3%20Player/)
+- [Improve MP3 Quality — re-encode MP3 files](https://gcfernando.github.io/python-projects-and-examples/Improve%20MP3%20Quality/)
 - [Lyrics — Genius API song lookup](../Lyrics/readme.md)
 - [Back to all Python projects](../README.md)
 
@@ -114,4 +114,4 @@ MP3 Tags/
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

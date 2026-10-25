@@ -90,7 +90,7 @@ TagClouds/
 
 ## 🔗 Related documentation
 
-- [Simple Selenium Scraper](../Simple%20Selenium%20Scraper/readme.md)
+- [Simple Selenium Scraper](https://gcfernando.github.io/python-projects-and-examples/Simple%20Selenium%20Scraper/)
 - [Image2Cartoon — OpenCV image effects](../Image2Cartoon/readme.md)
 - [Back to all Python projects](../README.md)
 
@@ -98,4 +98,4 @@ TagClouds/
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

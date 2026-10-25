@@ -85,13 +85,13 @@ The IPv4/IPv6 steps labelled optional in the source still run on every invocatio
 
 ## 🔗 Related documentation
 
-- [WiFi Profiles — manage saved Windows Wi-Fi networks](../Wifi%20Profiles/readme.md)
-- [Internet Speed Test](../Internet%20Speed%20Test/readme.md)
-- [Windows maintenance PowerShell script](https://github.com/gcfernando/other_codes/tree/main/SystemMaintenance)
+- [WiFi Profiles — manage saved Windows Wi-Fi networks](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/)
+- [Internet Speed Test](https://gcfernando.github.io/python-projects-and-examples/Internet%20Speed%20Test/)
+- [Windows maintenance PowerShell script](https://github.com/gcfernando/developer-tools-and-guides/tree/main/SystemMaintenance)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

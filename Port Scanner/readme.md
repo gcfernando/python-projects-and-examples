@@ -156,12 +156,12 @@ Resolution does not retry another address after a connection fails. The JSON `sc
 
 ## 🔗 Related documentation
 
-- [WiFi Radar — Flask Wi-Fi scanner dashboard](../Wifi%20Radar/readme.md)
-- [Linux command reference for cybersecurity](https://github.com/gcfernando/other_codes/tree/main/Linux_Commands)
+- [WiFi Radar — Flask Wi-Fi scanner dashboard](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html)
+- [Linux command reference for cybersecurity](https://github.com/gcfernando/developer-tools-and-guides/tree/main/Linux_Commands)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

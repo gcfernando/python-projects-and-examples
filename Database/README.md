@@ -74,11 +74,11 @@ Database/
 
 ## 🔗 Related documentation
 
-- [Object Clone](../Object%20Clone/readme.md) and [Custom Exception](../Custom%20Exception/readme.md) — other short Python fundamentals examples
+- [Object Clone](https://gcfernando.github.io/python-projects-and-examples/Object%20Clone/) and [Custom Exception](https://gcfernando.github.io/python-projects-and-examples/Custom%20Exception/) — other short Python fundamentals examples
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

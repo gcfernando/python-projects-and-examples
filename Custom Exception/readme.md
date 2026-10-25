@@ -78,7 +78,7 @@ Custom Exception/
 
 ## 🔗 Related documentation
 
-- [Object Clone — deep copy example](../Object%20Clone/readme.md)
+- [Object Clone — deep copy example](https://gcfernando.github.io/python-projects-and-examples/Object%20Clone/)
 - [Python dbm database example](../Database/README.md)
 - [Back to all Python projects](../README.md)
 
@@ -86,4 +86,4 @@ Custom Exception/
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

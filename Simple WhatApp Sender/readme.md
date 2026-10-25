@@ -90,12 +90,12 @@ Simple WhatApp Sender/
 
 ## 🔗 Related documentation
 
-- [Use Twilio — send SMS and WhatsApp messages through an API](../Use%20Twilio/readme.md)
-- [Simple Selenium Scraper — browser automation](../Simple%20Selenium%20Scraper/readme.md)
+- [Use Twilio — send SMS and WhatsApp messages through an API](https://gcfernando.github.io/python-projects-and-examples/Use%20Twilio/)
+- [Simple Selenium Scraper — browser automation](https://gcfernando.github.io/python-projects-and-examples/Simple%20Selenium%20Scraper/)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

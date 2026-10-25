@@ -2,7 +2,7 @@
 
 **Graphite CLI** is a small Python command-line tool that converts a photograph into a **black-and-white graphite pencil sketch**. It uses OpenCV, NumPy, and Pillow, chooses its rendering settings automatically from each photo, and needs no GUI, network connection, AI model weights, or manual tuning. The output keeps the original pixel dimensions, and the result is deterministic for the same input and dependency versions.
 
-![Before-and-after example: a colour portrait of a woman holding a latte, and a black-and-white pencil-sketch version of the same photo](Console_Code/Before%20and%20After.png)
+![Before-and-after example: a colour portrait of a woman holding a latte, and a black-and-white pencil-sketch version of the same photo](https://gcfernando.github.io/python-projects-and-examples/Graphite_CLI/Console_Code/Before%20and%20After.png)
 
 *Before-and-after example image included in the project folder.*
 
@@ -73,11 +73,11 @@ This is a deterministic OpenCV renderer, not a neural image-to-image model or a 
 ## 🔗 Related documentation
 
 - [Image2Cartoon](../Image2Cartoon/readme.md) — cartoon-style image effects with OpenCV
-- [Image to ASCII](../Image%20to%20ASCII/readme.md) — turn an image into ASCII art
+- [Image to ASCII](https://gcfernando.github.io/python-projects-and-examples/Image%20to%20ASCII/) — turn an image into ASCII art
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)

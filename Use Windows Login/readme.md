@@ -88,12 +88,12 @@ Use Windows Login/
 
 ## 🔗 Related documentation
 
-- [Password Generator and Strength Checker](../Password%20Utility/readme.md)
-- [WiFi Profiles — Windows Wi-Fi utility](../Wifi%20Profiles/readme.md)
+- [Password Generator and Strength Checker](https://gcfernando.github.io/python-projects-and-examples/Password%20Utility/)
+- [WiFi Profiles — Windows Wi-Fi utility](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/)
 - [Back to all Python projects](../README.md)
 
 ---
 
 ## Documentation links
 
-[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python_codes/documentation/) · [Project overview](https://gcfernando.github.io/python_codes/) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+[Read all Python Projects and Code Examples guides online](https://gcfernando.github.io/python-projects-and-examples/documentation/) · [Project overview](../README.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
