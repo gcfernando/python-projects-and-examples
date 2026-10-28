@@ -1,6 +1,12 @@
-# Python MP3 Player with Crossfade — pygame Console Music Player
+[Python projects](../README.md) · **Audio playback**
+
+<a id="python-mp3-player-with-crossfade--pygame-console-music-player"></a>
+
+# Python MP3 Player with pygame and Crossfade
 
 A console-based **MP3 player written in Python** with crossfade transitions between tracks, background preloading of the next song, and shuffled playback, built on `pygame.mixer` and `mutagen`.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A console-based **MP3 player written in Python** with crossfade transitions betw
 This script plays `.mp3` files from a folder you specify in a shuffled order. It uses two `pygame` mixer channels to overlap playback and preloads the next track in a background thread. If preloading is not ready, it loads synchronously, which can cause a gap or glitch.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -22,6 +30,8 @@ This script plays `.mp3` files from a folder you specify in a shuffled order. It
 - Cleanup after the main playback loop exits; `Ctrl+C` is not handled by a surrounding `try/finally`
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -49,6 +59,8 @@ Two constants in the script control the crossfade behavior:
 | `CROSSFADE_START_TIME_S` | `15` | How many seconds before a song ends to begin the crossfade |
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -86,6 +98,8 @@ MP3 Player/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

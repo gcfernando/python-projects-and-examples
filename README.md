@@ -1,4 +1,16 @@
-# 🐍 Python Projects and Code Examples
+<a id="-python-projects-and-code-examples"></a>
+
+<div align="center" markdown="1">
+
+# Python Projects — Automation, Media and Machine Learning
+
+<p align="center"><strong>Find a small project. Read the guide. Try it with your own inputs.</strong></p>
+
+[![Repository standards](https://github.com/gcfernando/python-projects-and-examples/actions/workflows/repository-standards.yml/badge.svg)](https://github.com/gcfernando/python-projects-and-examples/actions/workflows/repository-standards.yml) [![Read the documentation](https://img.shields.io/badge/Read-the_documentation-2563eb?style=flat-square)](https://gcfernando.github.io/python-projects-and-examples/)
+
+</div>
+
+> **Start here:** [Get started](#guide-quick-start) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 **Read online:** [Documentation website](https://gcfernando.github.io/python-projects-and-examples/) · [All guides](documentation.md)
 
@@ -24,6 +36,8 @@ Choose a small project to study a concrete task: an asynchronous HTTP client, a 
 
 Each project has its own dependencies and operating-system requirements. Some examples need configuration or have documented defects; read the project's guide before running it. There is no repository-wide installer or Python version guarantee.
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - CLI examples using the standard library, asyncio, Rich, and external APIs.
@@ -32,6 +46,8 @@ Each project has its own dependencies and operating-system requirements. Some ex
 - Local Flask and Streamlit dashboards, plus regression and time-series exercises.
 
 <a id="-getting-started"></a>
+
+<a id="guide-quick-start"></a>
 
 ## 🚀 Quick start
 
@@ -84,6 +100,8 @@ Many scripts contain editable settings rather than CLI options. Check each guide
 Use your own credentials and keep them outside commits and copied terminal output. The SQL Server and API examples require particular care when replacing their embedded settings.
 
 <a id="-project-index"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -179,6 +197,8 @@ The tracked `audio8d-release.yml` workflow still refers to an absent `8D/` direc
 <a id="-faq"></a>
 
 <a id="️-before-you-run-a-project"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

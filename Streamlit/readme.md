@@ -1,6 +1,12 @@
-# Streamlit Example App in Python — Widgets, DataFrames and Charts
+[Python projects](../README.md) · **Interactive data apps**
+
+<a id="streamlit-example-app-in-python--widgets-dataframes-and-charts"></a>
+
+# Streamlit in Python — Widgets, DataFrames and Charts
 
 A single-file **Streamlit example app** in Python that demonstrates sidebar input widgets, a pandas DataFrame, a matplotlib histogram, and Streamlit's native line and area charts — a quick way to learn how to build an interactive data web app without writing HTML or JavaScript.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A single-file **Streamlit example app** in Python that demonstrates sidebar inpu
 This app serves as a showcase of Streamlit's core capabilities. Users can interact with various sidebar controls, view their selections displayed in the main area, explore a dynamically generated data table, and see multiple chart types — all in a single-page web interface.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -32,6 +40,8 @@ This app serves as a showcase of Streamlit's core capabilities. Users can intera
 
 <a id="requirements"></a>
 
+<a id="guide-prerequisites-and-installation"></a>
+
 ## 📦 Prerequisites and installation
 
 ```text
@@ -48,6 +58,8 @@ python -m pip install streamlit pandas numpy matplotlib
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 

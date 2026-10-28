@@ -1,6 +1,12 @@
-# Generate a QR Code in Python — Custom Colours with the qrcode Library
+[Python projects](../README.md) · **Images and encoding**
+
+<a id="generate-a-qr-code-in-python--custom-colours-with-the-qrcode-library"></a>
+
+# Generate Custom QR Codes with Python
 
 A short Python script that shows **how to generate a QR code in Python** with the `qrcode` library, using custom fill and background colours and saving the result as a PNG image.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features)
 
 <a id="overview"></a>
 
@@ -10,6 +16,8 @@ This script uses the `qrcode` library to create a QR code that encodes a short t
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Encodes any text or URL into a QR code
@@ -18,6 +26,8 @@ This script uses the `qrcode` library to create a QR code that encodes a short t
 - Output saved as a PNG image
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -46,6 +56,8 @@ python -m pip install "qrcode[pil]"
 | `back_color` | `'lightgray'` | Background color |
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 

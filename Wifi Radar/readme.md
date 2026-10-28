@@ -1,8 +1,14 @@
 <a id="manual-any-platform"></a>
 
-# WiFi Radar — Python Wi-Fi Scanner with a Live Flask Web Dashboard
+[Python projects](../README.md) · **Networking and dashboards**
+
+<a id="wifi-radar--python-wi-fi-scanner-with-a-live-flask-web-dashboard"></a>
+
+# WiFi Radar — Python Scanner and Flask Dashboard
 
 A real-time, cross-platform **Wi-Fi scanner written in Python** with a military-style radar web interface served by Flask. Displays nearby access points as live radar blips with signal strength, security info, vendor lookup, and CSV export.
+
+> **In this guide:** [Get started](#guide-quick-start) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -13,6 +19,8 @@ A real-time, cross-platform **Wi-Fi scanner written in Python** with a military-
 WiFi Radar runs a local Flask web server that continuously scans nearby Wi-Fi networks using native OS tools. The results are displayed in a browser-based radar UI that refreshes automatically. Vendor lookup is done via the macvendors.com API and cached locally.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -33,6 +41,8 @@ WiFi Radar runs a local Flask web server that continuously scans nearby Wi-Fi ne
 | Auto-install | Flask and Flask-CORS are installed automatically if missing |
 
 <a id="quick-start"></a>
+
+<a id="guide-quick-start"></a>
 
 ## 🚀 Quick start
 
@@ -115,6 +125,8 @@ Linux scan permissions depend on NetworkManager/PolicyKit configuration and the 
 | Cipher | CCMP (strong) or TKIP (weak) |
 | Radio type | WiFi 4/5/6/7 |
 | Network type | Infrastructure or Ad-Hoc |
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## Troubleshooting and limitations
 

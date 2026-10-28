@@ -1,6 +1,12 @@
-# Salary Prediction with Linear Regression in Python — scikit-learn Train and Predict Example
+[Python projects](../../README.md) · **Machine learning and regression**
+
+<a id="salary-prediction-with-linear-regression-in-python--scikit-learn-train-and-predict-example"></a>
+
+# Salary Regression with Python and scikit-learn
 
 A beginner-friendly **machine learning** example in Python: a scikit-learn **linear regression** pipeline that predicts salary from years of experience, with a separate training script that saves the model and scaler with `joblib`, and an inference script that loads them to make predictions.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-scripts) · [Understand the details](#guide-architecture) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -12,6 +18,8 @@ This project has two scripts:
 - **`Prediction/prediction.py`** — loads the saved model and predicts salary from user input
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -27,6 +35,8 @@ Install dependencies:
 ```bash
 python -m pip install pandas scikit-learn joblib numpy
 ```
+
+<a id="guide-scripts"></a>
 
 ## Scripts
 
@@ -88,6 +98,8 @@ Predicted Salary for 7.0 years of experience: $<predicted amount>
 
 <a id="file-structure"></a>
 
+<a id="guide-architecture"></a>
+
 ## 🏗️ Architecture
 
 ```text
@@ -103,6 +115,8 @@ Salary/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

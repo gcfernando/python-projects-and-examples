@@ -1,6 +1,12 @@
-# Remove Image Background in Python with rembg — AI Background Removal Example
+[Python projects](../README.md) · **Images and AI**
+
+<a id="remove-image-background-in-python-with-rembg--ai-background-removal-example"></a>
+
+# Remove Image Backgrounds with Python and rembg
 
 A short Python script that shows **how to remove the background from an image in Python** using the AI-based `rembg` library, then places the subject on a solid black background with Pillow.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -10,6 +16,8 @@ This script takes an input image, removes its background using the AI-powered `r
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Automatic background removal through `rembg.remove()`; the installed dependency chooses its default model
@@ -18,6 +26,8 @@ This script takes an input image, removes its background using the AI-powered `r
 - The default input and output names differ; keep them distinct to preserve the source image
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -35,6 +45,8 @@ python -m pip install "rembg[cpu]" Pillow
 The [upstream rembg installation guide](https://github.com/danielgatis/rembg#installation) documents backend extras and current Python requirements. This repository does not pin a rembg version or explicitly select a model. Its default model, download size, cache location, and model-weight license can therefore change with the installed version. A first run may download weights; later runs can reuse cached weights. Check upstream model terms before using the output commercially.
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -72,6 +84,8 @@ Remove Background/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

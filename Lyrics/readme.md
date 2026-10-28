@@ -1,6 +1,12 @@
-# Get Song Lyrics with Python and the Genius API — lyricsgenius Example
+[Python projects](../README.md) · **Music and APIs**
+
+<a id="get-song-lyrics-with-python-and-the-genius-api--lyricsgenius-example"></a>
+
+# Search Genius Songs with Python and lyricsgenius
 
 A short Python script that **searches the Genius API for a song** with the `lyricsgenius` library and prints its title, artist, album, and a lyrics preview.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A short Python script that **searches the Genius API for a song** with the `lyri
 This script searches for a song by title and artist name using the Genius API, cleans the retrieved lyrics by stripping section headers (e.g., `[Verse 1]`), and prints the song's metadata along with a preview of the lyrics (up to 1,000 characters).
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -19,6 +27,8 @@ This script searches for a song by title and artist name using the Genius API, c
 - Suppresses non-song results using `skip_non_songs`
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -47,6 +57,8 @@ Open `Lyrics.py` and update the following variables:
 To get a Genius API token, register at [genius.com/developers](https://genius.com/developers) and create a new API client.
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -81,6 +93,8 @@ Lyrics/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

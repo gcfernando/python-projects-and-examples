@@ -1,6 +1,12 @@
-# Python Bookmark Manager CLI — Save and Search Links with SQLite and Rich
+[Python projects](../README.md) · **CLI and databases**
+
+<a id="python-bookmark-manager-cli--save-and-search-links-with-sqlite-and-rich"></a>
+
+# Python Bookmark Manager with SQLite and Rich
 
 A lightweight **command-line bookmark manager written in Python** for saving, searching, opening, editing, and deleting links with notes. It stores data in SQLite (no server needed) and uses `rich` for coloured terminal output — a compact example of a CRUD console app.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A lightweight **command-line bookmark manager written in Python** for saving, se
 Bookmark stores your important URLs in a local SQLite database (`links.db`) alongside a title and a short summary note. All operations are done through a simple interactive prompt. The `rich` library provides colored, readable output in the terminal.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -22,6 +30,8 @@ Bookmark stores your important URLs in a local SQLite database (`links.db`) alon
 - Graceful exit with `Ctrl+C`
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -38,6 +48,8 @@ python -m pip install rich
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -89,6 +101,8 @@ Bookmark/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

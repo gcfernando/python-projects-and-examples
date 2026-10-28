@@ -1,6 +1,12 @@
-# Python Password Generator and Password Strength Checker
+[Python projects](../README.md) · **CLI learning examples**
+
+<a id="python-password-generator-and-password-strength-checker"></a>
+
+# Python Password Generator and Strength-Check Examples
 
 Two small Python command-line tools: a **random password generator** with guaranteed numbers of digits, uppercase, lowercase, and special characters, and a **password strength checker** that rates a password by the number of possible character combinations.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-scripts) · [Understand the details](#guide-architecture)
 
 <a id="overview"></a>
 
@@ -13,9 +19,13 @@ This project contains two independent scripts:
 
 <a id="requirements"></a>
 
+<a id="guide-prerequisites-and-installation"></a>
+
 ## 📦 Prerequisites and installation
 
 No external dependencies. Both scripts use only Python standard library modules (`random`, `string`, `re`, `os`).
+
+<a id="guide-scripts"></a>
 
 ## Scripts
 
@@ -86,6 +96,8 @@ More ! (Y|N) : N
 > The rating only considers length and character types. `P@ssw0rd!2024` scores **Very Strong** even though it follows a very common pattern that password crackers try early. For a realistic estimate, use a library such as `zxcvbn`, which also checks dictionary words and common substitutions.
 
 <a id="file-structure"></a>
+
+<a id="guide-architecture"></a>
 
 ## 🏗️ Architecture
 

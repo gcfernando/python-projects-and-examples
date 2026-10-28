@@ -1,11 +1,19 @@
-# Python Port Scanner — Multithreaded TCP Scanner with IPv6, Banners and JSON Output
+[Python projects](../README.md) · **Authorized network diagnostics**
+
+<a id="python-port-scanner--multithreaded-tcp-scanner-with-ipv6-banners-and-json-output"></a>
+
+# Python TCP Port Scanner — IPv6 and JSON Output
 
 A fast, multithreaded **TCP port scanner written in pure Python** (standard library only). It resolves IPv4 or IPv6 hosts, reports open TCP ports, can read service banners, and can emit JSON for automation. Internal closed/filtered classification has a platform limitation described below.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features)
 
 > **Only scan systems you own or have explicit written permission to test.**
 > Unauthorized scanning may violate computer-misuse laws in your jurisdiction.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -20,12 +28,16 @@ A fast, multithreaded **TCP port scanner written in pure Python** (standard libr
 
 <a id="requirements"></a>
 
+<a id="guide-prerequisites-and-installation"></a>
+
 ## 📦 Prerequisites and installation
 
 - Python **3.10** or newer
 - No external packages
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 

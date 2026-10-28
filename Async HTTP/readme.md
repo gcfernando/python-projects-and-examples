@@ -1,6 +1,12 @@
-# Async HTTP Requests in Python with aiohttp and asyncio — GET, POST, PUT, DELETE Example
+[Python projects](../README.md) · **HTTP and automation**
+
+<a id="async-http-requests-in-python-with-aiohttp-and-asyncio--get-post-put-delete-example"></a>
+
+# Async HTTP Requests in Python with aiohttp
 
 An interactive command-line client that shows how to make **asynchronous HTTP requests in Python** with `asyncio` and `aiohttp` — sending GET, POST, PUT, and DELETE requests to a REST API and printing the JSON responses.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ An interactive command-line client that shows how to make **asynchronous HTTP re
 This script demonstrates asynchronous HTTP communication by connecting to the Northwind sample REST API. It runs a loop that lets you repeatedly choose a request method, provide the necessary data, and view the JSON response — all using non-blocking I/O.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -19,6 +27,8 @@ This script demonstrates asynchronous HTTP communication by connecting to the No
 - Targets the Northwind API's `/categories` resource for demonstration
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -35,6 +45,8 @@ python -m pip install aiohttp
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -83,6 +95,8 @@ Async HTTP/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

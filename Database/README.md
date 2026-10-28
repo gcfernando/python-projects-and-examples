@@ -1,6 +1,12 @@
-# Python dbm Example — Simple Key-Value Database with the Standard Library
+[Python projects](../README.md) · **Data persistence**
+
+<a id="python-dbm-example--simple-key-value-database-with-the-standard-library"></a>
+
+# Python dbm — A File-Based Key-Value Database
 
 A simple example of **key-value data persistence** using Python's built-in **`dbm` module**: store a small record in a file-based database and read it back, with no database server and no third-party packages.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-known-issue)
 
 <a id="overview"></a>
 
@@ -12,6 +18,8 @@ This script demonstrates how to store and retrieve structured data using Python'
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Stores key-value pairs in a file-based database using `dbm`
@@ -20,11 +28,15 @@ This script demonstrates how to store and retrieve structured data using Python'
 
 <a id="requirements"></a>
 
+<a id="guide-prerequisites-and-installation"></a>
+
 ## 📦 Prerequisites and installation
 
 No external dependencies. `dbm` is part of the Python standard library.
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -40,6 +52,8 @@ Hi, I am Gehan Fernando. I live in Sri Lanka, and I am 43 years old.
 ```
 
 Database files named after `user.db` are created in the working directory. Their exact names depend on the platform's `dbm` backend — for example, the pure-Python `dbm.dumb` fallback creates `user.db.dat`, `user.db.dir`, and `user.db.bak`.
+
+<a id="guide-known-issue"></a>
 
 ## Known issue
 

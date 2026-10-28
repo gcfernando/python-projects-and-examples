@@ -1,6 +1,12 @@
-# Windows Network Reset Script in Python — Fix Internet Connection Problems
+[Python projects](../README.md) · **Windows networking**
+
+<a id="windows-network-reset-script-in-python--fix-internet-connection-problems"></a>
+
+# Windows Network Diagnostics and Reset with Python
 
 A Windows network repair utility written in Python that automates the standard **Windows network troubleshooting commands** — DHCP release/renew, DNS flush, Winsock and TCP/IP stack reset, proxy reset, adapter restart, and connectivity tests — with a progress bar and colour-coded results.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 > ⚠️ **This script changes system network settings.** Resetting the TCP/IP stack and Winsock catalog can remove static IP addresses, custom DNS servers, and some VPN or network-filter configurations, and restarting adapters disconnects you briefly. Note any custom settings before running it.
 
@@ -11,6 +17,8 @@ A Windows network repair utility written in Python that automates the standard *
 This script automates a series of common network troubleshooting steps — releasing DHCP leases, flushing caches, resetting the TCP/IP and Winsock stacks, restarting the WLAN service, and running connectivity tests — all with a progress bar and color-coded output. It must be run as Administrator.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -33,6 +41,8 @@ This script automates a series of common network troubleshooting steps — relea
 
 <a id="requirements"></a>
 
+<a id="guide-prerequisites-and-installation"></a>
+
 ## 📦 Prerequisites and installation
 
 ```text
@@ -47,6 +57,8 @@ python -m pip install colorama tqdm
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -71,6 +83,8 @@ FixNetwork/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

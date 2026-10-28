@@ -1,6 +1,12 @@
-# Cartoonify an Image with Python and OpenCV — Image2Cartoon
+[Python projects](../README.md) · **Images and OpenCV**
+
+<a id="cartoonify-an-image-with-python-and-opencv--image2cartoon"></a>
+
+# Turn Photos into Cartoons with Python and OpenCV
 
 A short Python script that shows **how to cartoonify a photo with OpenCV**: median blur, adaptive-threshold edge detection, and a bilateral filter are combined to turn a regular photograph into a cartoon-style image.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A short Python script that shows **how to cartoonify a photo with OpenCV**: medi
 This script applies a series of computer vision operations to transform an input image into a cartoon-like rendering. The original and cartoon images are displayed side by side for comparison.
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -23,6 +31,8 @@ python -m pip install opencv-python
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -60,6 +70,8 @@ The output is resized to 500×500 pixels.
 - `cv2.adaptiveThreshold(..., 9, 9)` controls edge detection (block size and constant); `cv2.bilateralFilter(image, 9, 250, 250)` controls how flat the colour areas become. Adjust them to make lines thicker or colours smoother.
 
 <a id="file-structure"></a>
+
+<a id="guide-architecture"></a>
 
 ## 🏗️ Architecture
 

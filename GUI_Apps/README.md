@@ -1,8 +1,16 @@
-# Python Desktop GUI Apps — Tkinter (ttkbootstrap) Contact Book with SQL Server
+[Python projects](../README.md) · **Desktop interfaces**
+
+<a id="python-desktop-gui-apps--tkinter-ttkbootstrap-contact-book-with-sql-server"></a>
+
+# Python Contact Book — Tkinter and SQL Server
 
 A collection of desktop GUI applications built with Python. It currently contains **Contact Book**, a CRUD contact manager that shows how to connect a **Tkinter / ttkbootstrap** interface to **Microsoft SQL Server** using **pyodbc** and stored procedures.
 
+> **In this guide:** [Understand the details](#guide-architecture) · [Applications](#guide-applications) · [Related documentation](#guide-related-documentation)
+
 ---
+
+<a id="guide-applications"></a>
 
 ## Applications
 
@@ -97,6 +105,8 @@ The database enforces unique mobile numbers and email addresses, so a save is re
 
 <a id="folder-structure"></a>
 
+<a id="guide-architecture"></a>
+
 ## 🏗️ Architecture
 
 ```text
@@ -111,6 +121,8 @@ GUI_Apps/
 <a id="related"></a>
 
 Search combines supplied mobile and email values with **AND**: when both are entered, both must match the same record. Leaving both blank matches all contacts, but the GUI uses `fetchone()` and displays only one result; there is no ordered result list.
+
+<a id="guide-related-documentation"></a>
 
 ## 🔗 Related documentation
 

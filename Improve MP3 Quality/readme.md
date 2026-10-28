@@ -1,6 +1,12 @@
-# Re-encode MP3 Files in Python — Change Bitrate, Channels and Sample Rate with pydub
+[Python projects](../README.md) · **Audio processing**
+
+<a id="re-encode-mp3-files-in-python--change-bitrate-channels-and-sample-rate-with-pydub"></a>
+
+# Re-encode MP3 Files with Python, pydub and FFmpeg
 
 A command-line tool written in Python that **re-encodes MP3 files** with a chosen bitrate, channel option, and sample rate using `pydub` and FFmpeg (`libmp3lame`), for a single file or a whole folder.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 > Re-encoding cannot add detail that a lower-quality MP3 has already lost; a higher bitrate mainly makes the file larger. Use it to standardize settings or reduce file size.
 
@@ -12,6 +18,8 @@ This script uses `pydub` (backed by FFmpeg) to re-encode one or more MP3 files. 
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Process a single MP3 file or a whole folder at once
@@ -22,6 +30,8 @@ This script uses `pydub` (backed by FFmpeg) to re-encode one or more MP3 files. 
 - Original file is replaced in-place after encoding
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -44,6 +54,8 @@ Install FFmpeg:
 - **Linux:** `sudo apt install ffmpeg`
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -104,6 +116,8 @@ Improve MP3 Quality/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

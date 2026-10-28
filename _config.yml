@@ -20,98 +20,98 @@ defaults:
   - scope:
       path: "Async HTTP/readme.md"
     values:
-      title: "Async HTTP Requests in Python with aiohttp and asyncio"
+      title: "Async HTTP Requests in Python with aiohttp"
       description: "Send asynchronous GET, POST, PUT and DELETE requests to a sample REST API from an interactive Python client using aiohttp and asyncio."
   - scope:
       path: "Bookmark/readme.md"
     values:
-      title: "Python Bookmark Manager CLI with SQLite and Rich"
+      title: "Python Bookmark Manager with SQLite and Rich"
       description: "Save, search, edit, delete and open bookmarks with notes in a local SQLite database, using a Python command-line interface and Rich output."
   - scope:
       path: "Custom Exception/readme.md"
     values:
-      title: "How to Create a Custom Exception in Python — Minimal Example"
+      title: "Create and Catch a Custom Exception in Python"
       description: "A minimal Python example demonstrating how to define, raise, and catch a custom exception class by subclassing Exception."
   - scope:
       path: "Database/README.md"
     values:
-      title: "Python dbm Example — Simple Key-Value Database with the Standard Library"
+      title: "Python dbm — A File-Based Key-Value Database"
       description: "Store and retrieve a small record with Python dbm, a file-based key-value database in the standard library that needs no database server."
   - scope:
       path: "Extract CPU Information/readme.md"
     values:
-      title: "Get CPU Information in Python — psutil and py-cpuinfo Example"
-      description: "A short script that shows how to get CPU information in Python: processor brand, architecture, clock speed, and physical and logical core counts, using psutil and py-cpuinfo."
+      title: "Read CPU Information with Python and psutil"
+      description: "Read processor model, architecture, frequency and physical or logical core counts in Python with psutil and py-cpuinfo."
   - scope:
       path: "FixNetwork/readme.md"
     values:
-      title: "Windows Network Diagnostics and Reset Script in Python"
+      title: "Windows Network Diagnostics and Reset with Python"
       description: "Review a Python Windows network repair utility for DHCP, DNS, Winsock, proxy and adapter troubleshooting, including reset precautions."
   - scope:
       path: "Graphite_CLI/README.md"
     values:
-      title: "Photo to Graphite Pencil Sketch with Python and OpenCV"
+      title: "Graphite CLI — Photo to Pencil Sketch with Python"
       description: "Convert photos to graphite pencil sketches with a Python CLI using OpenCV, NumPy and Pillow, automatic rendering settings and PNG or JPEG output."
   - scope:
       path: "GUI_Apps/README.md"
     values:
-      title: "Python Tkinter Contact Book with SQL Server"
+      title: "Python Contact Book — Tkinter and SQL Server"
       description: "Explore a contact manager built with Tkinter, ttkbootstrap, pyodbc and SQL Server stored procedures for creating, searching and editing contacts."
   - scope:
       path: "Health Monitor/readme.md"
     values:
-      title: "Python Process Memory Monitor — Possible Leak Alerts"
+      title: "Monitor Process Memory in Python with psutil"
       description: "Watch process memory usage in a live Python terminal dashboard with psutil and Rich, using growth heuristics to flag possible memory leaks."
   - scope:
       path: "Image to ASCII/readme.md"
     values:
-      title: "Convert an Image to ASCII Art in Python — pywhatkit Example"
-      description: "A short Python script that converts an image into ASCII art and saves it as a text file, using pywhatkit.imagetoasciiart."
+      title: "Convert Images to ASCII Art with Python"
+      description: "Convert an image into a text-file ASCII preview with a short pywhatkit example, then review the installed library's API and input requirements."
   - scope:
       path: "Image2Cartoon/readme.md"
     values:
-      title: "Cartoonify an Image with Python and OpenCV — Image2Cartoon"
+      title: "Turn Photos into Cartoons with Python and OpenCV"
       description: "Turn a photo into a cartoon-style image with OpenCV median blur, adaptive thresholding and a bilateral filter in a short Python example."
   - scope:
       path: "Improve MP3 Quality/readme.md"
     values:
-      title: "Re-encode MP3 Files in Python with pydub and FFmpeg"
+      title: "Re-encode MP3 Files with Python, pydub and FFmpeg"
       description: "Change MP3 bitrate, channels and sample rate with a Python pydub and FFmpeg tool for files or folders; review its in-place replacement behavior."
   - scope:
       path: "Internet Speed Test/readme.md"
     values:
-      title: "Internet Speed Test in Python — speedtest-cli Example"
-      description: "A short Python script that tests your internet speed — download, upload, and ping — using the speedtest-cli library and Speedtest.net servers."
+      title: "Test Internet Speed with Python and speedtest-cli"
+      description: "Measure download speed, upload speed and latency with a Python speedtest-cli example. Review the script's reported-unit limitation before interpreting results."
   - scope:
       path: "LoadLibraries/readme.md"
     values:
-      title: "Call a C# DLL from Python with pythonnet — Load a .NET Library"
-      description: "Demonstrates how to call a compiled C# / .NET library (DLL) from Python using pythonnet and its clr module."
+      title: "Call a C# DLL from Python with pythonnet"
+      description: "Load a compiled .NET library from Python with pythonnet and clr. Review matching runtime and library-build requirements before running the example."
   - scope:
       path: "Lyrics/readme.md"
     values:
-      title: "Get Song Lyrics with Python and the Genius API — lyricsgenius Example"
-      description: "A short Python script that searches the Genius API for a song with the lyricsgenius library and prints its title, artist, album, and a lyrics preview."
+      title: "Search Genius Songs with Python and lyricsgenius"
+      description: "Search Genius song metadata with Python and lyricsgenius, display a lyrics preview and review API configuration and response limitations."
   - scope:
       path: "ML/COVID Forecast/readme.md"
     values:
-      title: "COVID-19 Time-Series Forecasting with ARIMA and SARIMAX in Python"
+      title: "Time-Series Forecasting with ARIMA and SARIMAX"
       description: "Explore a Python time-series forecast using auto-ARIMA, SARIMAX, stationarity tests and confidence intervals with historical COVID-19 case data."
   - scope:
       path: "ML/README.md"
     values:
-      title: "Python Machine Learning Examples — Forecasting and Regression"
+      title: "Python Machine Learning: Forecasting and Regression"
       description: "Learn from two Python examples: COVID-19 time-series forecasting with auto-ARIMA and SARIMAX, and salary prediction with scikit-learn regression."
   - scope:
       path: "ML/Salary/readme.md"
     values:
-      title: "Salary Prediction with Linear Regression in Python"
+      title: "Salary Regression with Python and scikit-learn"
       description: "Train a scikit-learn salary regression model from years of experience, save the model and scaler with joblib, and load them for predictions."
   - scope:
       path: "MP3 Player/readme.md"
     values:
-      title: "Python MP3 Player with Crossfade — pygame Console Music Player"
-      description: "A console-based MP3 player written in Python with crossfade transitions between tracks, background preloading of the next song, and shuffled playback, built on pygame.mixer and mutagen."
+      title: "Python MP3 Player with pygame and Crossfade"
+      description: "Explore a console MP3 player using pygame and mutagen, with shuffled playback, track preloading and documented crossfade behavior."
   - scope:
       path: "MP3 Tags/readme.md"
     values:
@@ -120,98 +120,98 @@ defaults:
   - scope:
       path: "Object Clone/readme.md"
     values:
-      title: "Deep Copy vs Shallow Copy in Python — copy.deepcopy() Example"
-      description: "A minimal example of cloning a Python object with copy.deepcopy(), showing that changes to the original do not affect the copy."
+      title: "Clone Python Objects with copy.deepcopy"
+      description: "Compare an original object and its deep copy in Python, change the original and inspect independent values with a minimal copy.deepcopy example."
   - scope:
       path: "Password Utility/readme.md"
     values:
-      title: "Python Password Generator and Password Strength Checker"
+      title: "Python Password Generator and Strength-Check Examples"
       description: "Explore two Python CLI examples: generate passwords with character-count requirements and estimate password strength from possible combinations."
   - scope:
       path: "Port Scanner/readme.md"
     values:
-      title: "Python TCP Port Scanner — IPv6, Banners and JSON Output"
+      title: "Python TCP Port Scanner — IPv6 and JSON Output"
       description: "Scan authorized IPv4 and IPv6 hosts with a multithreaded Python TCP scanner, optional service banners and JSON output using the standard library."
   - scope:
       path: "QR Code/readme.md"
     values:
-      title: "Generate a QR Code in Python — Custom Colours with the qrcode Library"
-      description: "A short Python script that shows how to generate a QR code in Python with the qrcode library, using custom fill and background colours and saving the result as a PNG image."
+      title: "Generate Custom QR Codes with Python"
+      description: "Generate a QR code with Python's qrcode library, choose foreground and background colors and save the result as a PNG image."
   - scope:
       path: "README.md"
     values:
-      title: "Python Projects — Automation, Networking, Media and Machine Learning"
-      description: "Python examples for automation, networking, desktop interfaces, media processing, machine learning and local web dashboards."
+      title: "Python Projects — Automation, Media and Machine Learning"
+      description: "Explore Python examples for automation, networking, desktop apps, image and audio processing, and machine learning. Follow each project's setup and limitations."
   - scope:
       path: "Remove Background/readme.md"
     values:
-      title: "Remove Image Background in Python with rembg — AI Background Removal Example"
-      description: "A short Python script that shows how to remove the background from an image in Python using the AI-based rembg library, then places the subject on a solid black background with Pillow."
+      title: "Remove Image Backgrounds with Python and rembg"
+      description: "Remove an image background with rembg and composite the subject onto black with Pillow. Review model downloads, file paths and runtime requirements."
   - scope:
       path: "SetupWizard/readme.md"
     values:
-      title: "PySimpleGUI Image Viewer and PyInstaller Packaging in Python"
+      title: "Fruit Wiki — Python Image Viewer and Packaging Demo"
       description: "Build a fruit image viewer with PySimpleGUI and Pillow, and learn how a resource path helper locates bundled assets in PyInstaller packages."
   - scope:
       path: "Simple Selenium Scraper/readme.md"
     values:
-      title: "Python Selenium Web Scraping Example — Headless Chrome Headline Scraper"
+      title: "Python Selenium Scraper with Headless Chrome"
       description: "A short Selenium web scraping example in Python that runs Chrome in headless mode, opens the ESPN Cricinfo news page, and prints the page header and news headlines found by CSS class."
   - scope:
       path: "Simple WhatApp Sender/readme.md"
     values:
-      title: "Send a Scheduled WhatsApp Message with Python — pywhatkit Example"
+      title: "Schedule WhatsApp Messages with Python and pywhatkit"
       description: "A short Python script that shows how to schedule and send a WhatsApp message from Python with the pywhatkit library, which automates WhatsApp Web in your browser."
   - scope:
       path: "Stenography/readme.md"
     values:
-      title: "Image Steganography in Python — Hide Text in PNG with LSB"
+      title: "Hide and Read Text in PNG Images with Python"
       description: "Hide a text message in a PNG image and read it back with the stegano library, using a short Python example of least significant bit steganography."
   - scope:
       path: "StoryReader/readme.md"
     values:
-      title: "Read a PDF Aloud with Python, PyPDF2 and pyttsx3"
+      title: "Read a PDF Aloud with Python and pyttsx3"
       description: "Extract text from PDF pages with PyPDF2 and read it aloud with pyttsx3 using the operating system text-to-speech voices in a Python example."
   - scope:
       path: "Streamlit/readme.md"
     values:
-      title: "Streamlit Python Example — Widgets, DataFrames and Charts"
+      title: "Streamlit in Python — Widgets, DataFrames and Charts"
       description: "Explore Streamlit sidebar widgets, a pandas DataFrame, a matplotlib histogram and native line and area charts in a single-file Python app."
   - scope:
       path: "TagClouds/readme.md"
     values:
-      title: "Generate a Word Cloud from Web Pages in Python — wordcloud with an Image Mask"
-      description: "A Python script that creates a word cloud from text scraped from several web pages, shaped by a mask image, using requests, inscriptis, wordcloud, and matplotlib."
+      title: "Create Masked Word Clouds from Web Pages in Python"
+      description: "Collect web-page text and generate an image-shaped word cloud in Python with requests, inscriptis, wordcloud and matplotlib."
   - scope:
       path: "Text2Audio/readme.md"
     values:
-      title: "Python Text-to-Speech App with gTTS and CustomTkinter"
+      title: "Python Text-to-Speech App with gTTS"
       description: "Convert typed text to speech in a CustomTkinter Python desktop app with gTTS language and accent options and audio playback through pygame."
   - scope:
       path: "Use Twilio/readme.md"
     values:
-      title: "Send SMS and WhatsApp Messages and Make Calls with Python and Twilio"
-      description: "A command-line Python client that shows how to send an SMS, send a WhatsApp message, and place a voice call with the Twilio API, using the official twilio package."
+      title: "Python Twilio Examples — SMS, WhatsApp and Calls"
+      description: "Explore a Python CLI for Twilio SMS, WhatsApp and voice-call requests, with account configuration, credential handling and usage notes."
   - scope:
       path: "Use Windows Login/readme.md"
     values:
-      title: "Verify Windows Credentials in Python — pywin32 LogonUser Example"
-      description: "A short Python script that shows how to check a Windows username and password from Python with win32security.LogonUser (pywin32), as a simple Windows credential gate for a script or tool."
+      title: "Check Windows Credentials with Python and pywin32"
+      description: "Study a Python win32security.LogonUser example for checking Windows credentials, including its input handling and authentication-boundary limitations."
   - scope:
       path: "Wifi Profiles/readme.md"
     values:
-      title: "Manage Saved Windows Wi-Fi Profiles with Python and netsh"
-      description: "A Windows utility written in Python that uses netsh wlan to list saved Wi-Fi networks with their stored passwords and bulk-delete Wi-Fi profiles while keeping one network."
+      title: "Manage Windows Wi-Fi Profiles with Python and netsh"
+      description: "Review a Python netsh utility for listing saved Wi-Fi credentials and deleting profiles. Use it only on networks and machines you administer."
   - scope:
       path: "Wifi Radar/readme.md"
     values:
-      title: "WiFi Radar — Python Wi-Fi Scanner and Flask Dashboard"
+      title: "WiFi Radar — Python Scanner and Flask Dashboard"
       description: "Display nearby Wi-Fi access points in a local Flask radar dashboard with signal strength, security details, vendor lookup and CSV export."
   - scope:
       path: "Wifi Scanner/readme.md"
     values:
-      title: "Python Wi-Fi Scanner — List Nearby Networks with pywifi"
-      description: "A short Python script that scans for nearby Wi-Fi networks with the pywifi library and prints each network's SSID, BSSID, signal strength, frequency, and security type."
+      title: "Scan Nearby Wi-Fi Networks with Python and pywifi"
+      description: "Scan nearby Wi-Fi networks with a Python pywifi example and inspect SSID, signal, frequency and security fields alongside documented platform limitations."
   - scope:
       path: "Wifi Radar/index.html"
     values:

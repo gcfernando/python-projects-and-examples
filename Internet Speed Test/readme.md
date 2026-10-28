@@ -1,6 +1,12 @@
-# Internet Speed Test in Python — speedtest-cli Example
+[Python projects](../README.md) · **Network measurements**
+
+<a id="internet-speed-test-in-python--speedtest-cli-example"></a>
+
+# Test Internet Speed with Python and speedtest-cli
 
 A short Python script that **tests your internet speed** — download, upload, and ping — using the `speedtest-cli` library and Speedtest.net servers.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A short Python script that **tests your internet speed** — download, upload, a
 This script connects to the best available Speedtest.net server, runs a full speed test, and prints the results to the console.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -19,6 +27,8 @@ This script connects to the best available Speedtest.net server, runs a full spe
 - Displays the selected server's host, country, and sponsor
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -33,6 +43,8 @@ python -m pip install speedtest-cli
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 

@@ -1,6 +1,12 @@
-# Send a Scheduled WhatsApp Message with Python — pywhatkit Example
+[Python projects](../README.md) · **Browser automation**
+
+<a id="send-a-scheduled-whatsapp-message-with-python--pywhatkit-example"></a>
+
+# Schedule WhatsApp Messages with Python and pywhatkit
 
 A short Python script that shows **how to schedule and send a WhatsApp message from Python** with the `pywhatkit` library, which automates WhatsApp Web in your browser.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -10,6 +16,8 @@ This script automates sending a WhatsApp message via WhatsApp Web. It opens the 
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Sends a WhatsApp message to any phone number with a country code
@@ -17,6 +25,8 @@ This script automates sending a WhatsApp message via WhatsApp Web. It opens the 
 - Automatically closes the browser tab after sending (`tab_close=True`)
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -46,6 +56,8 @@ Open `WhatAppMessage.py` and update the following variables:
 | `min` | Minute to send the message | `5` |
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -79,6 +91,8 @@ Simple WhatApp Sender/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

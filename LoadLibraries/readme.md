@@ -1,6 +1,12 @@
-# Call a C# DLL from Python with pythonnet — Load a .NET Library
+[Python projects](../README.md) · **Python and .NET integration**
+
+<a id="call-a-c-dll-from-python-with-pythonnet--load-a-net-library"></a>
+
+# Call a C# DLL from Python with pythonnet
 
 Demonstrates **how to call a compiled C# / .NET library (DLL) from Python** using `pythonnet` and its `clr` module.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ Demonstrates **how to call a compiled C# / .NET library (DLL) from Python** usin
 This project shows cross-language interoperability between Python and .NET. A simple `Calculator` class is compiled as a C# class library (DLL), and Python loads it at runtime via the `clr` (Common Language Runtime) module from the `pythonnet` package. The Python script then calls the .NET methods directly as if they were native Python functions.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -21,6 +29,8 @@ This project shows cross-language interoperability between Python and .NET. A si
   - `Division(a, b)`
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -37,6 +47,8 @@ python -m pip install pythonnet
 You also need a **.NET runtime** that can load the DLL. `Calculator.csproj` targets **.NET 6** (`net6.0`).
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -93,6 +105,8 @@ LoadLibraries/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

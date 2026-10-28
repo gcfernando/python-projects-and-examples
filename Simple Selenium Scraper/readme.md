@@ -1,6 +1,12 @@
-# Python Selenium Web Scraping Example — Headless Chrome Headline Scraper
+[Python projects](../README.md) · **Browser automation**
+
+<a id="python-selenium-web-scraping-example--headless-chrome-headline-scraper"></a>
+
+# Python Selenium Scraper with Headless Chrome
 
 A short **Selenium web scraping example in Python** that runs Chrome in headless mode, opens the ESPN Cricinfo news page, and prints the page header and news headlines found by CSS class.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -10,6 +16,8 @@ This script launches a headless Chrome browser, navigates to the ESPN Cricinfo n
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Runs Chrome in headless mode (no visible browser window)
@@ -18,6 +26,8 @@ This script launches a headless Chrome browser, navigates to the ESPN Cricinfo n
 - Console cleared before displaying results
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -63,6 +73,8 @@ You can change this to any URL and update the CSS class selectors (`ds-text-titl
 
 <a id="usage"></a>
 
+<a id="guide-usage"></a>
+
 ## 💡 Usage
 
 From the `Console_Code` folder:
@@ -93,6 +105,8 @@ Simple Selenium Scraper/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

@@ -1,6 +1,12 @@
-# Get CPU Information in Python — psutil and py-cpuinfo Example
+[Python projects](../README.md) · **System information**
+
+<a id="get-cpu-information-in-python--psutil-and-py-cpuinfo-example"></a>
+
+# Read CPU Information with Python and psutil
 
 A short script that shows **how to get CPU information in Python**: processor brand, architecture, clock speed, and physical and logical core counts, using `psutil` and `py-cpuinfo`.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A short script that shows **how to get CPU information in Python**: processor br
 This script uses the `psutil` and `py-cpuinfo` libraries to gather and print CPU details to the console, including brand name, architecture, clock speed, core counts, and an estimated temperature.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -20,6 +28,8 @@ This script uses the `psutil` and `py-cpuinfo` libraries to gather and print CPU
 - Estimated temperature in °C (derived from current frequency)
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -35,6 +45,8 @@ python -m pip install psutil py-cpuinfo
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -70,6 +82,8 @@ Extract CPU Information/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

@@ -1,6 +1,12 @@
-# How to Create a Custom Exception in Python — Minimal Example
+[Python projects](../README.md) · **Python fundamentals**
+
+<a id="how-to-create-a-custom-exception-in-python--minimal-example"></a>
+
+# Create and Catch a Custom Exception in Python
 
 A minimal Python example demonstrating **how to define, raise, and catch a custom exception class** by subclassing `Exception`.
+
+> **In this guide:** [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A minimal Python example demonstrating **how to define, raise, and catch a custo
 This script shows the pattern for creating a user-defined exception in Python by subclassing the built-in `Exception` class. It demonstrates how to raise the custom exception under a specific condition and catch it with a `try/except` block.
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -59,6 +67,8 @@ From `Exception` (or one of its subclasses). `BaseException` is reserved for exc
 
 <a id="file-structure"></a>
 
+<a id="guide-architecture"></a>
+
 ## 🏗️ Architecture
 
 ```text
@@ -68,6 +78,8 @@ Custom Exception/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

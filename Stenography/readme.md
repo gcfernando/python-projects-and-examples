@@ -1,6 +1,12 @@
-# Image Steganography in Python — Hide Text in a PNG with LSB (stegano)
+[Python projects](../README.md) · **Images and steganography**
+
+<a id="image-steganography-in-python--hide-text-in-a-png-with-lsb-stegano"></a>
+
+# Hide and Read Text in PNG Images with Python
 
 A short Python example of **image steganography**: it hides a secret text message inside a PNG image using LSB (Least Significant Bit) encoding with the `stegano` library, then reads the message back. (The folder is named `Stenography`; the technique is steganography.)
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -10,6 +16,8 @@ This script uses the `stegano` library's LSB (Least Significant Bit) method to e
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Hides an a text message that fits the image’s embedding capacity message inside a PNG image using LSB steganography
@@ -17,6 +25,8 @@ This script uses the `stegano` library's LSB (Least Significant Bit) method to e
 - Extracts and prints the hidden message from the output image
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -31,6 +41,8 @@ python -m pip install stegano
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -68,6 +80,8 @@ Stenography/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

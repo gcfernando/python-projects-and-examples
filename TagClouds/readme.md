@@ -1,6 +1,12 @@
-# Generate a Word Cloud from Web Pages in Python — wordcloud with an Image Mask
+[Python projects](../README.md) · **Text and visualization**
+
+<a id="generate-a-word-cloud-from-web-pages-in-python--wordcloud-with-an-image-mask"></a>
+
+# Create Masked Word Clouds from Web Pages in Python
 
 A Python script that **creates a word cloud from text scraped from several web pages**, shaped by a mask image, using `requests`, `inscriptis`, `wordcloud`, and `matplotlib`.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A Python script that **creates a word cloud from text scraped from several web p
 This script fetches content from a list of web pages about Nike, extracts the plain text from the HTML using `inscriptis`, concatenates all the text, and generates a word cloud masked to the shape of a downloaded Nike logo image. The result is displayed using `matplotlib`.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -20,6 +28,8 @@ This script fetches content from a list of web pages about Nike, extracts the pl
 - Displays the word cloud with a black background using `matplotlib`
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -52,6 +62,8 @@ The following variables at the top of `TagCloud.py` can be modified:
 
 <a id="usage"></a>
 
+<a id="guide-usage"></a>
+
 ## 💡 Usage
 
 From the `Console_Code` folder:
@@ -76,6 +88,8 @@ TagClouds/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

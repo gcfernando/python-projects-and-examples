@@ -1,6 +1,12 @@
-# Convert an Image to ASCII Art in Python — pywhatkit Example
+[Python projects](../README.md) · **Images and text**
+
+<a id="convert-an-image-to-ascii-art-in-python--pywhatkit-example"></a>
+
+# Convert Images to ASCII Art with Python
 
 A short Python script that **converts an image into ASCII art** and saves it as a text file, using `pywhatkit.image_to_ascii_art`.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A short Python script that **converts an image into ASCII art** and saves it as 
 This script uses the `pywhatkit` library to transform any image into a text-based ASCII art representation. The output is saved as a `.txt` file at a path you specify in the script.
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -23,6 +31,8 @@ python -m pip install pywhatkit
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -50,6 +60,8 @@ In `pywhatkit` 5.4, `image_to_ascii_art` converts the image to grayscale with Pi
 > Importing `pywhatkit` also loads its WhatsApp, browser-automation (`pyautogui`), and other helpers, so it installs several extra dependencies. For ASCII art alone, a few lines of Pillow code would do the same job.
 
 <a id="file-structure"></a>
+
+<a id="guide-architecture"></a>
 
 ## 🏗️ Architecture
 

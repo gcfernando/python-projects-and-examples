@@ -1,6 +1,12 @@
-# PySimpleGUI Image Viewer with PyInstaller Packaging — Fruit Wiki (Python)
+[Python projects](../README.md) · **Desktop interfaces and packaging**
+
+<a id="pysimplegui-image-viewer-with-pyinstaller-packaging--fruit-wiki-python"></a>
+
+# Fruit Wiki — Python Image Viewer and Packaging Demo
 
 A Python desktop GUI that displays fruit images and descriptions in a paginated viewer, built with **PySimpleGUI** and **Pillow**, with a `resource_path()` helper that makes bundled assets work when the app is packaged into a Windows executable with **PyInstaller**.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A Python desktop GUI that displays fruit images and descriptions in a paginated 
 Fruit Wiki is a simple desktop image browser for fruits. It reads image files from an `Images/` folder and matching text files from a `Data/` folder, then displays the fruit image and exposes its description as an image tooltip. Users can browse entries using Previous and Next buttons.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -21,6 +29,8 @@ Fruit Wiki is a simple desktop image browser for fruits. It reads image files fr
 - Resource helper for development working-directory paths and PyInstaller extraction paths
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -38,6 +48,8 @@ python -m pip install PySimpleGUI Pillow pyglet pyinstaller
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -78,6 +90,8 @@ SetupWizard/
 Each `.txt` file in `Data/` must have the same base name as its matching image file. Six fruits are included.
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

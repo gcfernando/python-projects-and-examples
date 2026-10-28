@@ -1,6 +1,12 @@
-# Verify Windows Credentials in Python — pywin32 LogonUser Example
+[Python projects](../README.md) · **Windows integration**
+
+<a id="verify-windows-credentials-in-python--pywin32-logonuser-example"></a>
+
+# Check Windows Credentials with Python and pywin32
 
 A short Python script that shows **how to check a Windows username and password from Python** with `win32security.LogonUser` (pywin32), as a simple Windows credential gate for a script or tool.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -10,6 +16,8 @@ This script uses `getpass` to securely collect the current user's Windows passwo
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Automatically detects the currently logged-in Windows username
@@ -18,6 +26,8 @@ This script uses `getpass` to securely collect the current user's Windows passwo
 - Prints a success or failure message; failure does not call `sys.exit()` or set a nonzero exit status
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -34,6 +44,8 @@ python -m pip install pywin32
 > The script imports Python's built-in `getpass` module, so no extra package is needed for the password prompt. `pywin32` provides the `win32security` module required for Windows authentication.
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -76,6 +88,8 @@ Use Windows Login/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

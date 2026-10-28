@@ -1,8 +1,16 @@
-# Python Machine Learning Examples — ARIMA/SARIMAX Time-Series Forecasting and Linear Regression
+[Python projects](../README.md) · **Machine learning**
+
+<a id="python-machine-learning-examples--arimasarimax-time-series-forecasting-and-linear-regression"></a>
+
+# Python Machine Learning: Forecasting and Regression
 
 A collection of beginner-friendly **machine learning projects built with Python**: a **COVID-19 time-series forecast** using auto-ARIMA and SARIMAX (`pmdarima`, `statsmodels`), and a **salary prediction model** using scikit-learn linear regression with a separate training and inference workflow.
 
+> **In this guide:** [Understand the details](#guide-architecture) · [Projects](#guide-projects) · [Related documentation](#guide-related-documentation)
+
 ---
+
+<a id="guide-projects"></a>
 
 ## Projects
 
@@ -129,6 +137,8 @@ Predicted Salary for 5.0 years of experience: $<predicted amount>
 
 <a id="folder-structure"></a>
 
+<a id="guide-architecture"></a>
+
 ## 🏗️ Architecture
 
 ```text
@@ -148,6 +158,8 @@ ML/
 ```
 
 <a id="related"></a>
+
+<a id="guide-related-documentation"></a>
 
 ## 🔗 Related documentation
 

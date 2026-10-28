@@ -1,6 +1,12 @@
-# Show Saved Wi-Fi Passwords and Delete Wi-Fi Profiles on Windows with Python (netsh)
+[Python projects](../README.md) · **Windows networking**
+
+<a id="show-saved-wi-fi-passwords-and-delete-wi-fi-profiles-on-windows-with-python-netsh"></a>
+
+# Manage Windows Wi-Fi Profiles with Python and netsh
 
 A Windows utility written in Python that uses `netsh wlan` to **list saved Wi-Fi networks with their stored passwords** and **bulk-delete Wi-Fi profiles** while keeping one network.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 > ⚠️ **Running the script as it is deletes your saved Wi-Fi profiles.** Both parts run one after the other: after listing the passwords, the script deletes every saved profile except the one named in `ignore_ssid`, which is set to the placeholder `"WIFI_NAME"`. Unless you change `ignore_ssid` to your network's name, or comment out the delete section, **all** saved Wi-Fi profiles are deleted.
 
@@ -16,6 +22,8 @@ Both operations are in the same script and both run every time. To only list pas
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Lists all saved Wi-Fi profiles with their SSIDs and passwords
@@ -25,6 +33,8 @@ Both operations are in the same script and both run every time. To only list pas
 
 <a id="requirements"></a>
 
+<a id="guide-prerequisites-and-installation"></a>
+
 ## 📦 Prerequisites and installation
 
 No external dependencies. Uses only Python standard library.
@@ -32,6 +42,8 @@ No external dependencies. Uses only Python standard library.
 > **Windows only.** Requires a Windows system with the WLAN AutoConfig service running.
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -84,6 +96,8 @@ Wifi Profiles/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

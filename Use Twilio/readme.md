@@ -1,6 +1,12 @@
-# Send SMS and WhatsApp Messages and Make Calls with Python and Twilio
+[Python projects](../README.md) · **Messaging APIs**
+
+<a id="send-sms-and-whatsapp-messages-and-make-calls-with-python-and-twilio"></a>
+
+# Python Twilio Examples — SMS, WhatsApp and Calls
 
 A command-line Python client that shows **how to send an SMS, send a WhatsApp message, and place a voice call with the Twilio API**, using the official `twilio` package.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -10,6 +16,8 @@ This script wraps the Twilio REST API into a `TwilioService` class with three co
 
 <a id="features"></a>
 
+<a id="guide-features"></a>
+
 ## ✨ Features
 
 - Submit SMS requests to configured recipients (subject to your account and sender capabilities)
@@ -18,6 +26,8 @@ This script wraps the Twilio REST API into a `TwilioService` class with three co
 - Interactive console loop for repeated use
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -49,6 +59,8 @@ twilio_service = TwilioService(
 You can find these values in your [Twilio Console](https://console.twilio.com/). Do not commit real credentials; in your own copy, read them from environment variables such as `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN`.
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -92,6 +104,8 @@ Use Twilio/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

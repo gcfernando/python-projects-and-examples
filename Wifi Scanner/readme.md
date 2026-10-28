@@ -1,6 +1,12 @@
-# Python Wi-Fi Scanner — List Nearby Networks with pywifi
+[Python projects](../README.md) · **Wireless networking**
+
+<a id="python-wi-fi-scanner--list-nearby-networks-with-pywifi"></a>
+
+# Scan Nearby Wi-Fi Networks with Python and pywifi
 
 A short Python script that **scans for nearby Wi-Fi networks** with the `pywifi` library and prints each network's SSID, BSSID, signal strength, frequency, and security type.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-known-issues)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A short Python script that **scans for nearby Wi-Fi networks** with the `pywifi`
 This script initializes the system's first Wi-Fi interface, triggers a scan, and then reads the results to display network details including SSID, BSSID, signal strength, frequency, and security mode for each discovered access point.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -23,6 +31,8 @@ This script initializes the system's first Wi-Fi interface, triggers a scan, and
 - Error handling inside the scan/output block; interface initialization happens before that block
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -43,6 +53,8 @@ python -m pip install pywifi
 
 <a id="usage"></a>
 
+<a id="guide-usage"></a>
+
 ## 💡 Usage
 
 From the `Console_Code` folder:
@@ -62,6 +74,8 @@ Signal Strength (dBm): -55
 Frequency (MHz): 2.412
 Security Mode: WPA2-EAP
 ```
+
+<a id="guide-known-issues"></a>
 
 ## Known issues
 

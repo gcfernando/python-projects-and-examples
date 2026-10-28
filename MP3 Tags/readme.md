@@ -1,6 +1,12 @@
-# Read MP3 ID3 Tags in Python — eyeD3 Metadata and Audio Info Example
+[Python projects](../README.md) · **Audio metadata**
+
+<a id="read-mp3-id3-tags-in-python--eyed3-metadata-and-audio-info-example"></a>
+
+# Read MP3 ID3 Tags in Python with eyeD3
 
 A short Python script that shows **how to read MP3 metadata (ID3 tags) in Python** with `eyed3` — title, artist, album, genre, track number, and year — along with audio details such as sample rate, bitrate, duration, and channel mode.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-known-issue-bitrate-prints-as-0-kbps)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A short Python script that shows **how to read MP3 metadata (ID3 tags) in Python
 This script loads an MP3 file, extracts its ID3 tag information and audio stream properties, and prints them to the console. It covers both tag metadata (title, artist, genre, etc.) and technical audio details (bitrate, sample rate, duration, channels).
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -34,6 +42,8 @@ Extracts and displays the following information:
 
 <a id="requirements"></a>
 
+<a id="guide-prerequisites-and-installation"></a>
+
 ## 📦 Prerequisites and installation
 
 ```text
@@ -47,6 +57,8 @@ python -m pip install eyed3
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -78,6 +90,8 @@ Duration: <seconds>
 Channels: <channel mode, e.g. Joint stereo>
 File Size: <MB>
 ```
+
+<a id="guide-known-issue-bitrate-prints-as-0-kbps"></a>
 
 ## Known issue: bitrate prints as 0 kbps
 

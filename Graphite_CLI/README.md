@@ -1,12 +1,20 @@
-# Photo to Graphite Pencil Sketch — Automatic Python CLI (OpenCV)
+[Python projects](../README.md) · **Images and OpenCV**
+
+<a id="photo-to-graphite-pencil-sketch--automatic-python-cli-opencv"></a>
+
+# Graphite CLI — Photo to Pencil Sketch with Python
 
 **Graphite CLI** is a small Python command-line tool that converts a photograph into a **black-and-white graphite pencil sketch**. It uses OpenCV, NumPy, and Pillow, chooses its rendering settings automatically from each photo, and needs no GUI, network connection, AI model weights, or manual tuning. The output keeps the original pixel dimensions, and the result is deterministic for the same input and dependency versions.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture) · [Check the limits](#guide-verification-limits)
 
 ![Before-and-after example: a colour portrait of a woman holding a latte, and a black-and-white pencil-sketch version of the same photo](https://gcfernando.github.io/python-projects-and-examples/Graphite_CLI/Console_Code/Before%20and%20After.png)
 
 *Before-and-after example image included in the project folder.*
 
 <a id="developer-installation-one-time"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -21,6 +29,8 @@ The requirements file (in `Console_Code/`) constrains compatible version ranges 
 Install the dependencies as part of deployment so the end user only runs the two-argument command. An executable distribution would need to be built separately for each target operating system if users must not install Python or packages.
 
 <a id="end-user-usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -46,11 +56,15 @@ On success it prints the saved file and its size, for example `Saved 'sketch.png
 
 Supports common Pillow-readable image files as input and PNG/JPEG as output (`.png`, `.jpg`, `.jpeg`). EXIF rotation can swap width and height; dimension preservation is relative to the oriented image. For best lossless output, use `.png`.
 
+<a id="guide-verification-limits"></a>
+
 ## Verification limits
 
 This repository does not include an automated test module for Graphite CLI. The runtime validation described above checks output integrity and basic image properties; it does not verify artistic quality. Inspect the saved image when deciding whether a conversion meets your needs.
 
 <a id="project-structure"></a>
+
+<a id="guide-architecture"></a>
 
 ## 🏗️ Architecture
 

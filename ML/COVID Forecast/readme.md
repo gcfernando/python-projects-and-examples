@@ -1,6 +1,12 @@
-# COVID-19 Time Series Forecasting in Python — auto-ARIMA and SARIMAX Example
+[Python projects](../../README.md) · **Machine learning and time series**
+
+<a id="covid-19-time-series-forecasting-in-python--auto-arima-and-sarimax-example"></a>
+
+# Time-Series Forecasting with ARIMA and SARIMAX
 
 A **time series forecasting** script in Python that predicts daily COVID-19 cases for a country using `pmdarima.auto_arima` for model selection and `statsmodels` SARIMAX for fitting — a worked example of the ADF stationarity test, seasonal ARIMA, in-sample validation, and future forecasts with confidence intervals.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A **time series forecasting** script in Python that predicts daily COVID-19 case
 This script downloads daily COVID-19 case data, performs stationarity analysis, automatically selects the best ARIMA/SARIMA model, fits it, and generates both an in-sample static forecast and a future forecast for the next N days. All results are visualized with `matplotlib`.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -22,6 +30,8 @@ This script downloads daily COVID-19 case data, performs stationarity analysis, 
 - All plots displayed with gridlines, auto-scaled axes, and monthly date formatting
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -53,6 +63,8 @@ Edit the variables at the top of `CovidForecast.py`:
 | `frequency` | `'D'` | Time series frequency (`'D'` = daily) |
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -90,6 +102,8 @@ COVID Forecast/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

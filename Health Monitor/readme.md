@@ -1,6 +1,12 @@
-# Python Process Memory Monitor — Possible Leak Alerts with psutil and Rich
+[Python projects](../README.md) · **System monitoring**
+
+<a id="python-process-memory-monitor--possible-leak-alerts-with-psutil-and-rich"></a>
+
+# Monitor Process Memory in Python with psutil
 
 A real-time terminal dashboard written in Python that watches the **memory usage of running processes** and flags ones whose memory keeps growing — a simple heuristic for spotting possible memory leaks.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -9,6 +15,8 @@ A real-time terminal dashboard written in Python that watches the **memory usage
 Health Monitor continuously tracks the memory usage of the top processes on your system and flags any that show consistent upward growth — a common sign of a memory leak. The live dashboard refreshes every second and color-codes each process with a clear status indicator.
 
 <a id="features"></a>
+
+<a id="guide-features"></a>
 
 ## ✨ Features
 
@@ -23,6 +31,8 @@ Health Monitor continuously tracks the memory usage of the top processes on your
 - Configurable number of processes to track and check interval via command-line arguments
 
 <a id="requirements"></a>
+
+<a id="guide-prerequisites-and-installation"></a>
 
 ## 📦 Prerequisites and installation
 
@@ -40,6 +50,8 @@ python -m pip install psutil rich
 ```
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -98,6 +110,8 @@ Health Monitor/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 

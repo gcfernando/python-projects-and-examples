@@ -1,6 +1,12 @@
-# Deep Copy vs Shallow Copy in Python — copy.deepcopy() Example
+[Python projects](../README.md) · **Python fundamentals**
+
+<a id="deep-copy-vs-shallow-copy-in-python--copydeepcopy-example"></a>
+
+# Clone Python Objects with copy.deepcopy
 
 A minimal example of **cloning a Python object with `copy.deepcopy()`**, showing that changes to the original do not affect the copy.
+
+> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture) · [Check the limits](#guide-troubleshooting-and-limitations)
 
 <a id="overview"></a>
 
@@ -10,11 +16,15 @@ This script creates an instance of a custom class, clones it with `copy.deepcopy
 
 <a id="requirements"></a>
 
+<a id="guide-prerequisites-and-installation"></a>
+
 ## 📦 Prerequisites and installation
 
 No external dependencies. `copy` is part of the Python standard library.
 
 <a id="usage"></a>
+
+<a id="guide-usage"></a>
 
 ## 💡 Usage
 
@@ -52,6 +62,8 @@ For this `MyClass`, `deepcopy` creates a separate instance; assigning `20` to th
 
 <a id="file-structure"></a>
 
+<a id="guide-architecture"></a>
+
 ## 🏗️ Architecture
 
 ```text
@@ -61,6 +73,8 @@ Object Clone/
 ```
 
 <a id="notes"></a>
+
+<a id="guide-troubleshooting-and-limitations"></a>
 
 ## 🛠️ Troubleshooting and limitations
 
