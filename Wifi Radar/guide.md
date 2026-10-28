@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "WiFi Radar — Python Scanner and Flask Dashboard"
-description: "Documentation for a local Python Wi-Fi scanner with a Flask dashboard, signal and security information, vendor lookup and CSV export."
+description: "Display nearby Wi-Fi access points in a local Flask radar dashboard with signal strength, security details, vendor lookup and CSV export."
 ---
 
 {% include_relative readme.md %}
