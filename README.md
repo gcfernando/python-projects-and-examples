@@ -171,7 +171,7 @@ flowchart LR
 
 ## 🧪 Development and testing
 
-There is no repository-wide automated test suite. Start with the two standard-library commands above, then verify one example at a time with disposable inputs and the setup in its guide. Do not import arbitrary scripts as a test: many execute prompts, GUI code, network operations, or file changes at module scope.
+There is no repository-wide application test suite; the Repository standards workflow checks metadata separately. Start with the two standard-library commands above, then verify one example at a time with disposable inputs and the setup in its guide. Do not import arbitrary scripts as a test: many execute prompts, GUI code, network operations, or file changes at module scope.
 
 The tracked `audio8d-release.yml` workflow still refers to an absent `8D/` directory. It does not validate this collection. The separate [Audio8D repository](https://github.com/gcfernando/8d-audio-converter) contains that application; workflow repair is a code/configuration task outside these documentation changes.
 
@@ -200,7 +200,7 @@ Submit a focused issue or pull request in [this repository](https://github.com/g
 
 ## 🔒 Security
 
-Avoid posting passwords, tokens, connection strings, saved Wi-Fi data, or private model/input files in public issues. This repository has no tracked security policy or private reporting channel; use GitHub's private vulnerability reporting option only if it is offered for the repository.
+Avoid posting passwords, tokens, connection strings, saved Wi-Fi data, or private model/input files in public issues. Use the [security policy](SECURITY.md) and GitHub private vulnerability reporting for sensitive findings.
 
 ## 📄 Support and license
 
@@ -216,3 +216,7 @@ Use repository issues for setup questions, with the project name and reproducibl
 ## Documentation links
 
 [Guide index](documentation.md) · [All developer projects](https://gcfernando.github.io/gcfernando/projects/)
+
+## Repository maintenance
+
+[Contributing](https://github.com/gcfernando/python-projects-and-examples/blob/main/CONTRIBUTING.md) · [Security policy](https://github.com/gcfernando/python-projects-and-examples/blob/main/SECURITY.md) · [Repository standards](https://github.com/gcfernando/python-projects-and-examples/blob/main/REPOSITORY_STANDARDS.md)

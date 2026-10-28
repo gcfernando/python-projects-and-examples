@@ -1,2 +1,26 @@
 *.db
 /Wifi Radar/vendor_cache.json
+
+# Python environments, bytecode and tool caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Shared local files and documentation build caches
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.env
+.env.*
+!.env.example
+!.env.sample
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/

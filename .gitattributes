@@ -1,0 +1,10 @@
+# Repository metadata only: preserve application and data checkout behavior.
+/*.md text eol=lf
+/.editorconfig text eol=lf
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+/_config.yml text eol=lf
+/.github/** text eol=lf
+
+# Preserve the archived workflow exactly as imported.
+/.github/legacy-workflows/audio8d-release.yml -text whitespace=cr-at-eol
