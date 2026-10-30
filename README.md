@@ -174,11 +174,11 @@ Use your own credentials and keep them outside commits and copied terminal outpu
 
 ## Open in your browser
 
-| HTML source | View page | Setup guide |
+| Application | Open in browser | Setup guide |
 |---|---|---|
-| [Wifi Radar/index.html](https://github.com/gcfernando/python-projects-and-examples/blob/main/Wifi%20Radar/index.html) | [Open WiFi Radar — static dashboard preview](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/index.html) | [Run the local Flask scanner](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html) |
+| WiFi Radar | [Open the static dashboard preview](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/index.html) | [Run the local Flask scanner](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html) |
 
-The filename opens the HTML source on GitHub. The hosted preview can display and export simulated data. Live scanning and export of real scan results require the local Flask server; GitHub Pages does not run the scanner.
+The preview opens as a web page and can display and export simulated data. Live scanning and export of real scan results require the local Flask server; GitHub Pages does not run the scanner.
 
 <a id="architecture"></a>
 
