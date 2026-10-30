@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **System information**
-
-<a id="get-cpu-information-in-python--psutil-and-py-cpuinfo-example"></a>
-
 # Read CPU Information with Python and psutil
 
 A short script that shows **how to get CPU information in Python**: processor brand, architecture, clock speed, and physical and logical core counts, using `psutil` and `py-cpuinfo`.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **System information**
+
+<a id="get-cpu-information-in-python--psutil-and-py-cpuinfo-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Extract CPU Information/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script uses the `psutil` and `py-cpuinfo` libraries to gather and print CPU details to the console, including brand name, architecture, clock speed, core counts, and an estimated temperature.
 
@@ -18,7 +22,9 @@ This script uses the `psutil` and `py-cpuinfo` libraries to gather and print CPU
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - CPU brand name and architecture
 - cpuinfo version string
@@ -31,7 +37,9 @@ This script uses the `psutil` and `py-cpuinfo` libraries to gather and print CPU
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 psutil
@@ -48,7 +56,9 @@ python -m pip install psutil py-cpuinfo
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -73,7 +83,9 @@ Processor Info
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Extract CPU Information/
@@ -85,16 +97,20 @@ Extract CPU Information/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - Temperature is estimated based on the current CPU frequency (`freq / 100 + 15`). It is not a hardware sensor reading and should not be used to judge whether a CPU is overheating. On Linux, `psutil.sensors_temperatures()` can read real sensor values where the hardware exposes them.
 - `psutil` and `cpuinfo` support Windows, macOS, and Linux.
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Health Monitor — live process memory dashboard](https://gcfernando.github.io/python-projects-and-examples/Health%20Monitor/)
+## Related documentation
+
+- [Health Monitor — live process memory dashboard](../Health%20Monitor/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

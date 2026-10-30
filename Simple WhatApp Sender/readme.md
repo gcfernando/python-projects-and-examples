@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Browser automation**
-
-<a id="send-a-scheduled-whatsapp-message-with-python--pywhatkit-example"></a>
-
 # Schedule WhatsApp Messages with Python and pywhatkit
 
 A short Python script that shows **how to schedule and send a WhatsApp message from Python** with the `pywhatkit` library, which automates WhatsApp Web in your browser.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Browser automation**
+
+<a id="send-a-scheduled-whatsapp-message-with-python--pywhatkit-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Simple WhatApp Sender/Cosole_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script automates sending a WhatsApp message via WhatsApp Web. It opens the WhatsApp Web interface in a browser at the scheduled time and sends the message automatically.
 
@@ -18,7 +22,9 @@ This script automates sending a WhatsApp message via WhatsApp Web. It opens the 
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Sends a WhatsApp message to any phone number with a country code
 - Schedules the message for a specific hour and minute (24-hour format)
@@ -28,7 +34,9 @@ This script automates sending a WhatsApp message via WhatsApp Web. It opens the 
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 pywhatkit
@@ -44,7 +52,9 @@ python -m pip install pywhatkit
 
 <a id="configuration"></a>
 
-## ⚙️ Configuration
+<a id="-configuration"></a>
+
+## Configuration
 
 Open `WhatAppMessage.py` and update the following variables:
 
@@ -59,7 +69,9 @@ Open `WhatAppMessage.py` and update the following variables:
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Cosole_Code` folder:
 
@@ -82,7 +94,9 @@ Because it simulates mouse and keyboard input, keep the computer unlocked, the b
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Simple WhatApp Sender/
@@ -94,7 +108,9 @@ Simple WhatApp Sender/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - WhatsApp Web must be logged in before the scheduled send time.
 - Phone number format: include the country code with `+` (e.g., `+46` for Sweden, `+1` for USA).
@@ -102,10 +118,12 @@ Simple WhatApp Sender/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Use Twilio — send SMS and WhatsApp messages through an API](https://gcfernando.github.io/python-projects-and-examples/Use%20Twilio/)
-- [Simple Selenium Scraper — browser automation](https://gcfernando.github.io/python-projects-and-examples/Simple%20Selenium%20Scraper/)
+## Related documentation
+
+- [Use Twilio — send SMS and WhatsApp messages through an API](../Use%20Twilio/readme.md)
+- [Simple Selenium Scraper — browser automation](../Simple%20Selenium%20Scraper/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

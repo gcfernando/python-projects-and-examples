@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Windows integration**
-
-<a id="verify-windows-credentials-in-python--pywin32-logonuser-example"></a>
-
 # Check Windows Credentials with Python and pywin32
 
 A short Python script that shows **how to check a Windows username and password from Python** with `win32security.LogonUser` (pywin32), as a simple Windows credential gate for a script or tool.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Windows integration**
+
+<a id="verify-windows-credentials-in-python--pywin32-logonuser-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Use Windows Login/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script uses `getpass` to securely collect the current user's Windows password (without echoing it to the terminal) and then verifies it via the Win32 `LogonUser` API. This is a credential-check demonstration. It prints the result; the sample does not implement application authorization or session management.
 
@@ -18,7 +22,9 @@ This script uses `getpass` to securely collect the current user's Windows passwo
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Automatically detects the currently logged-in Windows username
 - Prompts for the password securely (input is not displayed)
@@ -29,7 +35,9 @@ This script uses `getpass` to securely collect the current user's Windows passwo
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 pywin32
@@ -47,7 +55,9 @@ python -m pip install pywin32
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -79,7 +89,9 @@ Login failed. Exiting application.
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Use Windows Login/
@@ -91,7 +103,9 @@ Use Windows Login/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - This script is Windows-only. `win32security` is not available on macOS or Linux.
 - The `LOGON32_LOGON_NETWORK` logon type is used, which validates credentials without creating a full user session.
@@ -100,10 +114,12 @@ Use Windows Login/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Password Generator and Strength Checker](https://gcfernando.github.io/python-projects-and-examples/Password%20Utility/)
-- [WiFi Profiles — Windows Wi-Fi utility](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/)
+## Related documentation
+
+- [Password Generator and Strength Checker](../Password%20Utility/readme.md)
+- [WiFi Profiles — Windows Wi-Fi utility](../Wifi%20Profiles/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

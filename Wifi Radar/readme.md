@@ -1,18 +1,22 @@
-<a id="manual-any-platform"></a>
-
-[Python projects](../README.md) · **Networking and dashboards**
-
-<a id="wifi-radar--python-wi-fi-scanner-with-a-live-flask-web-dashboard"></a>
-
 # WiFi Radar — Python Scanner and Flask Dashboard
 
 A real-time, cross-platform **Wi-Fi scanner written in Python** with a military-style radar web interface served by Flask. Displays nearby access points as live radar blips with signal strength, security info, vendor lookup, and CSV export.
 
-> **In this guide:** [Get started](#guide-quick-start) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Networking and dashboards**
+
+<a id="manual-any-platform"></a>
+
+<a id="wifi-radar--python-wi-fi-scanner-with-a-live-flask-web-dashboard"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Wifi Radar/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 [Open the published dashboard preview](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/index.html). GitHub Pages serves the interface only; live scans and export of real scan results require the local Flask server described below. The hosted preview can display and export simulated data with its offline banner.
 
@@ -22,7 +26,9 @@ WiFi Radar runs a local Flask web server that continuously scans nearby Wi-Fi ne
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 | Feature | Description |
 |---|---|
@@ -44,7 +50,9 @@ WiFi Radar runs a local Flask web server that continuously scans nearby Wi-Fi ne
 
 <a id="guide-quick-start"></a>
 
-## 🚀 Quick start
+<a id="-quick-start"></a>
+
+## Quick start
 
 Run these commands from the `Wifi Radar` directory. The launchers install packages into the selected Python environment; the Unix launcher can retry with `--break-system-packages`. For controlled setup, prefer the manual route in a virtual environment.
 
@@ -83,7 +91,9 @@ Then open your browser at: **http://localhost:5000**
 
 <a id="requirements"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 - Python 3.8+
 - Flask and Flask-CORS (auto-installed by launcher scripts)
@@ -126,25 +136,11 @@ Linux scan permissions depend on NetworkManager/PolicyKit configuration and the 
 | Radio type | WiFi 4/5/6/7 |
 | Network type | Infrastructure or Ad-Hoc |
 
-<a id="guide-troubleshooting-and-limitations"></a>
-
-## Troubleshooting and limitations
-
-- If backend requests fail, `index.html` can display generated demo networks with a `SERVER OFFLINE` / `Showing simulated data` banner. Those blips do not establish a successful native scan. Check server status and the banner before interpreting the display.
-- Radar angle and radius come from `stable_pos(bssid)`, a hash of the MAC address. They are visual placement, not measured direction, physical distance, or device location.
-- dBm can be estimated from signal percentage when the OS does not return it; missing platform fields and fallback defaults are not measurements. The macOS fallback includes a hardcoded security label.
-- `/api/debug` exposes raw scan output. There is no authentication layer around the dashboard or API.
-- Scan command output parsing is platform-dependent. A successful server start does not prove every field is available or accurate. Check native tool output and permissions if the network list is empty.
-
-## Disclaimer
-
-This tool is intended for educational and network diagnostic purposes only. Only scan networks you own or have explicit permission to scan.
-
----
-
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Wifi Radar/
@@ -164,13 +160,31 @@ Security, radio generation and band are parser results or heuristics. Band is in
 
 Online CSV export includes the backend snapshot and first/last-seen fields. Offline export downloads the generated demo records shown in the browser; it does not recover a real scan. New-AP alerts mean first seen in this server session, including the initial scan, and events are consumed by the first API client that polls. They are not a durable event log. Vendor lookups use independent background threads; their per-thread delay does not enforce a global request limit.
 
+<a id="guide-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
+
+- If backend requests fail, `index.html` can display generated demo networks with a `SERVER OFFLINE` / `Showing simulated data` banner. Those blips do not establish a successful native scan. Check server status and the banner before interpreting the display.
+- Radar angle and radius come from `stable_pos(bssid)`, a hash of the MAC address. They are visual placement, not measured direction, physical distance, or device location.
+- dBm can be estimated from signal percentage when the OS does not return it; missing platform fields and fallback defaults are not measurements. The macOS fallback includes a hardcoded security label.
+- `/api/debug` exposes raw scan output. There is no authentication layer around the dashboard or API.
+- Scan command output parsing is platform-dependent. A successful server start does not prove every field is available or accurate. Check native tool output and permissions if the network list is empty.
+
+## Disclaimer
+
+This tool is intended for educational and network diagnostic purposes only. Only scan networks you own or have explicit permission to scan.
+
+---
+
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [WiFi Scanner — command-line scan with pywifi](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Scanner/)
-- [WiFi Profiles — saved Windows Wi-Fi networks](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/)
-- [Port Scanner](https://gcfernando.github.io/python-projects-and-examples/Port%20Scanner/)
+## Related documentation
+
+- [WiFi Scanner — command-line scan with pywifi](../Wifi%20Scanner/readme.md)
+- [WiFi Profiles — saved Windows Wi-Fi networks](../Wifi%20Profiles/readme.md)
+- [Port Scanner](../Port%20Scanner/readme.md)
 - [Back to all Python projects](https://gcfernando.github.io/python-projects-and-examples/)
 
 ## Documentation links

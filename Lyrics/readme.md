@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Music and APIs**
-
-<a id="get-song-lyrics-with-python-and-the-genius-api--lyricsgenius-example"></a>
-
 # Search Genius Songs with Python and lyricsgenius
 
 A short Python script that **searches the Genius API for a song** with the `lyricsgenius` library and prints its title, artist, album, and a lyrics preview.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Music and APIs**
+
+<a id="get-song-lyrics-with-python-and-the-genius-api--lyricsgenius-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Lyrics/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script searches for a song by title and artist name using the Genius API, cleans the retrieved lyrics by stripping section headers (e.g., `[Verse 1]`), and prints the song's metadata along with a preview of the lyrics (up to 1,000 characters).
 
@@ -18,7 +22,9 @@ This script searches for a song by title and artist name using the Genius API, c
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Searches the Genius database by song title and artist name
 - Removes section headers (e.g., `[Chorus]`, `[Bridge]`) from lyrics using regex
@@ -30,7 +36,9 @@ This script searches for a song by title and artist name using the Genius API, c
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 lyricsgenius
@@ -44,7 +52,9 @@ python -m pip install lyricsgenius
 
 <a id="configuration"></a>
 
-## ⚙️ Configuration
+<a id="-configuration"></a>
+
+## Configuration
 
 Open `Lyrics.py` and update the following variables:
 
@@ -60,7 +70,9 @@ To get a Genius API token, register at [genius.com/developers](https://genius.co
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -84,7 +96,9 @@ If no match is found, the script prints `Song not found.`
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Lyrics/
@@ -96,7 +110,9 @@ Lyrics/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - Use your own Genius API token. Do not commit a real token to source control — read it from an environment variable instead, for example `lyricsgenius.Genius(os.environ["GENIUS_ACCESS_TOKEN"])`.
 - `song.album` can be `None` for songs without an album on Genius, which would make the `song.album.full_title` line fail.
@@ -107,10 +123,12 @@ Lyrics/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [MP3 Tags — read ID3 metadata](https://gcfernando.github.io/python-projects-and-examples/MP3%20Tags/)
-- [MP3 Player with crossfade](https://gcfernando.github.io/python-projects-and-examples/MP3%20Player/)
+## Related documentation
+
+- [MP3 Tags — read ID3 metadata](../MP3%20Tags/readme.md)
+- [MP3 Player with crossfade](../MP3%20Player/readme.md)
 - [Back to all Python projects](../README.md)
 
 ## Documentation links

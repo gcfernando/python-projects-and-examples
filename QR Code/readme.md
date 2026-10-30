@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Images and encoding**
-
-<a id="generate-a-qr-code-in-python--custom-colours-with-the-qrcode-library"></a>
-
 # Generate Custom QR Codes with Python
 
 A short Python script that shows **how to generate a QR code in Python** with the `qrcode` library, using custom fill and background colours and saving the result as a PNG image.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features)
+[Python projects](../README.md) · **Images and encoding**
+
+<a id="generate-a-qr-code-in-python--custom-colours-with-the-qrcode-library"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `QR Code/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script uses the `qrcode` library to create a QR code that encodes a short text containing a LinkedIn profile address. The QR code is styled with a dark blue fill on a light gray background and saved to `profile.png`. A sample `profile.png` is included in the `Console_Code` folder.
 
@@ -18,7 +22,9 @@ This script uses the `qrcode` library to create a QR code that encodes a short t
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Encodes any text or URL into a QR code
 - Configurable box size and border width
@@ -29,7 +35,9 @@ This script uses the `qrcode` library to create a QR code that encodes a short t
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 qrcode[pil]
@@ -45,7 +53,9 @@ python -m pip install "qrcode[pil]"
 
 <a id="configuration"></a>
 
-## ⚙️ Configuration
+<a id="-configuration"></a>
+
+## Configuration
 
 | Parameter | Value | Description |
 |---|---|---|
@@ -59,7 +69,9 @@ python -m pip install "qrcode[pil]"
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 Open `qr_code.py` and update the `data` variable with your desired content:
 
@@ -79,7 +91,9 @@ A file named `profile.png` will be created in the working directory.
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 QR Code/
@@ -90,10 +104,12 @@ QR Code/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Steganography — hide text inside a PNG](../Stenography/readme.md)
-- [Image to ASCII](https://gcfernando.github.io/python-projects-and-examples/Image%20to%20ASCII/)
+- [Image to ASCII](../Image%20to%20ASCII/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

@@ -1,14 +1,16 @@
-[Python projects](../README.md) · **Machine learning**
-
-<a id="python-machine-learning-examples--arimasarimax-time-series-forecasting-and-linear-regression"></a>
-
 # Python Machine Learning: Forecasting and Regression
 
 A collection of beginner-friendly **machine learning projects built with Python**: a **COVID-19 time-series forecast** using auto-ARIMA and SARIMAX (`pmdarima`, `statsmodels`), and a **salary prediction model** using scikit-learn linear regression with a separate training and inference workflow.
 
-> **In this guide:** [Understand the details](#guide-architecture) · [Projects](#guide-projects) · [Related documentation](#guide-related-documentation)
+[Python projects](../README.md) · **Machine learning**
 
 ---
+
+<a id="python-machine-learning-examples--arimasarimax-time-series-forecasting-and-linear-regression"></a>
+
+## Start here
+
+Choose [salary regression](Salary/readme.md) or [time-series forecasting](COVID%20Forecast/readme.md). Follow that project’s environment, data and model setup before running it.
 
 <a id="guide-projects"></a>
 
@@ -139,7 +141,9 @@ Predicted Salary for 5.0 years of experience: $<predicted amount>
 
 <a id="guide-architecture"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 ML/
@@ -161,7 +165,9 @@ ML/
 
 <a id="guide-related-documentation"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Machine-learning datasets](https://github.com/gcfernando/machine-learning-practice-datasets) — more datasets for regression, classification, and forecasting practice
 - [Back to all Python projects](../README.md)

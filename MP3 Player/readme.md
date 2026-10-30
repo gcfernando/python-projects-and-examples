@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Audio playback**
-
-<a id="python-mp3-player-with-crossfade--pygame-console-music-player"></a>
-
 # Python MP3 Player with pygame and Crossfade
 
 A console-based **MP3 player written in Python** with crossfade transitions between tracks, background preloading of the next song, and shuffled playback, built on `pygame.mixer` and `mutagen`.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Audio playback**
+
+<a id="python-mp3-player-with-crossfade--pygame-console-music-player"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `MP3 Player/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script plays `.mp3` files from a folder you specify in a shuffled order. It uses two `pygame` mixer channels to overlap playback and preloads the next track in a background thread. If preloading is not ready, it loads synchronously, which can cause a gap or glitch.
 
@@ -18,7 +22,9 @@ This script plays `.mp3` files from a folder you specify in a shuffled order. It
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Shuffle playback of all `.mp3` files in a given folder
 - Crossfade between tracks (configurable duration and trigger time)
@@ -33,7 +39,9 @@ This script plays `.mp3` files from a folder you specify in a shuffled order. It
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 pygame
@@ -49,7 +57,9 @@ python -m pip install pygame mutagen colorama
 
 <a id="configuration"></a>
 
-## ⚙️ Configuration
+<a id="-configuration"></a>
+
+## Configuration
 
 Two constants in the script control the crossfade behavior:
 
@@ -62,7 +72,9 @@ Two constants in the script control the crossfade behavior:
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -89,7 +101,9 @@ The player will shuffle the playlist, preload the first track, and begin playbac
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 MP3 Player/
@@ -101,7 +115,9 @@ MP3 Player/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - The playlist index wraps with modulo arithmetic; the shuffled order can repeat rather than stop after one pass. A single track can also restart when it reaches the crossfade trigger.
 - The default transition starts 15 seconds before the end but fades out over 5 seconds, so approximately the final 10 seconds of the outgoing track are cut off. Align the trigger and fade duration if you want a different overlap.
@@ -116,10 +132,12 @@ Background preloading shares a single `next_sound` variable without a track iden
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [MP3 Tags — read ID3 metadata](https://gcfernando.github.io/python-projects-and-examples/MP3%20Tags/)
-- [Improve MP3 Quality — re-encode MP3 files](https://gcfernando.github.io/python-projects-and-examples/Improve%20MP3%20Quality/)
+## Related documentation
+
+- [MP3 Tags — read ID3 metadata](../MP3%20Tags/readme.md)
+- [Improve MP3 Quality — re-encode MP3 files](../Improve%20MP3%20Quality/readme.md)
 - [Audio8D — 8D audio converter](https://github.com/gcfernando/8d-audio-converter)
 - [Back to all Python projects](../README.md)
 

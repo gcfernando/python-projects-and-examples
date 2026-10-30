@@ -1,22 +1,26 @@
-[Python projects](../README.md) · **Images and OpenCV**
-
-<a id="photo-to-graphite-pencil-sketch--automatic-python-cli-opencv"></a>
-
 # Graphite CLI — Photo to Pencil Sketch with Python
 
 **Graphite CLI** is a small Python command-line tool that converts a photograph into a **black-and-white graphite pencil sketch**. It uses OpenCV, NumPy, and Pillow, chooses its rendering settings automatically from each photo, and needs no GUI, network connection, AI model weights, or manual tuning. The output keeps the original pixel dimensions, and the result is deterministic for the same input and dependency versions.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture) · [Check the limits](#guide-verification-limits)
+[Python projects](../README.md) · **Images and OpenCV**
 
 ![Before-and-after example: a colour portrait of a woman holding a latte, and a black-and-white pencil-sketch version of the same photo](https://gcfernando.github.io/python-projects-and-examples/Graphite_CLI/Console_Code/Before%20and%20After.png)
 
 *Before-and-after example image included in the project folder.*
 
+<a id="photo-to-graphite-pencil-sketch--automatic-python-cli-opencv"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Graphite_CLI/Console_Code/`. Install any third-party packages in an isolated Python environment.
+
 <a id="developer-installation-one-time"></a>
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 Python 3.10+ is required. From the `Graphite_CLI/Console_Code` directory, install the dependencies:
 
@@ -32,7 +36,9 @@ Install the dependencies as part of deployment so the end user only runs the two
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -56,17 +62,13 @@ On success it prints the saved file and its size, for example `Saved 'sketch.png
 
 Supports common Pillow-readable image files as input and PNG/JPEG as output (`.png`, `.jpg`, `.jpeg`). EXIF rotation can swap width and height; dimension preservation is relative to the oriented image. For best lossless output, use `.png`.
 
-<a id="guide-verification-limits"></a>
-
-## Verification limits
-
-This repository does not include an automated test module for Graphite CLI. The runtime validation described above checks output integrity and basic image properties; it does not verify artistic quality. Inspect the saved image when deciding whether a conversion meets your needs.
-
 <a id="project-structure"></a>
 
 <a id="guide-architecture"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Graphite_CLI/
@@ -76,18 +78,28 @@ Graphite_CLI/
     └── Before and After.png                # Example result
 ```
 
+<a id="guide-verification-limits"></a>
+
+## Verification limits
+
+This repository does not include an automated test module for Graphite CLI. The runtime validation described above checks output integrity and basic image properties; it does not verify artistic quality. Inspect the saved image when deciding whether a conversion meets your needs.
+
 <a id="limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 This is a deterministic OpenCV renderer, not a neural image-to-image model or a human artist. It cannot guarantee a specific reference style, 100% identity preservation in perceptual terms, or perfect results on arbitrary photos. Automatic validation detects corrupted output, wrong dimensions, and obvious failures, not subjective artistic quality. For a strict artistic acceptance target, use a validated trained model or a human-in-the-loop quality-review process.
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Image2Cartoon](../Image2Cartoon/readme.md) — cartoon-style image effects with OpenCV
-- [Image to ASCII](https://gcfernando.github.io/python-projects-and-examples/Image%20to%20ASCII/) — turn an image into ASCII art
+- [Image to ASCII](../Image%20to%20ASCII/readme.md) — turn an image into ASCII art
 - [Back to all Python projects](../README.md)
 
 ---

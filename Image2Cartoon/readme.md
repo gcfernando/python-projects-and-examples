@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Images and OpenCV**
-
-<a id="cartoonify-an-image-with-python-and-opencv--image2cartoon"></a>
-
 # Turn Photos into Cartoons with Python and OpenCV
 
 A short Python script that shows **how to cartoonify a photo with OpenCV**: median blur, adaptive-threshold edge detection, and a bilateral filter are combined to turn a regular photograph into a cartoon-style image.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture)
+[Python projects](../README.md) · **Images and OpenCV**
+
+<a id="cartoonify-an-image-with-python-and-opencv--image2cartoon"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Image2Cartoon/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script applies a series of computer vision operations to transform an input image into a cartoon-like rendering. The original and cartoon images are displayed side by side for comparison.
 
@@ -18,7 +22,9 @@ This script applies a series of computer vision operations to transform an input
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 opencv-python
@@ -34,7 +40,9 @@ python -m pip install opencv-python
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 Open `CartoonImage.py` and set the input image path:
 
@@ -73,7 +81,9 @@ The output is resized to 500×500 pixels.
 
 <a id="guide-architecture"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Image2Cartoon/
@@ -83,11 +93,13 @@ Image2Cartoon/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Photo to graphite pencil sketch CLI](../Graphite_CLI/README.md)
-- [Remove Background](https://gcfernando.github.io/python-projects-and-examples/Remove%20Background/)
-- [Image to ASCII](https://gcfernando.github.io/python-projects-and-examples/Image%20to%20ASCII/)
+- [Remove Background](../Remove%20Background/readme.md)
+- [Image to ASCII](../Image%20to%20ASCII/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Images and steganography**
-
-<a id="image-steganography-in-python--hide-text-in-a-png-with-lsb-stegano"></a>
-
 # Hide and Read Text in PNG Images with Python
 
 A short Python example of **image steganography**: it hides a secret text message inside a PNG image using LSB (Least Significant Bit) encoding with the `stegano` library, then reads the message back. (The folder is named `Stenography`; the technique is steganography.)
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Images and steganography**
+
+<a id="image-steganography-in-python--hide-text-in-a-png-with-lsb-stegano"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Stenography/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script uses the `stegano` library's LSB (Least Significant Bit) method to embed a hidden text string into the pixel data of a PNG image. The modified image contains small pixel changes that carry the concealed message. The script also demonstrates how to extract (reveal) the hidden message from the output image.
 
@@ -18,7 +22,9 @@ This script uses the `stegano` library's LSB (Least Significant Bit) method to e
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Hides an a text message that fits the image’s embedding capacity message inside a PNG image using LSB steganography
 - Saves the resulting image to a new file (original is not modified)
@@ -28,7 +34,9 @@ This script uses the `stegano` library's LSB (Least Significant Bit) method to e
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 stegano
@@ -44,7 +52,9 @@ python -m pip install stegano
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 Open `HideTextInImage.py` and update the file paths:
 
@@ -71,7 +81,9 @@ Steganography is the practice of hiding information within another file in a way
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Stenography/
@@ -83,7 +95,9 @@ Stenography/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - Only **PNG images** are supported. JPEG compression would destroy the hidden data.
 - The carrier image must be large enough to hold the message (more pixels = more capacity).
@@ -94,10 +108,12 @@ Keep the configured input and output paths distinct. The sample uses separate na
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [QR Code generator](https://gcfernando.github.io/python-projects-and-examples/QR%20Code/)
-- [Password Generator and Strength Checker](https://gcfernando.github.io/python-projects-and-examples/Password%20Utility/)
+## Related documentation
+
+- [QR Code generator](../QR%20Code/readme.md)
+- [Password Generator and Strength Checker](../Password%20Utility/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

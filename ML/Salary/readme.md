@@ -1,16 +1,20 @@
-[Python projects](../../README.md) · **Machine learning and regression**
-
-<a id="salary-prediction-with-linear-regression-in-python--scikit-learn-train-and-predict-example"></a>
-
 # Salary Regression with Python and scikit-learn
 
 A beginner-friendly **machine learning** example in Python: a scikit-learn **linear regression** pipeline that predicts salary from years of experience, with a separate training script that saves the model and scaler with `joblib`, and an inference script that loads them to make predictions.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-scripts) · [Understand the details](#guide-architecture) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../../README.md) · **Machine learning and regression**
+
+<a id="salary-prediction-with-linear-regression-in-python--scikit-learn-train-and-predict-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `ML/Salary/Model Builder/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This project has two scripts:
 
@@ -21,7 +25,9 @@ This project has two scripts:
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 pandas
@@ -100,7 +106,9 @@ Predicted Salary for 7.0 years of experience: $<predicted amount>
 
 <a id="guide-architecture"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Salary/
@@ -118,7 +126,9 @@ Salary/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - Only load model files you trust: `joblib.load()` can execute code from serialized artifacts. Prefer retraining from the inspected source and CSV, and retain matching package versions. No dependency lockfile identifies the versions used for the bundled artifacts.
 - A trained `salary.pkl` and `scaler.pkl` are already included, so `prediction.py` works without training first. Run `builder.py` to retrain them. If your scikit-learn version differs from the one that created the files, retraining avoids version-mismatch warnings when loading them.
@@ -130,9 +140,11 @@ The inference prompt converts input to `float` without validating finite or non-
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [COVID-19 time series forecasting](https://gcfernando.github.io/python-projects-and-examples/ML/COVID%20Forecast/)
+## Related documentation
+
+- [COVID-19 time series forecasting](../COVID%20Forecast/readme.md)
 - [Machine-learning examples overview](../README.md)
 - [`Salary.csv` and other practice datasets](https://github.com/gcfernando/machine-learning-practice-datasets)
 - [Back to all Python projects](../../README.md)

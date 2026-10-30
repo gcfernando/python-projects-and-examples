@@ -1,18 +1,24 @@
-[Python projects](../README.md) · **Windows networking**
-
-<a id="show-saved-wi-fi-passwords-and-delete-wi-fi-profiles-on-windows-with-python-netsh"></a>
-
 # Manage Windows Wi-Fi Profiles with Python and netsh
 
 A Windows utility written in Python that uses `netsh wlan` to **list saved Wi-Fi networks with their stored passwords** and **bulk-delete Wi-Fi profiles** while keeping one network.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Windows networking**
 
 > ⚠️ **Running the script as it is deletes your saved Wi-Fi profiles.** Both parts run one after the other: after listing the passwords, the script deletes every saved profile except the one named in `ignore_ssid`, which is set to the placeholder `"WIFI_NAME"`. Unless you change `ignore_ssid` to your network's name, or comment out the delete section, **all** saved Wi-Fi profiles are deleted.
 
+<a id="show-saved-wi-fi-passwords-and-delete-wi-fi-profiles-on-windows-with-python-netsh"></a>
+
+## Start here
+
+**Before running:** this script prints saved Wi-Fi passwords and deletes saved profiles except the configured SSID. Read the deletion warning and edit the script first.
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Wifi Profiles/Console_Code/`. Install any third-party packages in an isolated Python environment.
+
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script uses `netsh wlan` commands via `subprocess` to:
 1. Display all saved Wi-Fi SSIDs and their stored passwords
@@ -24,7 +30,9 @@ Both operations are in the same script and both run every time. To only list pas
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Lists all saved Wi-Fi profiles with their SSIDs and passwords
 - Bulk-deletes all Wi-Fi profiles except a designated "safe" SSID
@@ -35,7 +43,9 @@ Both operations are in the same script and both run every time. To only list pas
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 No external dependencies. Uses only Python standard library.
 
@@ -45,7 +55,11 @@ No external dependencies. Uses only Python standard library.
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
+
+Run from the `Wifi Profiles/Console_Code/` directory, after reviewing and editing the deletion section:
 
 ```bash
 python profile.py
@@ -87,7 +101,9 @@ The script then deletes all other saved profiles, printing `Skipping profile: ..
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Wifi Profiles/
@@ -99,7 +115,9 @@ Wifi Profiles/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - You may need to run this script as Administrator to read stored passwords on some Windows configurations.
 - This tool is intended for personal use to manage your own saved Wi-Fi connections. Always use responsibly and with respect for privacy.
@@ -109,9 +127,11 @@ Wifi Profiles/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [WiFi Scanner — list nearby networks](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Scanner/)
+## Related documentation
+
+- [WiFi Scanner — list nearby networks](../Wifi%20Scanner/readme.md)
 - [WiFi Radar — live Wi-Fi dashboard](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html)
 - [FixNetwork — Windows network reset script](../FixNetwork/readme.md)
 - [Back to all Python projects](../README.md)

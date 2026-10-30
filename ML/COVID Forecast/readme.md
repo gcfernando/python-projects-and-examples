@@ -1,16 +1,20 @@
-[Python projects](../../README.md) · **Machine learning and time series**
-
-<a id="covid-19-time-series-forecasting-in-python--auto-arima-and-sarimax-example"></a>
-
 # Time-Series Forecasting with ARIMA and SARIMAX
 
 A **time series forecasting** script in Python that predicts daily COVID-19 cases for a country using `pmdarima.auto_arima` for model selection and `statsmodels` SARIMAX for fitting — a worked example of the ADF stationarity test, seasonal ARIMA, in-sample validation, and future forecasts with confidence intervals.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../../README.md) · **Machine learning and time series**
+
+<a id="covid-19-time-series-forecasting-in-python--auto-arima-and-sarimax-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `ML/COVID Forecast/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script downloads daily COVID-19 case data, performs stationarity analysis, automatically selects the best ARIMA/SARIMA model, fits it, and generates both an in-sample static forecast and a future forecast for the next N days. All results are visualized with `matplotlib`.
 
@@ -18,7 +22,9 @@ This script downloads daily COVID-19 case data, performs stationarity analysis, 
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Automatically downloads COVID-19 daily case data if not cached locally
 - Augmented Dickey-Fuller (ADF) stationarity test with detailed output
@@ -33,7 +39,9 @@ This script downloads daily COVID-19 case data, performs stationarity analysis, 
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 numpy
@@ -52,7 +60,9 @@ python -m pip install numpy pandas pmdarima covid_daily statsmodels matplotlib
 
 <a id="configuration"></a>
 
-## ⚙️ Configuration
+<a id="-configuration"></a>
+
+## Configuration
 
 Edit the variables at the top of `CovidForecast.py`:
 
@@ -66,7 +76,9 @@ Edit the variables at the top of `CovidForecast.py`:
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -93,7 +105,9 @@ On first run, a CSV file (e.g., `india_corvid19.csv`) is downloaded and saved in
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 COVID Forecast/
@@ -105,7 +119,9 @@ COVID Forecast/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - The transformed series is used for ADF testing and the rolling-statistics chart. Both `auto_arima` and SARIMAX are fitted to the original `y` series, not the detrended series. The in-sample chart is not an independent held-out evaluation.
 - The `dataset[newColumn].astype(float)` result is not assigned back; provide numeric values in a cached CSV. The static forecast needs at least 120 observations.
@@ -115,7 +131,9 @@ COVID Forecast/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Salary prediction with scikit-learn linear regression](../Salary/readme.md)
 - [Machine-learning examples overview](../README.md)

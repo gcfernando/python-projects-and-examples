@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **System monitoring**
-
-<a id="python-process-memory-monitor--possible-leak-alerts-with-psutil-and-rich"></a>
-
 # Monitor Process Memory in Python with psutil
 
 A real-time terminal dashboard written in Python that watches the **memory usage of running processes** and flags ones whose memory keeps growing — a simple heuristic for spotting possible memory leaks.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **System monitoring**
+
+<a id="python-process-memory-monitor--possible-leak-alerts-with-psutil-and-rich"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Health Monitor/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 Health Monitor continuously tracks the memory usage of the top processes on your system and flags any that show consistent upward growth — a common sign of a memory leak. The live dashboard refreshes every second and color-codes each process with a clear status indicator.
 
@@ -18,7 +22,9 @@ Health Monitor continuously tracks the memory usage of the top processes on your
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Live terminal dashboard powered by the `rich` library
 - Tracks the top N processes by memory usage
@@ -34,7 +40,9 @@ Health Monitor continuously tracks the memory usage of the top processes on your
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 Use Python 3.10 or newer; the script uses runtime union type annotations such as `float | None`.
 
@@ -53,7 +61,9 @@ python -m pip install psutil rich
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -101,7 +111,9 @@ These are heuristics, not proof of a leak: caches, garbage-collected runtimes, a
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Health Monitor/
@@ -113,7 +125,9 @@ Health Monitor/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - Press `Ctrl+C` to stop monitoring. The dashboard is cleared on exit.
 - Processes that exit mid-session are automatically removed from tracking.
@@ -125,9 +139,11 @@ The display labels memory as MB, but the source divides bytes by `1024 ** 2`, so
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Extract CPU Information](https://gcfernando.github.io/python-projects-and-examples/Extract%20CPU%20Information/)
+## Related documentation
+
+- [Extract CPU Information](../Extract%20CPU%20Information/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

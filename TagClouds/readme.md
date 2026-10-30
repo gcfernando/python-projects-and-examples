@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Text and visualization**
-
-<a id="generate-a-word-cloud-from-web-pages-in-python--wordcloud-with-an-image-mask"></a>
-
 # Create Masked Word Clouds from Web Pages in Python
 
 A Python script that **creates a word cloud from text scraped from several web pages**, shaped by a mask image, using `requests`, `inscriptis`, `wordcloud`, and `matplotlib`.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Text and visualization**
+
+<a id="generate-a-word-cloud-from-web-pages-in-python--wordcloud-with-an-image-mask"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `TagClouds/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script fetches content from a list of web pages about Nike, extracts the plain text from the HTML using `inscriptis`, concatenates all the text, and generates a word cloud masked to the shape of a downloaded Nike logo image. The result is displayed using `matplotlib`.
 
@@ -18,7 +22,9 @@ This script fetches content from a list of web pages about Nike, extracts the pl
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Scrapes multiple web pages using `requests` with a browser-like User-Agent header
 - Extracts clean text from HTML using `inscriptis`
@@ -31,7 +37,9 @@ This script fetches content from a list of web pages about Nike, extracts the pl
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 requests
@@ -50,7 +58,9 @@ python -m pip install requests inscriptis Pillow wordcloud numpy matplotlib
 
 <a id="configuration"></a>
 
-## ⚙️ Configuration
+<a id="-configuration"></a>
+
+## Configuration
 
 The following variables at the top of `TagCloud.py` can be modified:
 
@@ -64,7 +74,9 @@ The following variables at the top of `TagCloud.py` can be modified:
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -79,7 +91,9 @@ The script will:
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 TagClouds/
@@ -91,7 +105,9 @@ TagClouds/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - An internet connection is required to fetch web pages and the mask image.
 - Pages that return HTTP errors or connection failures are skipped after a `Failed to fetch ...` diagnostic. Successful requests print `Fetched: ...`.
@@ -102,9 +118,11 @@ TagClouds/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Simple Selenium Scraper](https://gcfernando.github.io/python-projects-and-examples/Simple%20Selenium%20Scraper/)
+## Related documentation
+
+- [Simple Selenium Scraper](../Simple%20Selenium%20Scraper/readme.md)
 - [Image2Cartoon — OpenCV image effects](../Image2Cartoon/readme.md)
 - [Back to all Python projects](../README.md)
 

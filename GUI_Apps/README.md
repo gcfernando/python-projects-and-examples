@@ -1,14 +1,16 @@
-[Python projects](../README.md) · **Desktop interfaces**
-
-<a id="python-desktop-gui-apps--tkinter-ttkbootstrap-contact-book-with-sql-server"></a>
-
 # Python Contact Book — Tkinter and SQL Server
 
 A collection of desktop GUI applications built with Python. It currently contains **Contact Book**, a CRUD contact manager that shows how to connect a **Tkinter / ttkbootstrap** interface to **Microsoft SQL Server** using **pyodbc** and stored procedures.
 
-> **In this guide:** [Understand the details](#guide-architecture) · [Applications](#guide-applications) · [Related documentation](#guide-related-documentation)
+[Python projects](../README.md) · **Desktop interfaces**
 
 ---
+
+<a id="python-desktop-gui-apps--tkinter-ttkbootstrap-contact-book-with-sql-server"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `GUI_Apps/ContactBook/V1/`. Install any third-party packages in an isolated Python environment.
 
 <a id="guide-applications"></a>
 
@@ -107,7 +109,9 @@ The database enforces unique mobile numbers and email addresses, so a save is re
 
 <a id="guide-architecture"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 GUI_Apps/
@@ -124,10 +128,12 @@ Search combines supplied mobile and email values with **AND**: when both are ent
 
 <a id="guide-related-documentation"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Text2Audio](../Text2Audio/readme.md) and [Setup Wizard — Fruit Wiki](../SetupWizard/readme.md) — more Python desktop GUI examples
-- [Complete SQL Guide](https://github.com/gcfernando/developer-guides-and-cheatsheets/blob/main/sql_complete_guide.md) — learn the SQL Server concepts used here, including stored procedures and constraints
+- [SQL Server and MySQL guide](https://github.com/gcfernando/developer-guides-and-tools/blob/main/docs/databases/sql-server-and-mysql.md) — learn the SQL Server concepts used here, including stored procedures and constraints
 - [Back to all Python projects](../README.md)
 
 ---

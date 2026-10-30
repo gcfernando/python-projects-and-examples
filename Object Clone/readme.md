@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Python fundamentals**
-
-<a id="deep-copy-vs-shallow-copy-in-python--copydeepcopy-example"></a>
-
 # Clone Python Objects with copy.deepcopy
 
 A minimal example of **cloning a Python object with `copy.deepcopy()`**, showing that changes to the original do not affect the copy.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Python fundamentals**
+
+<a id="deep-copy-vs-shallow-copy-in-python--copydeepcopy-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Object Clone/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script creates an instance of a custom class, clones it with `copy.deepcopy()`, then reassigns the original’s integer attribute. The copied instance retains its original value. The example demonstrates separate instances; it does not exercise nested mutable state or compare shallow copying directly.
 
@@ -18,7 +22,9 @@ This script creates an instance of a custom class, clones it with `copy.deepcopy
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 No external dependencies. `copy` is part of the Python standard library.
 
@@ -26,7 +32,9 @@ No external dependencies. `copy` is part of the Python standard library.
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -64,7 +72,9 @@ For this `MyClass`, `deepcopy` creates a separate instance; assigning `20` to th
 
 <a id="guide-architecture"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Object Clone/
@@ -76,7 +86,9 @@ Object Clone/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - Use `copy.copy()` for a **shallow copy**, which only copies the top-level object (nested mutable objects are still shared).
 - Use `copy.deepcopy()` for a **deep copy**, which recursively copies supported mutable contents — suitable when the object contains lists, dicts, or other mutable attributes.
@@ -84,11 +96,13 @@ Object Clone/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Custom Exception](https://gcfernando.github.io/python-projects-and-examples/Custom%20Exception/)
+## Related documentation
+
+- [Custom Exception](../Custom%20Exception/readme.md)
 - [Python dbm database example](../Database/README.md)
-- [Python OOP and dunder methods guides](https://github.com/gcfernando/developer-guides-and-cheatsheets)
+- [Python OOP guide](https://github.com/gcfernando/developer-guides-and-tools/blob/main/docs/python/oop.md) and [special methods reference](https://github.com/gcfernando/developer-guides-and-tools/blob/main/docs/python/special-methods.md)
 - [Back to all Python projects](../README.md)
 
 ---

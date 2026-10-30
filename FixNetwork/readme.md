@@ -1,18 +1,24 @@
-[Python projects](../README.md) · **Windows networking**
-
-<a id="windows-network-reset-script-in-python--fix-internet-connection-problems"></a>
-
 # Windows Network Diagnostics and Reset with Python
 
 A Windows network repair utility written in Python that automates the standard **Windows network troubleshooting commands** — DHCP release/renew, DNS flush, Winsock and TCP/IP stack reset, proxy reset, adapter restart, and connectivity tests — with a progress bar and colour-coded results.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Windows networking**
 
 > ⚠️ **This script changes system network settings.** Resetting the TCP/IP stack and Winsock catalog can remove static IP addresses, custom DNS servers, and some VPN or network-filter configurations, and restarting adapters disconnects you briefly. Note any custom settings before running it.
 
+<a id="windows-network-reset-script-in-python--fix-internet-connection-problems"></a>
+
+## Start here
+
+**Before running:** this Windows script changes network settings and restarts adapters. Read the limitations and prepare for a dropped connection.
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `FixNetwork/Console_Code/`. Install any third-party packages in an isolated Python environment.
+
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script automates a series of common network troubleshooting steps — releasing DHCP leases, flushing caches, resetting the TCP/IP and Winsock stacks, restarting the WLAN service, and running connectivity tests — all with a progress bar and color-coded output. It must be run as Administrator.
 
@@ -20,7 +26,9 @@ This script automates a series of common network troubleshooting steps — relea
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Administrator privilege check before execution
 - Progress bar via `tqdm` showing step name and completion
@@ -43,7 +51,9 @@ This script automates a series of common network troubleshooting steps — relea
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 colorama
@@ -60,7 +70,9 @@ python -m pip install colorama tqdm
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder, in a terminal or PowerShell window opened as Administrator:
 
@@ -74,7 +86,9 @@ After the routine completes, a reboot is recommended for maximum stability.
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 FixNetwork/
@@ -86,7 +100,9 @@ FixNetwork/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - All commands use `subprocess.run()` with `shell=True`. Each step's output is shown only if the step fails.
 - This tool is Windows-only. It relies on `netsh`, `ipconfig`, `arp`, `nbtstat`, `ping`, `nslookup`, and PowerShell cmdlets.
@@ -97,11 +113,13 @@ The IPv4/IPv6 steps labelled optional in the source still run on every invocatio
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [WiFi Profiles — manage saved Windows Wi-Fi networks](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/)
-- [Internet Speed Test](https://gcfernando.github.io/python-projects-and-examples/Internet%20Speed%20Test/)
-- [Windows maintenance PowerShell script](https://github.com/gcfernando/developer-tools-and-guides/tree/main/SystemMaintenance)
+## Related documentation
+
+- [WiFi Profiles — manage saved Windows Wi-Fi networks](../Wifi%20Profiles/readme.md)
+- [Internet Speed Test](../Internet%20Speed%20Test/readme.md)
+- [Windows maintenance PowerShell script](https://github.com/gcfernando/developer-guides-and-tools/blob/main/tools/powershell/system-maintenance/README.md)
 - [Back to all Python projects](../README.md)
 
 ---

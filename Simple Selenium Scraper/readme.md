@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Browser automation**
-
-<a id="python-selenium-web-scraping-example--headless-chrome-headline-scraper"></a>
-
 # Python Selenium Scraper with Headless Chrome
 
 A short **Selenium web scraping example in Python** that runs Chrome in headless mode, opens the ESPN Cricinfo news page, and prints the page header and news headlines found by CSS class.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Browser automation**
+
+<a id="python-selenium-web-scraping-example--headless-chrome-headline-scraper"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Simple Selenium Scraper/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script launches a headless Chrome browser, navigates to the ESPN Cricinfo news page, and extracts the page header and all news feed article titles. Results are printed to the console.
 
@@ -18,7 +22,9 @@ This script launches a headless Chrome browser, navigates to the ESPN Cricinfo n
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Runs Chrome in headless mode (no visible browser window)
 - Scrapes the page header and news article titles
@@ -29,7 +35,9 @@ This script launches a headless Chrome browser, navigates to the ESPN Cricinfo n
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 selenium
@@ -56,7 +64,9 @@ You also need:
 
 <a id="configuration"></a>
 
-## ⚙️ Configuration
+<a id="-configuration"></a>
+
+## Configuration
 
 Open `Web_Scrape.py` and update the ChromeDriver path:
 
@@ -75,7 +85,9 @@ You can change this to any URL and update the CSS class selectors (`ds-text-titl
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -96,7 +108,9 @@ Headlines change daily, and the CSS classes used by the site can change at any t
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Simple Selenium Scraper/
@@ -108,7 +122,9 @@ Simple Selenium Scraper/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - The first two items from the news feed list are skipped (`news_feeds[2:]`) to avoid navigation elements.
 - ChromeDriver must be version-compatible with the installed Chrome browser.
@@ -117,10 +133,12 @@ Simple Selenium Scraper/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Tag Clouds — word cloud from scraped web pages](../TagClouds/readme.md)
-- [Simple WhatsApp Sender — browser automation](https://gcfernando.github.io/python-projects-and-examples/Simple%20WhatApp%20Sender/)
+- [Simple WhatsApp Sender — browser automation](../Simple%20WhatApp%20Sender/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

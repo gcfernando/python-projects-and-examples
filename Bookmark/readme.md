@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **CLI and databases**
-
-<a id="python-bookmark-manager-cli--save-and-search-links-with-sqlite-and-rich"></a>
-
 # Python Bookmark Manager with SQLite and Rich
 
 A lightweight **command-line bookmark manager written in Python** for saving, searching, opening, editing, and deleting links with notes. It stores data in SQLite (no server needed) and uses `rich` for coloured terminal output — a compact example of a CRUD console app.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **CLI and databases**
+
+<a id="python-bookmark-manager-cli--save-and-search-links-with-sqlite-and-rich"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Bookmark/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 Bookmark stores your important URLs in a local SQLite database (`links.db`) alongside a title and a short summary note. All operations are done through a simple interactive prompt. The `rich` library provides colored, readable output in the terminal.
 
@@ -18,7 +22,9 @@ Bookmark stores your important URLs in a local SQLite database (`links.db`) alon
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - **Add** links with a title, URL, and summary note
 - **Search** links by keyword matching the title
@@ -33,7 +39,9 @@ Bookmark stores your important URLs in a local SQLite database (`links.db`) alon
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 rich
@@ -51,7 +59,9 @@ python -m pip install rich
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -92,7 +102,9 @@ Opening...
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Bookmark/
@@ -104,7 +116,9 @@ Bookmark/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - `links.db` is created automatically in the directory where the script is run.
 - The database schema adds the `note` column automatically if it's missing (for backwards compatibility with older databases).
@@ -112,7 +126,9 @@ Bookmark/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Python dbm key-value database example](../Database/README.md)
 - [Contact Book — Python GUI with SQL Server](../GUI_Apps/README.md)

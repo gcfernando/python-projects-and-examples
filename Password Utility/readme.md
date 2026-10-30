@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **CLI learning examples**
-
-<a id="python-password-generator-and-password-strength-checker"></a>
-
 # Python Password Generator and Strength-Check Examples
 
 Two small Python command-line tools: a **random password generator** with guaranteed numbers of digits, uppercase, lowercase, and special characters, and a **password strength checker** that rates a password by the number of possible character combinations.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-scripts) · [Understand the details](#guide-architecture)
+[Python projects](../README.md) · **CLI learning examples**
+
+<a id="python-password-generator-and-password-strength-checker"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Password Utility/Cosole_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This project contains two independent scripts:
 
@@ -21,7 +25,9 @@ This project contains two independent scripts:
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 No external dependencies. Both scripts use only Python standard library modules (`random`, `string`, `re`, `os`).
 
@@ -99,7 +105,9 @@ More ! (Y|N) : N
 
 <a id="guide-architecture"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Password Utility/
@@ -110,9 +118,11 @@ Password Utility/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Use Windows Login — verify Windows credentials](https://gcfernando.github.io/python-projects-and-examples/Use%20Windows%20Login/)
+## Related documentation
+
+- [Use Windows Login — verify Windows credentials](../Use%20Windows%20Login/readme.md)
 - [Steganography — hide text in images](../Stenography/readme.md)
 - [Back to all Python projects](../README.md)
 

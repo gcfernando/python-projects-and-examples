@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Images and AI**
-
-<a id="remove-image-background-in-python-with-rembg--ai-background-removal-example"></a>
-
 # Remove Image Backgrounds with Python and rembg
 
 A short Python script that shows **how to remove the background from an image in Python** using the AI-based `rembg` library, then places the subject on a solid black background with Pillow.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Images and AI**
+
+<a id="remove-image-background-in-python-with-rembg--ai-background-removal-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Remove Background/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script takes an input image, removes its background using the AI-powered `rembg` library, and composites the foreground onto a solid black canvas. The result is saved as a new image file.
 
@@ -18,7 +22,9 @@ This script takes an input image, removes its background using the AI-powered `r
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Automatic background removal through `rembg.remove()`; the installed dependency chooses its default model
 - Composites the transparent result onto a solid black background
@@ -29,7 +35,9 @@ This script takes an input image, removes its background using the AI-powered `r
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 rembg[cpu]
@@ -48,7 +56,9 @@ The [upstream rembg installation guide](https://github.com/danielgatis/rembg#ins
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 By default the script processes the included sample image `Elephant.jpg` and writes `Elephant_Modified.jpg`, so you can try it straight away from the `Console_Code` folder:
 
@@ -74,7 +84,9 @@ The processed image will be saved at the output path.
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Remove Background/
@@ -87,7 +99,9 @@ Remove Background/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - The output background color is currently set to black. Change `'black'` to `'white'` or any other color in `Image.new('RGB', result_img.size, 'black')` to use a different background.
 - `rembg` works best on images with clear subject-background contrast.
@@ -96,7 +110,9 @@ Remove Background/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Image2Cartoon — cartoon effect with OpenCV](../Image2Cartoon/readme.md)
 - [Photo to graphite pencil sketch CLI](../Graphite_CLI/README.md)

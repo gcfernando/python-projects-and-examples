@@ -1,18 +1,24 @@
-[Python projects](../README.md) · **Audio processing**
-
-<a id="re-encode-mp3-files-in-python--change-bitrate-channels-and-sample-rate-with-pydub"></a>
-
 # Re-encode MP3 Files with Python, pydub and FFmpeg
 
 A command-line tool written in Python that **re-encodes MP3 files** with a chosen bitrate, channel option, and sample rate using `pydub` and FFmpeg (`libmp3lame`), for a single file or a whole folder.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Audio processing**
 
 > Re-encoding cannot add detail that a lower-quality MP3 has already lost; a higher bitrate mainly makes the file larger. Use it to standardize settings or reduce file size.
 
+<a id="re-encode-mp3-files-in-python--change-bitrate-channels-and-sample-rate-with-pydub"></a>
+
+## Start here
+
+**Before running:** the script replaces original MP3 files. Use copies of your audio and read its file-handling notes first.
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Improve MP3 Quality/Console_Code/`. Install any third-party packages in an isolated Python environment.
+
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script uses `pydub` (backed by FFmpeg) to re-encode one or more MP3 files. The original file is replaced in-place with the optimized version. ID3 tags from the original file are preserved in the output. It can process a single MP3 file or an entire folder of MP3s in one run.
 
@@ -20,7 +26,9 @@ This script uses `pydub` (backed by FFmpeg) to re-encode one or more MP3 files. 
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Process a single MP3 file or a whole folder at once
 - 7 bitrate menu options: `32k`, `64k`, `96k`, `128k`, `192k`, `256k`, `320k`
@@ -33,7 +41,9 @@ This script uses `pydub` (backed by FFmpeg) to re-encode one or more MP3 files. 
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 pydub
@@ -57,7 +67,9 @@ Install FFmpeg:
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -103,7 +115,9 @@ The channel options are applied by `pydub` before encoding; they are not LAME's 
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Improve MP3 Quality/
@@ -119,7 +133,9 @@ Improve MP3 Quality/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - The original file is overwritten. Back up your files before running if needed.
 - Only `.mp3` files are processed when a folder path is given.
@@ -130,10 +146,12 @@ Improve MP3 Quality/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [MP3 Tags — read ID3 metadata](https://gcfernando.github.io/python-projects-and-examples/MP3%20Tags/)
-- [MP3 Player with crossfade](https://gcfernando.github.io/python-projects-and-examples/MP3%20Player/)
+## Related documentation
+
+- [MP3 Tags — read ID3 metadata](../MP3%20Tags/readme.md)
+- [MP3 Player with crossfade](../MP3%20Player/readme.md)
 - [Audio8D — FFmpeg 8D audio converter](https://github.com/gcfernando/8d-audio-converter)
 - [Back to all Python projects](../README.md)
 

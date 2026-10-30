@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Documents and audio**
-
-<a id="read-a-pdf-aloud-with-python--pypdf2-and-pyttsx3-offline-text-to-speech"></a>
-
 # Read a PDF Aloud with Python and pyttsx3
 
 A short Python script that **reads a PDF aloud**, page by page: it extracts the text with `PyPDF2` and speaks it with `pyttsx3`, which uses your operating system's built-in (offline) text-to-speech voices.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Documents and audio**
+
+<a id="read-a-pdf-aloud-with-python--pypdf2-and-pyttsx3-offline-text-to-speech"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `StoryReader/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script extracts text from a PDF file using `PyPDF2` and converts it to speech using `pyttsx3`. It reads each page sequentially, with a brief pause between pages for natural pacing. A preferred voice (female by default) is selected automatically if available.
 
@@ -18,7 +22,9 @@ This script extracts text from a PDF file using `PyPDF2` and converts it to spee
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Reads all pages of a PDF aloud using the system's text-to-speech engine
 - Tries to select a voice whose name or ID contains "female" (see the note on voice selection below)
@@ -31,7 +37,9 @@ This script extracts text from a PDF file using `PyPDF2` and converts it to spee
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 PyPDF2
@@ -48,7 +56,9 @@ python -m pip install PyPDF2 pyttsx3
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 `Story.pdf` is not included in the repository. Place your own PDF named `Story.pdf` in the folder you run the script from (or update the path), then run:
 
@@ -77,7 +87,9 @@ read_pdf_aloud("path/to/your/file.pdf", voice_id=chosen_voice, rate=150, volume=
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 StoryReader/
@@ -89,7 +101,9 @@ StoryReader/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - `pyttsx3` uses the operating system's built-in TTS engine (SAPI5 on Windows, NSSpeechSynthesizer on macOS, eSpeak on Linux).
 - Pages with no extractable text are silently skipped.
@@ -104,7 +118,9 @@ Calling `read_pdf_aloud()` directly uses its function default volume of `1.0` un
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Text2Audio — Google text-to-speech desktop app](../Text2Audio/readme.md)
 - [Back to all Python projects](../README.md)

@@ -1,16 +1,22 @@
-[Python projects](../README.md) · **Data persistence**
-
-<a id="python-dbm-example--simple-key-value-database-with-the-standard-library"></a>
-
 # Python dbm — A File-Based Key-Value Database
 
 A simple example of **key-value data persistence** using Python's built-in **`dbm` module**: store a small record in a file-based database and read it back, with no database server and no third-party packages.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-known-issue)
+[Python projects](../README.md) · **Data persistence**
+
+<a id="python-dbm-example--simple-key-value-database-with-the-standard-library"></a>
+
+## Start here
+
+**Known issue:** the current script raises a byte-key `KeyError` after writing the database. The explanation and adaptation below are part of this learning example.
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Database/DatabaseManager/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script demonstrates how to store and retrieve structured data using Python's `dbm` module — a lightweight, file-based key-value store that requires no external database server. It saves a set of user details to a database file, then reads them back and formats a summary.
 
@@ -20,17 +26,27 @@ This script demonstrates how to store and retrieve structured data using Python'
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Stores key-value pairs in a file-based database using `dbm`
 - Reads back and decodes stored data from the database
 - No external libraries or server setup required
 
+<a id="guide-known-issue"></a>
+
+## Known issue
+
+As currently written, the script raises `KeyError: 'first_name'` when it reaches the print step. `dbm` returns **keys** as bytes as well as values, and `load_user_data()` decodes only the values, so the returned dictionary has keys such as `b'first_name'` rather than `'first_name'`. Decoding the keys too — `{key.decode(): db[key].decode() for key in db.keys()}` — produces the intended output.
+
 <a id="requirements"></a>
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 No external dependencies. `dbm` is part of the Python standard library.
 
@@ -38,7 +54,11 @@ No external dependencies. `dbm` is part of the Python standard library.
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
+
+From the `Database/` directory:
 
 ```bash
 cd DatabaseManager/Console_Code
@@ -53,12 +73,6 @@ Hi, I am Gehan Fernando. I live in Sri Lanka, and I am 43 years old.
 
 Database files named after `user.db` are created in the working directory. Their exact names depend on the platform's `dbm` backend — for example, the pure-Python `dbm.dumb` fallback creates `user.db.dat`, `user.db.dir`, and `user.db.bak`.
 
-<a id="guide-known-issue"></a>
-
-## Known issue
-
-As currently written, the script raises `KeyError: 'first_name'` when it reaches the print step. `dbm` returns **keys** as bytes as well as values, and `load_user_data()` decodes only the values, so the returned dictionary has keys such as `b'first_name'` rather than `'first_name'`. Decoding the keys too — `{key.decode(): db[key].decode() for key in db.keys()}` — produces the intended output.
-
 ## How It Works
 
 1. A dictionary of user data (first name, last name, age, country) is defined.
@@ -68,7 +82,9 @@ As currently written, the script raises `KeyError: 'first_name'` when it reaches
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Database/
@@ -79,16 +95,20 @@ Database/
 
 <a id="notes"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - The database file is created in the current working directory when the script runs.
 - `dbm` stores all keys and values as bytes. The `load_user_data()` function decodes the values using `.decode()`.
 
 <a id="related-examples"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Object Clone](https://gcfernando.github.io/python-projects-and-examples/Object%20Clone/) and [Custom Exception](https://gcfernando.github.io/python-projects-and-examples/Custom%20Exception/) — other short Python fundamentals examples
+## Related documentation
+
+- [Object Clone](../Object%20Clone/readme.md) and [Custom Exception](../Custom%20Exception/readme.md) — other short Python fundamentals examples
 - [Back to all Python projects](../README.md)
 
 ---

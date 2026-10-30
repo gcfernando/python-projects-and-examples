@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Interactive data apps**
-
-<a id="streamlit-example-app-in-python--widgets-dataframes-and-charts"></a>
-
 # Streamlit in Python — Widgets, DataFrames and Charts
 
 A single-file **Streamlit example app** in Python that demonstrates sidebar input widgets, a pandas DataFrame, a matplotlib histogram, and Streamlit's native line and area charts — a quick way to learn how to build an interactive data web app without writing HTML or JavaScript.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features)
+[Python projects](../README.md) · **Interactive data apps**
+
+<a id="streamlit-example-app-in-python--widgets-dataframes-and-charts"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Streamlit/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This app serves as a showcase of Streamlit's core capabilities. Users can interact with various sidebar controls, view their selections displayed in the main area, explore a dynamically generated data table, and see multiple chart types — all in a single-page web interface.
 
@@ -18,7 +22,9 @@ This app serves as a showcase of Streamlit's core capabilities. Users can intera
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - **Sidebar widgets:**
   - Slider (age range selection)
@@ -42,7 +48,9 @@ This app serves as a showcase of Streamlit's core capabilities. Users can intera
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 streamlit
@@ -61,7 +69,9 @@ python -m pip install streamlit pandas numpy matplotlib
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -85,7 +95,9 @@ Streamlit re-runs the whole script from top to bottom every time a widget change
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Streamlit/
@@ -95,9 +107,11 @@ Streamlit/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Local AI chat app with Ollama and Streamlit](https://github.com/gcfernando/developer-guides-and-cheatsheets/blob/main/local_ai_learning_lab.md)
+## Related documentation
+
+- [Local AI chat app with Ollama and Streamlit](https://github.com/gcfernando/developer-guides-and-tools/blob/main/docs/ai/local-ai-chat-lab.md)
 - [WiFi Radar — Flask web dashboard](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html)
 - [Back to all Python projects](../README.md)
 

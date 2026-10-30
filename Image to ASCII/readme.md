@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Images and text**
-
-<a id="convert-an-image-to-ascii-art-in-python--pywhatkit-example"></a>
-
 # Convert Images to ASCII Art with Python
 
 A short Python script that **converts an image into ASCII art** and saves it as a text file, using `pywhatkit.image_to_ascii_art`.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture)
+[Python projects](../README.md) · **Images and text**
+
+<a id="convert-an-image-to-ascii-art-in-python--pywhatkit-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Image to ASCII/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script uses the `pywhatkit` library to transform any image into a text-based ASCII art representation. The output is saved as a `.txt` file at a path you specify in the script.
 
@@ -18,7 +22,9 @@ This script uses the `pywhatkit` library to transform any image into a text-base
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 pywhatkit
@@ -34,7 +40,9 @@ python -m pip install pywhatkit
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 Open `ImageToText.py` and update the input and output paths:
 
@@ -63,7 +71,9 @@ In `pywhatkit` 5.4, `image_to_ascii_art` converts the image to grayscale with Pi
 
 <a id="guide-architecture"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Image to ASCII/
@@ -73,7 +83,9 @@ Image to ASCII/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Photo to graphite pencil sketch CLI](../Graphite_CLI/README.md)
 - [Image2Cartoon — cartoon effect with OpenCV](../Image2Cartoon/readme.md)

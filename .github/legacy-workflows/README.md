@@ -1,12 +1,14 @@
-[Python projects](../../README.md)
-
-<a id="historical-workflow-configuration"></a>
-
 # Archived Audio8D Workflow — History and Current Project
 
 The archived `audio8d-release.yml` records the release configuration for the former `8D/` application in this examples repository.
 
-> **In this guide:** [Understand the details](#guide-understand-the-archive) · [Check the limits](#guide-plan-a-replacement-deliberately) · [Find the current project](#guide-find-the-current-project)
+[Python projects](../../README.md)
+
+<a id="historical-workflow-configuration"></a>
+
+## Start here
+
+For current downloads and source setup, open the [Audio8D application repository](https://github.com/gcfernando/8d-audio-converter). This directory preserves history and does not run a release workflow.
 
 <a id="guide-find-the-current-project"></a>
 

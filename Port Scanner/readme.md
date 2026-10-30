@@ -1,21 +1,25 @@
-[Python projects](../README.md) · **Authorized network diagnostics**
-
-<a id="python-port-scanner--multithreaded-tcp-scanner-with-ipv6-banners-and-json-output"></a>
-
 # Python TCP Port Scanner — IPv6 and JSON Output
 
 A fast, multithreaded **TCP port scanner written in pure Python** (standard library only). It resolves IPv4 or IPv6 hosts, reports open TCP ports, can read service banners, and can emit JSON for automation. Internal closed/filtered classification has a platform limitation described below.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features)
+[Python projects](../README.md) · **Authorized network diagnostics**
 
 > **Only scan systems you own or have explicit written permission to test.**
 > Unauthorized scanning may violate computer-misuse laws in your jurisdiction.
+
+<a id="python-port-scanner--multithreaded-tcp-scanner-with-ipv6-banners-and-json-output"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Port Scanner/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="features"></a>
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - **IPv4 and IPv6** — resolves hostnames via `getaddrinfo`, selects an IPv4 result when available, otherwise an IPv6 result; it scans one resolved address
 - **Flexible port specification** — single ports, ranges, lists, or any mix: `80`, `1-1024`, `22,80,443`, `1-100,8080`
@@ -30,7 +34,9 @@ A fast, multithreaded **TCP port scanner written in pure Python** (standard libr
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 - Python **3.10** or newer
 - No external packages
@@ -39,7 +45,9 @@ A fast, multithreaded **TCP port scanner written in pure Python** (standard libr
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 Run from the `Port Scanner/Console_Code` directory:
 
@@ -154,7 +162,9 @@ The CLI does not print filtered entries. Internally the worker uses that label f
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Port Scanner/
@@ -166,10 +176,12 @@ Resolution does not retry another address after a connection fails. The JSON `sc
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [WiFi Radar — Flask Wi-Fi scanner dashboard](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html)
-- [Linux command reference for cybersecurity](https://github.com/gcfernando/developer-tools-and-guides/tree/main/Linux_Commands)
+- [Linux command reference for cybersecurity](https://github.com/gcfernando/developer-guides-and-tools/blob/main/apps/linux-command-reference/README.md)
 - [Back to all Python projects](../README.md)
 
 ---

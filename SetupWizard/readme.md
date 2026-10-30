@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Desktop interfaces and packaging**
-
-<a id="pysimplegui-image-viewer-with-pyinstaller-packaging--fruit-wiki-python"></a>
-
 # Fruit Wiki — Python Image Viewer and Packaging Demo
 
 A Python desktop GUI that displays fruit images and descriptions in a paginated viewer, built with **PySimpleGUI** and **Pillow**, with a `resource_path()` helper that makes bundled assets work when the app is packaged into a Windows executable with **PyInstaller**.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Desktop interfaces and packaging**
+
+<a id="pysimplegui-image-viewer-with-pyinstaller-packaging--fruit-wiki-python"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `SetupWizard/GUI_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 Fruit Wiki is a simple desktop image browser for fruits. It reads image files from an `Images/` folder and matching text files from a `Data/` folder, then displays the fruit image and exposes its description as an image tooltip. Users can browse entries using Previous and Next buttons.
 
@@ -18,7 +22,9 @@ Fruit Wiki is a simple desktop image browser for fruits. It reads image files fr
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Paginated image viewer with Previous / Next navigation
 - Loads images (`.png`, `.jpg`, `.jpeg`) from an `Images/` folder
@@ -32,7 +38,9 @@ Fruit Wiki is a simple desktop image browser for fruits. It reads image files fr
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 PySimpleGUI
@@ -51,7 +59,9 @@ python -m pip install PySimpleGUI Pillow pyglet pyinstaller
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 ### Running the script directly
 
@@ -74,7 +84,9 @@ The executable is created in `dist/`.
 
 <a id="folder-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 SetupWizard/
@@ -93,7 +105,9 @@ Each `.txt` file in `Data/` must have the same base name as its matching image f
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - The `resource_path()` helper chooses the working directory during development and `sys._MEIPASS` in a bundle. Start from `GUI_Code` or bundle the folders as shown above; the helper does not include assets automatically.
 - Sentence formatting is applied to description text: periods followed by a space are replaced with a newline.
@@ -104,7 +118,9 @@ Each `.txt` file in `Data/` must have the same base name as its matching image f
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [Text2Audio — customtkinter text-to-speech app](../Text2Audio/readme.md)
 - [Contact Book — ttkbootstrap and SQL Server](../GUI_Apps/README.md)

@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Python fundamentals**
-
-<a id="how-to-create-a-custom-exception-in-python--minimal-example"></a>
-
 # Create and Catch a Custom Exception in Python
 
 A minimal Python example demonstrating **how to define, raise, and catch a custom exception class** by subclassing `Exception`.
 
-> **In this guide:** [Walk through the example](#guide-usage) · [Understand the details](#guide-architecture) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **Python fundamentals**
+
+<a id="how-to-create-a-custom-exception-in-python--minimal-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Custom Exception/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script shows the pattern for creating a user-defined exception in Python by subclassing the built-in `Exception` class. It demonstrates how to raise the custom exception under a specific condition and catch it with a `try/except` block.
 
@@ -18,7 +22,9 @@ This script shows the pattern for creating a user-defined exception in Python by
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -69,7 +75,9 @@ From `Exception` (or one of its subclasses). `BaseException` is reserved for exc
 
 <a id="guide-architecture"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Custom Exception/
@@ -81,16 +89,20 @@ Custom Exception/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - No external dependencies required — uses only Python built-ins.
 - The script includes a discussion in the docstring about when it is appropriate to make a custom exception serializable (relevant for distributed systems where exceptions may be passed across process boundaries).
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Object Clone — deep copy example](https://gcfernando.github.io/python-projects-and-examples/Object%20Clone/)
+## Related documentation
+
+- [Object Clone — deep copy example](../Object%20Clone/readme.md)
 - [Python dbm database example](../Database/README.md)
 - [Back to all Python projects](../README.md)
 

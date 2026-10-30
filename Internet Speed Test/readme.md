@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Network measurements**
-
-<a id="internet-speed-test-in-python--speedtest-cli-example"></a>
-
 # Test Internet Speed with Python and speedtest-cli
 
 A short Python script that **tests your internet speed** — download, upload, and ping — using the `speedtest-cli` library and Speedtest.net servers.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features)
+[Python projects](../README.md) · **Network measurements**
+
+<a id="internet-speed-test-in-python--speedtest-cli-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Internet Speed Test/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script connects to the best available Speedtest.net server, runs a full speed test, and prints the results to the console.
 
@@ -18,7 +22,9 @@ This script connects to the best available Speedtest.net server, runs a full spe
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Automatically selects the best available test server
 - Measures download speed (Mbps)
@@ -30,7 +36,9 @@ This script connects to the best available Speedtest.net server, runs a full spe
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 speedtest-cli
@@ -46,7 +54,9 @@ python -m pip install speedtest-cli
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -76,7 +86,9 @@ Ping        : 12.34 ms
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Internet Speed Test/
@@ -86,10 +98,12 @@ Internet Speed Test/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [FixNetwork — Windows network reset script](../FixNetwork/readme.md)
-- [WiFi Scanner](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Scanner/)
+- [WiFi Scanner](../Wifi%20Scanner/readme.md)
 - [Get your public IP address in C#](https://github.com/gcfernando/csharp-dotnet-examples/tree/main/PublicIP)
 - [Back to all Python projects](../README.md)
 

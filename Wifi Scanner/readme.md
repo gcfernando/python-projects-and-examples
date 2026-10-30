@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Wireless networking**
-
-<a id="python-wi-fi-scanner--list-nearby-networks-with-pywifi"></a>
-
 # Scan Nearby Wi-Fi Networks with Python and pywifi
 
 A short Python script that **scans for nearby Wi-Fi networks** with the `pywifi` library and prints each network's SSID, BSSID, signal strength, frequency, and security type.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-known-issues)
+[Python projects](../README.md) · **Wireless networking**
+
+<a id="python-wi-fi-scanner--list-nearby-networks-with-pywifi"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Wifi Scanner/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script initializes the system's first Wi-Fi interface, triggers a scan, and then reads the results to display network details including SSID, BSSID, signal strength, frequency, and security mode for each discovered access point.
 
@@ -18,7 +22,9 @@ This script initializes the system's first Wi-Fi interface, triggers a scan, and
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Scans all visible Wi-Fi networks
 - Displays for each network:
@@ -30,11 +36,21 @@ This script initializes the system's first Wi-Fi interface, triggers a scan, and
   - Authentication mode
 - Error handling inside the scan/output block; interface initialization happens before that block
 
+<a id="guide-known-issues"></a>
+
+## Known issues
+
+- **Authentication value is scalar.** The [upstream Profile definition](https://github.com/awkman/pywifi/blob/master/pywifi/profile.py) stores `auth` as an integer, while this script indexes `network.auth[0]`. The default `0` skips the branch; a nonzero integer raises a type error and ends the scan/output block. Use the documented integer constants when adapting the display rather than treating authentication as a list.
+- **Security labels are shifted.** `pywifi` numbers its AKM types as 0 = none, 1 = WPA, 2 = WPA-PSK, 3 = WPA2, 4 = WPA2-PSK, 5 = unknown, but the script's `akm_modes` list is ordered `OPEN, WPA-PSK, WPA-EAP, WPA2-PSK, WPA2-EAP, UNKNOWN`. As a result, a typical WPA2-Personal network (type 4) is printed as `WPA2-EAP`. Reordering the list to `['OPEN', 'WPA-EAP', 'WPA-PSK', 'WPA2-EAP', 'WPA2-PSK', 'UNKNOWN']` matches `pywifi`'s constants.
+- **Frequency units.** On Windows, `pywifi` returns the channel centre frequency in kHz, so `network.freq / 1000000` prints gigahertz (for example `2.412`) under a "MHz" label. Dividing by `1000` gives MHz. Other platforms may report frequency in different units.
+
 <a id="requirements"></a>
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 pywifi
@@ -55,7 +71,9 @@ python -m pip install pywifi
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -75,17 +93,11 @@ Frequency (MHz): 2.412
 Security Mode: WPA2-EAP
 ```
 
-<a id="guide-known-issues"></a>
-
-## Known issues
-
-- **Authentication value is scalar.** The [upstream Profile definition](https://github.com/awkman/pywifi/blob/master/pywifi/profile.py) stores `auth` as an integer, while this script indexes `network.auth[0]`. The default `0` skips the branch; a nonzero integer raises a type error and ends the scan/output block. Use the documented integer constants when adapting the display rather than treating authentication as a list.
-- **Security labels are shifted.** `pywifi` numbers its AKM types as 0 = none, 1 = WPA, 2 = WPA-PSK, 3 = WPA2, 4 = WPA2-PSK, 5 = unknown, but the script's `akm_modes` list is ordered `OPEN, WPA-PSK, WPA-EAP, WPA2-PSK, WPA2-EAP, UNKNOWN`. As a result, a typical WPA2-Personal network (type 4) is printed as `WPA2-EAP`. Reordering the list to `['OPEN', 'WPA-EAP', 'WPA-PSK', 'WPA2-EAP', 'WPA2-PSK', 'UNKNOWN']` matches `pywifi`'s constants.
-- **Frequency units.** On Windows, `pywifi` returns the channel centre frequency in kHz, so `network.freq / 1000000` prints gigahertz (for example `2.412`) under a "MHz" label. Dividing by `1000` gives MHz. Other platforms may report frequency in different units.
-
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Wifi Scanner/
@@ -95,7 +107,9 @@ Wifi Scanner/
 
 <a id="notes"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - If no Wi-Fi interface exists, `interfaces()[0]` fails before the `try` block and its friendly error handler cannot run.
 - The script always uses the first Wi-Fi interface (`interfaces()[0]`). Systems with multiple Wi-Fi adapters will use whichever is first in the list.
@@ -105,11 +119,13 @@ Wifi Scanner/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
+
+## Related documentation
 
 - [WiFi Radar — live Wi-Fi dashboard](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Radar/guide.html)
-- [WiFi Profiles — saved Windows Wi-Fi networks](https://gcfernando.github.io/python-projects-and-examples/Wifi%20Profiles/)
-- [Internet Speed Test](https://gcfernando.github.io/python-projects-and-examples/Internet%20Speed%20Test/)
+- [WiFi Profiles — saved Windows Wi-Fi networks](../Wifi%20Profiles/readme.md)
+- [Internet Speed Test](../Internet%20Speed%20Test/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

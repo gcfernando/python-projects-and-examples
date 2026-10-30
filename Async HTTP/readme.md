@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **HTTP and automation**
-
-<a id="async-http-requests-in-python-with-aiohttp-and-asyncio--get-post-put-delete-example"></a>
-
 # Async HTTP Requests in Python with aiohttp
 
 An interactive command-line client that shows how to make **asynchronous HTTP requests in Python** with `asyncio` and `aiohttp` — sending GET, POST, PUT, and DELETE requests to a REST API and printing the JSON responses.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-troubleshooting-and-limitations)
+[Python projects](../README.md) · **HTTP and automation**
+
+<a id="async-http-requests-in-python-with-aiohttp-and-asyncio--get-post-put-delete-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `Async HTTP/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script demonstrates asynchronous HTTP communication by connecting to the Northwind sample REST API. It runs a loop that lets you repeatedly choose a request method, provide the necessary data, and view the JSON response — all using non-blocking I/O.
 
@@ -18,7 +22,9 @@ This script demonstrates asynchronous HTTP communication by connecting to the No
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 - Supports GET, POST, PUT, and DELETE methods
 - Asynchronous request handling via `aiohttp` and `asyncio`
@@ -30,7 +36,9 @@ This script demonstrates asynchronous HTTP communication by connecting to the No
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 aiohttp
@@ -48,7 +56,9 @@ python -m pip install aiohttp
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 From the `Console_Code` folder:
 
@@ -86,7 +96,9 @@ More! (Y|N): N
 
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 Async HTTP/
@@ -98,7 +110,9 @@ Async HTTP/
 
 <a id="guide-troubleshooting-and-limitations"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - Each request opens its own `aiohttp.ClientSession`. That keeps the demo short; in larger programs, create one session and reuse it for many requests.
 - Every response is parsed as JSON without `raise_for_status()` or a check for an empty body. HTML errors or a successful empty DELETE response can raise a JSON parsing error. The interactive `input()` calls block even though request I/O is asynchronous.
@@ -106,10 +120,12 @@ Async HTTP/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [Internet Speed Test](https://gcfernando.github.io/python-projects-and-examples/Internet%20Speed%20Test/)
-- [Port Scanner](https://gcfernando.github.io/python-projects-and-examples/Port%20Scanner/)
+## Related documentation
+
+- [Internet Speed Test](../Internet%20Speed%20Test/readme.md)
+- [Port Scanner](../Port%20Scanner/readme.md)
 - [Back to all Python projects](../README.md)
 
 ---

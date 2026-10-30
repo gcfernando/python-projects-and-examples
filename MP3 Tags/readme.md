@@ -1,16 +1,20 @@
-[Python projects](../README.md) · **Audio metadata**
-
-<a id="read-mp3-id3-tags-in-python--eyed3-metadata-and-audio-info-example"></a>
-
 # Read MP3 ID3 Tags in Python with eyeD3
 
 A short Python script that shows **how to read MP3 metadata (ID3 tags) in Python** with `eyed3` — title, artist, album, genre, track number, and year — along with audio details such as sample rate, bitrate, duration, and channel mode.
 
-> **In this guide:** [Get started](#guide-prerequisites-and-installation) · [Walk through the example](#guide-usage) · [Understand the details](#guide-features) · [Check the limits](#guide-known-issue-bitrate-prints-as-0-kbps)
+[Python projects](../README.md) · **Audio metadata**
+
+<a id="read-mp3-id3-tags-in-python--eyed3-metadata-and-audio-info-example"></a>
+
+## Start here
+
+Read the requirements and any configuration below, then follow the usage example. Source paths below are relative to the repository root; run commands from the working directory stated in Usage. This example’s source is in `MP3 Tags/Console_Code/`. Install any third-party packages in an isolated Python environment.
 
 <a id="overview"></a>
 
-## 🔎 Overview
+<a id="-overview"></a>
+
+## Overview
 
 This script loads an MP3 file, extracts its ID3 tag information and audio stream properties, and prints them to the console. It covers both tag metadata (title, artist, genre, etc.) and technical audio details (bitrate, sample rate, duration, channels).
 
@@ -18,7 +22,9 @@ This script loads an MP3 file, extracts its ID3 tag information and audio stream
 
 <a id="guide-features"></a>
 
-## ✨ Features
+<a id="-features"></a>
+
+## Features
 
 Extracts and displays the following information:
 
@@ -40,11 +46,19 @@ Extracts and displays the following information:
 **File Information:**
 - File size (MB)
 
+<a id="guide-known-issue-bitrate-prints-as-0-kbps"></a>
+
+## Known issue: bitrate prints as 0 kbps
+
+In `eyed3`, `audio_file.info.bit_rate` is a `(vbr, bitrate)` tuple whose bitrate is **already in kb/s**. The script divides it by 1000 again (`bit_rate[1] // 1000`), so a 320 kb/s file prints `Bitrate: 0 kbps`. Printing `audio_file.info.bit_rate[1]` — or `audio_file.info.bit_rate_str`, which also marks variable bitrates with `~` — shows the correct value.
+
 <a id="requirements"></a>
 
 <a id="guide-prerequisites-and-installation"></a>
 
-## 📦 Prerequisites and installation
+<a id="-prerequisites-and-installation"></a>
+
+## Prerequisites and installation
 
 ```text
 eyed3
@@ -60,7 +74,9 @@ python -m pip install eyed3
 
 <a id="guide-usage"></a>
 
-## 💡 Usage
+<a id="-usage"></a>
+
+## Usage
 
 Open `ReadMP3File.py` and update the file path:
 
@@ -91,15 +107,11 @@ Channels: <channel mode, e.g. Joint stereo>
 File Size: <MB>
 ```
 
-<a id="guide-known-issue-bitrate-prints-as-0-kbps"></a>
-
-## Known issue: bitrate prints as 0 kbps
-
-In `eyed3`, `audio_file.info.bit_rate` is a `(vbr, bitrate)` tuple whose bitrate is **already in kb/s**. The script divides it by 1000 again (`bit_rate[1] // 1000`), so a 320 kb/s file prints `Bitrate: 0 kbps`. Printing `audio_file.info.bit_rate[1]` — or `audio_file.info.bit_rate_str`, which also marks variable bitrates with `~` — shows the correct value.
-
 <a id="file-structure"></a>
 
-## 🏗️ Architecture
+<a id="-architecture"></a>
+
+## Architecture
 
 ```text
 MP3 Tags/
@@ -109,7 +121,9 @@ MP3 Tags/
 
 <a id="notes"></a>
 
-## 🛠️ Troubleshooting and limitations
+<a id="-troubleshooting-and-limitations"></a>
+
+## Troubleshooting and limitations
 
 - The file path is currently hardcoded in the script. Update it before running.
 - Year is only printed if `getBestDate()` returns a valid date object.
@@ -117,10 +131,12 @@ MP3 Tags/
 
 <a id="related-projects"></a>
 
-## 🔗 Related documentation
+<a id="-related-documentation"></a>
 
-- [MP3 Player with crossfade](https://gcfernando.github.io/python-projects-and-examples/MP3%20Player/)
-- [Improve MP3 Quality — re-encode MP3 files](https://gcfernando.github.io/python-projects-and-examples/Improve%20MP3%20Quality/)
+## Related documentation
+
+- [MP3 Player with crossfade](../MP3%20Player/readme.md)
+- [Improve MP3 Quality — re-encode MP3 files](../Improve%20MP3%20Quality/readme.md)
 - [Lyrics — Genius API song lookup](../Lyrics/readme.md)
 - [Back to all Python projects](../README.md)
 
