@@ -208,7 +208,7 @@ flowchart LR
 
 There is no repository-wide application test suite; the Repository standards workflow checks metadata separately. Start with the two standard-library commands above, then verify one example at a time with disposable inputs and the setup in its guide. Do not import arbitrary scripts as a test: many execute prompts, GUI code, network operations, or file changes at module scope.
 
-The [archived Audio8D workflow](.github/legacy-workflows/README.md) documents a former application directory and cannot run from its archive location. Current packaging belongs to the separate [Audio8D repository](https://github.com/gcfernando/8d-audio-converter).
+The [archived Audio8D workflow guide](https://github.com/gcfernando/python-projects-and-examples/blob/main/.github/legacy-workflows/README.md) documents a former application directory and cannot run from its archive location. Current packaging belongs to the separate [Audio8D repository](https://github.com/gcfernando/8d-audio-converter).
 
 For documentation and metadata changes, run `python .github/scripts/check_repository.py` with Python 3.12 or later. See [Contributing](CONTRIBUTING.md) for the scope of that check.
 
